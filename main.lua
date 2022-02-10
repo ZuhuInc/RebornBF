@@ -76,11 +76,11 @@ MiscSection:AddToggle({
     max = 70,
 })
 
-CreditsSection4:AddLabel("discord.gg/n99SfKPe9M")
+CreditsSection4:AddLabel("discord.gg/YVaaSQbrgg")
 CreditsSection4:AddButton({
     text = "Copy Invite",
     callback = function()
-        setclipboard("https://discord.gg/n99SfKPe9M")
+        setclipboard("https://discord.gg/YVaaSQbrgg")
     end,
 })
 
@@ -402,9 +402,9 @@ KnifeAura:AddToggle({
     flag = "KnifeAuraHeld",
 })
 
-CreditsSection:AddLabel("Made by: duck#1337")
-CreditsSection2:AddLabel("People who helped:\ninteger#1993\nsiper#9938\niRay#1488 [Extreme racist]")
-CreditsSection3:AddLabel("UI: Jans Library that I\ntotally got permission to\nuse")
+CreditsSection:AddLabel("Made by: ZuhuInc ")
+CreditsSection2:AddLabel("support from:\nLT.Wrench\nZurax\nIceQbe [Cotton yes]")
+CreditsSection3:AddLabel("UI: Jans Library that I\ntotally got permission to\nPaste")
 
 ESPSection:AddToggle({
     text = "Enabled",
