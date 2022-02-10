@@ -403,7 +403,7 @@ KnifeAura:AddToggle({
 })
 
 CreditsSection:AddLabel("Made by: ZuhuInc ")
-CreditsSection2:AddLabel("support from:\nLT.Wrench\nZurax\nIceQbe [Cotton yes]")
+CreditsSection2:AddLabel("support from:\nLT.Wrench\nZoraX\nIceQbe [Cotton yes]")
 CreditsSection3:AddLabel("UI: Jans Library that I\ntotally got permission to\nPaste")
 
 ESPSection:AddToggle({
