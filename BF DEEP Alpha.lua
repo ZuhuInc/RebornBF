@@ -1,5 +1,8 @@
 --[[
-	Welcome to BF Client! Have Fun And Get banned
+	Welcome to Sunshine! The first publicly open source DeepWoken script!
+	This script was brought to you by our top tier developers at https://stumware.cc/
+	Enjoy! Also, Please note that we arent responsible for if this script gets detected as it is OpenSource.
+]]
 do
   local Key53 = 8186484168865098
   local Key14 = 4887
@@ -247,7 +250,7 @@ sfx:Play()
 tablestack[4][ivzcxy10]:SetCore(
 "SendNotification",
 {
-Title = "BFClient!",
+Title = "BF DW!",
 Text = text,
 Duration = 2
 }
@@ -279,7 +282,7 @@ tool.Parent=tablestack[4].Players.LocalPlayer.Backpack
 end
 
 local DefaultSettings = {
-WindowName = "BFClient Aphla V1" .. " - Time : " .. tostring(os.date()) .. " - Welcome to the club.",
+WindowName = "BF DeepWoken Beta V1" .. " - Time : " .. tostring(os.date()) .. " - Welcome to the club.",
 Color = tablestack[10](255, 0, 0),
 Keybind = Enum.KeyCode.RightBracket,
 noinsanity = tablestack[2],
@@ -5408,4 +5411,3 @@ tablestack[4].Players.LocalPlayer.Character.HumanoidRootPart.CFrame =b
 end)
 tool.Parent=tablestack[4].Players.LocalPlayer.Backpack 
 end
-
