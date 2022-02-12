@@ -1,14 +1,14 @@
---Made By: ZuhuIncﱞﱞﱞﱞﱞﱞﱞﱞﱞﱞﱞ⚠⧖⧖⚠#9999
+--Made By: ZuhuInc
 --https://discord.gg/a5kmyZTQPy
 --this is quite a old script but i managed to update it sorry for the shit ui
 --stuff that has been grayed out is stuff that is mostlikly patched
 _G.Funnyname=false
-if _G.Arsonia then
+if _G.ArsenalBF then
     return
 end
-_G.Arsonia=true
+_G.ArsenalBF=true
 local Library=loadstring(game:HttpGet("https://raw.githubusercontent.com/ZuhuInc/RebornBF/main/ArsenalBetaUI.lua"))()
-local ArsoniaTable={
+local ArsenalBFTable={
     Player={
         Anti_Aim={
             Enabled=false,
@@ -309,15 +309,15 @@ local ArsoniaTable={
             DoFlame=getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).flamemoment.doflame,
             ColCol=function(a,b)return Color3.new(math.clamp(a.R+b.R,0,1),math.clamp(a.G+b.G,0,1),math.clamp(a.B+b.B,0,1))end,
             _=(function()if setfpscap then setfpscap(999)end for _,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren())do if v:FindFirstChild("HumanoidRootPart")then v.HumanoidRootPart.Transparency=1 end end 
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).firebullet,321,"ArsoniaFireRate")
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun,434,"ArsoniaEquipTime")
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).reloadwep,94,"ArsoniaReloadTime")
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).reloadwep,123,"ArsoniaEReloadTime")
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).countammo,61,"ArsoniaStoredAmmo")
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).getammo,13,"ArsoniaStoredAmmo")
-                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).getprimaryammo,7,"ArsoniaStoredAmmo")
-                debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools,115,"ArsoniaStoredAmmo")
-                debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).updtprimary,9,"ArsoniaStoredAmmo")for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do if v:FindFirstChild("FireRate")then local a=v.FireRate:Clone()a.Parent=v a.Name="ArsoniaFireRate"end if v:FindFirstChild("ReloadTime")then local a=v.ReloadTime:Clone()a.Parent=v a.Name="ArsoniaReloadTime"end if v:FindFirstChild("EReloadTime")then local a=v.EReloadTime:Clone()a.Parent=v a.Name="ArsoniaEReloadTime"end if v:FindFirstChild("EquipTime")then local a=v.EquipTime:Clone()a.Parent=v a.Name="ArsoniaEquipTime"end if v:FindFirstChild("StoredAmmo")then local a=v.StoredAmmo:Clone()a.Parent=v a.Name="ArsoniaStoredAmmo"end if v:FindFirstChild("Range")and v:FindFirstChild("Melee")and v:FindFirstChild("Backstab")then local a=v.Range:Clone()a.Parent=v a.Name="ArsoniaRange"end end end)(),
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).firebullet,321,"ArsenalBFFireRate")
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun,434,"ArsenalBFEquipTime")
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).reloadwep,94,"ArsenalBFReloadTime")
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).reloadwep,123,"ArsenalBFEReloadTime")
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).countammo,61,"ArsenalBFStoredAmmo")
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).getammo,13,"ArsenalBFStoredAmmo")
+                debug.setconstant(require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).getprimaryammo,7,"ArsenalBFStoredAmmo")
+                debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools,115,"ArsenalBFStoredAmmo")
+                debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).updtprimary,9,"ArsenalBFStoredAmmo")for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do if v:FindFirstChild("FireRate")then local a=v.FireRate:Clone()a.Parent=v a.Name="ArsenalBFFireRate"end if v:FindFirstChild("ReloadTime")then local a=v.ReloadTime:Clone()a.Parent=v a.Name="ArsenalBFReloadTime"end if v:FindFirstChild("EReloadTime")then local a=v.EReloadTime:Clone()a.Parent=v a.Name="ArsenalBFEReloadTime"end if v:FindFirstChild("EquipTime")then local a=v.EquipTime:Clone()a.Parent=v a.Name="ArsenalBFEquipTime"end if v:FindFirstChild("StoredAmmo")then local a=v.StoredAmmo:Clone()a.Parent=v a.Name="ArsenalBFStoredAmmo"end if v:FindFirstChild("Range")and v:FindFirstChild("Melee")and v:FindFirstChild("Backstab")then local a=v.Range:Clone()a.Parent=v a.Name="ArsenalBFRange"end end end)(),
             Unpacktable=(function()local a={["\a"]="\\a",["\b"]="\\b",["\f"]="\\f",["\n"]="\\n",["\r"]="\\r",["\t"]="\\t",["\v"]="\\v",["\0"]="\\0"}local b={["and"]=true,["break"]=true,["do"]=true,["else"]=true,["elseif"]=true,["end"]=true,["false"]=true,["for"]=true,["function"]=true,["if"]=true,["in"]=true,["local"]=true,["nil"]=true,["not"]=true,["or"]=true,["repeat"]=true,["return"]=true,["then"]=true,["true"]=true,["until"]=true,["while"]=true,["continue"]=true}local c={[DockWidgetPluginGuiInfo.new]="DockWidgetPluginGuiInfo.new",[warn]="warn",[CFrame.fromMatrix]="CFrame.fromMatrix",[CFrame.fromAxisAngle]="CFrame.fromAxisAngle",[CFrame.fromOrientation]="CFrame.fromOrientation",[CFrame.fromEulerAnglesXYZ]="CFrame.fromEulerAnglesXYZ",[CFrame.Angles]="CFrame.Angles",[CFrame.fromEulerAnglesYXZ]="CFrame.fromEulerAnglesYXZ",[CFrame.new]="CFrame.new",[gcinfo]="gcinfo",[os.clock]="os.clock",[os.difftime]="os.difftime",[os.time]="os.time",[os.date]="os.date",[tick]="tick",[bit32.band]="bit32.band",[bit32.extract]="bit32.extract",[bit32.bor]="bit32.bor",[bit32.bnot]="bit32.bnot",[bit32.arshift]="bit32.arshift",[bit32.rshift]="bit32.rshift",[bit32.rrotate]="bit32.rrotate",[bit32.replace]="bit32.replace",[bit32.lshift]="bit32.lshift",[bit32.lrotate]="bit32.lrotate",[bit32.btest]="bit32.btest",[bit32.bxor]="bit32.bxor",[pairs]="pairs",[NumberSequence.new]="NumberSequence.new",[assert]="assert",[tonumber]="tonumber",[Color3.fromHSV]="Color3.fromHSV",[Color3.toHSV]="Color3.toHSV",[Color3.fromRGB]="Color3.fromRGB",[Color3.new]="Color3.new",[Delay]="Delay",[Stats]="Stats",[UserSettings]="UserSettings",[coroutine.resume]="coroutine.resume",[coroutine.yield]="coroutine.yield",[coroutine.running]="coroutine.running",[coroutine.status]="coroutine.status",[coroutine.wrap]="coroutine.wrap",[coroutine.create]="coroutine.create",[coroutine.isyieldable]="coroutine.isyieldable",[NumberRange.new]="NumberRange.new",[PhysicalProperties.new]="PhysicalProperties.new",[PluginManager]="PluginManager",[Ray.new]="Ray.new",[NumberSequenceKeypoint.new]="NumberSequenceKeypoint.new",[Version]="Version",[Vector2.new]="Vector2.new",[Instance.new]="Instance.new",[delay]="delay",[spawn]="spawn",[unpack]="unpack",[string.split]="string.split",[string.match]="string.match",[string.gmatch]="string.gmatch",[string.upper]="string.upper",[string.gsub]="string.gsub",[string.format]="string.format",[string.lower]="string.lower",[string.sub]="string.sub",[string.pack]="string.pack",[string.rep]="string.rep",[string.char]="string.char",[string.packsize]="string.packsize",[string.reverse]="string.reverse",[string.byte]="string.byte",[string.unpack]="string.unpack",[string.len]="string.len",[string.find]="string.find",[CellId.new]="CellId.new",[ypcall]="ypcall",[version]="version",[print]="print",[stats]="stats",[printidentity]="printidentity",[settings]="settings",[UDim2.fromOffset]="UDim2.fromOffset",[UDim2.fromScale]="UDim2.fromScale",[UDim2.new]="UDim2.new",[table.pack]="table.pack",[table.move]="table.move",[table.insert]="table.insert",[table.getn]="table.getn",[table.foreachi]="table.foreachi",[table.maxn]="table.maxn",[table.foreach]="table.foreach",[table.concat]="table.concat",[table.unpack]="table.unpack",[table.find]="table.find",[table.create]="table.create",[table.sort]="table.sort",[table.remove]="table.remove",[TweenInfo.new]="TweenInfo.new",[loadstring]="loadstring",[require]="require",[Vector3.FromNormalId]="Vector3.FromNormalId",[Vector3.FromAxis]="Vector3.FromAxis",[Vector3.fromAxis]="Vector3.fromAxis",[Vector3.fromNormalId]="Vector3.fromNormalId",[Vector3.new]="Vector3.new",[Vector3int16.new]="Vector3int16.new",[setmetatable]="setmetatable",[next]="next",[Wait]="Wait",[wait]="wait",[ipairs]="ipairs",[elapsedTime]="elapsedTime",[time]="time",[rawequal]="rawequal",[Vector2int16.new]="Vector2int16.new",[collectgarbage]="collectgarbage",[newproxy]="newproxy",[Spawn]="Spawn",[PluginDrag.new]="PluginDrag.new",[Region3.new]="Region3.new",[utf8.offset]="utf8.offset",[utf8.codepoint]="utf8.codepoint",[utf8.nfdnormalize]="utf8.nfdnormalize",[utf8.char]="utf8.char",[utf8.codes]="utf8.codes",[utf8.len]="utf8.len",[utf8.graphemes]="utf8.graphemes",[utf8.nfcnormalize]="utf8.nfcnormalize",[xpcall]="xpcall",[tostring]="tostring",[rawset]="rawset",[PathWaypoint.new]="PathWaypoint.new",[DateTime.fromUnixTimestamp]="DateTime.fromUnixTimestamp",[DateTime.now]="DateTime.now",[DateTime.fromIsoDate]="DateTime.fromIsoDate",[DateTime.fromUnixTimestampMillis]="DateTime.fromUnixTimestampMillis",[DateTime.fromLocalTime]="DateTime.fromLocalTime",[DateTime.fromUniversalTime]="DateTime.fromUniversalTime",[Random.new]="Random.new",[typeof]="typeof",[RaycastParams.new]="RaycastParams.new",[math.log]="math.log",[math.ldexp]="math.ldexp",[math.rad]="math.rad",[math.cosh]="math.cosh",[math.random]="math.random",[math.frexp]="math.frexp",[math.tanh]="math.tanh",[math.floor]="math.floor",[math.max]="math.max",[math.sqrt]="math.sqrt",[math.modf]="math.modf",[math.pow]="math.pow",[math.atan]="math.atan",[math.tan]="math.tan",[math.cos]="math.cos",[math.sign]="math.sign",[math.clamp]="math.clamp",[math.log10]="math.log10",[math.noise]="math.noise",[math.acos]="math.acos",[math.abs]="math.abs",[math.sinh]="math.sinh",[math.asin]="math.asin",[math.min]="math.min",[math.deg]="math.deg",[math.fmod]="math.fmod",[math.randomseed]="math.randomseed",[math.atan2]="math.atan2",[math.ceil]="math.ceil",[math.sin]="math.sin",[math.exp]="math.exp",[getfenv]="getfenv",[pcall]="pcall",[ColorSequenceKeypoint.new]="ColorSequenceKeypoint.new",[ColorSequence.new]="ColorSequence.new",[type]="type",[Region3int16.new]="Region3int16.new",[ElapsedTime]="ElapsedTime",[select]="select",[getmetatable]="getmetatable",[rawget]="rawget",[Faces.new]="Faces.new",[Rect.new]="Rect.new",[BrickColor.Blue]="BrickColor.Blue",[BrickColor.White]="BrickColor.White",[BrickColor.Yellow]="BrickColor.Yellow",[BrickColor.Red]="BrickColor.Red",[BrickColor.Gray]="BrickColor.Gray",[BrickColor.palette]="BrickColor.palette",[BrickColor.New]="BrickColor.New",[BrickColor.Black]="BrickColor.Black",[BrickColor.Green]="BrickColor.Green",[BrickColor.Random]="BrickColor.Random",[BrickColor.DarkGray]="BrickColor.DarkGray",[BrickColor.random]="BrickColor.random",[BrickColor.new]="BrickColor.new",[setfenv]="setfenv",[UDim.new]="UDim.new",[Axes.new]="Axes.new",[error]="error",[debug.traceback]="debug.traceback",[debug.profileend]="debug.profileend",[debug.profilebegin]="debug.profilebegin"}function GetHierarchy(d)local e={}local f=1;local g=d;while g do g=g.Parent;f=f+1 end;g=d;local h=0;while g do h=h+1;local i=string.gsub(g.Name,"[%c%z]",a)i=g==game and"game"or i;if b[i]or not string.match(i,"^[_%a][_%w]*$")then i='["'..i..'"]'elseif h~=f-1 then i="."..i end;e[f-h]=i;g=g.Parent end;return table.concat(e)end;local function j(k,l)if l=="string"then return string.format('"%s"',string.gsub(k,"[%c%z]",a))elseif l=="Instance"then return GetHierarchy(k)elseif type(k)~=l then return l..".new("..tostring(k)..")"elseif l=="function"then return c[k]or"'[Unknown "..(pcall(setfenv,k,getfenv(k))and"Lua"or"C").." "..tostring(k).."]'"elseif l=="userdata"then return"newproxy("..tostring(not not getmetatable(k))..")"elseif l=="thread"then return"'"..tostring(k)..", status: "..coroutine.status(k).."'"else return tostring(k)end end;local function m(n,o,p,q)o=o or{}local r=o[n]if r then return(r[1]==p[1]-1 and"'[Cyclic Parent "or"'[Cyclic ")..tostring(n)..", path: "..r[2].."]'"end;q=q or"ROOT"p=p or{0,q}local s=p[1]+1;p[1]=s;p[2]=q;o[n]=p;local t=string.rep("    ",s)local u=string.rep("    ",s-1)local v="{"local w="\n"..t;local x=true;local y=1;local z=true;for A,k in next,n do z=false;if y~=A then x=false else y=y+1 end;local B,C=typeof(A),typeof(k)local D=false;if B=="string"then A=string.gsub(A,"[%c%z]",a)if b[A]or not string.match(A,"^[_%a][_%w]*$")then D=true;A=string.format('["%s"]',A)end else D=true;A="["..(B=="table"and string.gsub(m(A,o,{s,q}),"^%s*(.-)%s*$","%1")or j(A,B)).."]"end;k=C=="table"and m(k,o,{s,q},q..(D and""or".")..A)or j(k,C)v=v..w..(x and k or A.." = "..k)..","end;return z and v.."}"or string.sub(v,1,-2).."\n"..u.."}"end;return m end)(),
             DoFEFlame=function(a,b)getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).flamemoment.doflame(game.Players.LocalPlayer,a,Vector3.new(),b,0,Vector3.new())game:GetService("ReplicatedStorage").Events.Flames:FireServer(a,Vector3.new(),b,0,Vector3.new())end,
             Shakecam=getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).ShakeCam,
@@ -341,7 +341,7 @@ local ArsoniaTable={
 
 
 
-local name="Arsonia"
+local name="ArsenalBF"
 if _G.Funnyname then
     local Prefix={"Epic","","Working"}
     local Names={"Astolfo","Baker","Thigh","Breast","Femboy","Hentai","Aim","Tits","Arsenal","Rolve"}
@@ -356,104 +356,104 @@ local Window=Library:Window(name,Color3.fromRGB(255,0,175),700,Color3.new(1,0,17
 local PlayerTab=Window:Tab("Player")
 local PlayerTabAntiAimSection=PlayerTab:Section("Anti Aim")
 PlayerTabAntiAimSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Player.Anti_Aim.Enabled=x
+    ArsenalBFTable.Player.Anti_Aim.Enabled=x
 end)
 PlayerTabAntiAimSection:ToggleSlider("Yaw",-180,180,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.Yaw=x
-    ArsoniaTable.Player.Anti_Aim.YawValue=y
+    ArsenalBFTable.Player.Anti_Aim.Yaw=x
+    ArsenalBFTable.Player.Anti_Aim.YawValue=y
 end)
 PlayerTabAntiAimSection:Dropdown("Yaw Type",{"Spinning","Offset","Absolute","Random","Inverted","Frozen"},function(x)
-    ArsoniaTable.Player.Anti_Aim.YawType=x
+    ArsenalBFTable.Player.Anti_Aim.YawType=x
 end)
 PlayerTabAntiAimSection:ToggleSlider("Pitch",-90,90,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.Pitch=x
-    ArsoniaTable.Player.Anti_Aim.PitchValue=-math.rad(y)
+    ArsenalBFTable.Player.Anti_Aim.Pitch=x
+    ArsenalBFTable.Player.Anti_Aim.PitchValue=-math.rad(y)
 end)
 PlayerTabAntiAimSection:Dropdown("Pitch Type",{"Offset","Absolute","Random","Inverted",--[["Down",]]"Frozen"},function(x)
-    ArsoniaTable.Player.Anti_Aim.PitchType=x
+    ArsenalBFTable.Player.Anti_Aim.PitchType=x
 end)
 PlayerTabAntiAimSection:ToggleSlider("Torso Angle",-360,360,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.Torso=x
-    ArsoniaTable.Player.Anti_Aim.TorsoValue=math.rad(y)
+    ArsenalBFTable.Player.Anti_Aim.Torso=x
+    ArsenalBFTable.Player.Anti_Aim.TorsoValue=math.rad(y)
 end)
 PlayerTabAntiAimSection:Dropdown("Torso Angle Type",{"Offset","Absolute","Spinning","Down","Sideways","-Sideways","Random","Cam"},function(x)
-    ArsoniaTable.Player.Anti_Aim.TorsoType=x
+    ArsenalBFTable.Player.Anti_Aim.TorsoType=x
 end)
 PlayerTabAntiAimSection:ToggleSlider("Wall AA Enabled",-180,180,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.Wall=x
-    ArsoniaTable.Player.Anti_Aim.WallValue=-math.rad(y)
+    ArsenalBFTable.Player.Anti_Aim.Wall=x
+    ArsenalBFTable.Player.Anti_Aim.WallValue=-math.rad(y)
 end)
 PlayerTabAntiAimSection:Slider("Wall AA Distance",1,10,5,function(x)
-    ArsoniaTable.Player.Anti_Aim.WallDist=x
+    ArsenalBFTable.Player.Anti_Aim.WallDist=x
 end)
 --[[PlayerTabAntiAimSection:ToggleSlider("Wall AA Towall",1,100,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.Wall2=x
-    ArsoniaTable.Player.Anti_Aim.WallValue2=y
+    ArsenalBFTable.Player.Anti_Aim.Wall2=x
+    ArsenalBFTable.Player.Anti_Aim.WallValue2=y
 end)]]
 PlayerTabAntiAimSection:Toggle("Upside Down",function(x)
-    ArsoniaTable.Player.Anti_Aim.Upsidedown=x
+    ArsenalBFTable.Player.Anti_Aim.Upsidedown=x
 end)
 PlayerTabAntiAimSection:ToggleSlider("Hip Height",0,25,2,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.Hip=x
+    ArsenalBFTable.Player.Anti_Aim.Hip=x
     if y==0 then y=.05 end
-    ArsoniaTable.Player.Anti_Aim.Hipheight=y
+    ArsenalBFTable.Player.Anti_Aim.Hipheight=y
 end)
 PlayerTabAntiAimSection:Button("Remove Head",function()
-    ArsoniaTable.Player.Anti_Aim.IsHead=true
+    ArsenalBFTable.Player.Anti_Aim.IsHead=true
 end)
 PlayerTabAntiAimSection:Button("Remove Legs",function()
-    ArsoniaTable.Player.Anti_Aim.IsLegs=true
+    ArsenalBFTable.Player.Anti_Aim.IsLegs=true
 end)
 PlayerTabAntiAimSection:Toggle("Crouch Spam",function(x)
-    ArsoniaTable.Player.Anti_Aim.Crouchspam=x
+    ArsenalBFTable.Player.Anti_Aim.Crouchspam=x
 end)
 PlayerTabAntiAimSection:Keybind("Key","V",function(x)
-    ArsoniaTable.Variables.Croucher=x
+    ArsenalBFTable.Variables.Croucher=x
 end)
 PlayerTabAntiAimSection:Toggle("Allow Crouch Jump",function(x)
-    ArsoniaTable.Player.Anti_Aim.Crouchjumpspam=x
+    ArsenalBFTable.Player.Anti_Aim.Crouchjumpspam=x
 end)
 PlayerTabAntiAimSection:Toggle("Always On",function(x)
-    ArsoniaTable.Player.Anti_Aim.Crouchon=x
+    ArsenalBFTable.Player.Anti_Aim.Crouchon=x
 end)
 PlayerTabAntiAimSection:Slider("Crouch Spam On Time (ms)",0,500,100,function(x)
-    ArsoniaTable.Player.Anti_Aim.CrouchspamVal=x/1000
+    ArsenalBFTable.Player.Anti_Aim.CrouchspamVal=x/1000
 end)
 PlayerTabAntiAimSection:Slider("Crouch Spam Off Time (ms)",0,500,100,function(x)
-    ArsoniaTable.Player.Anti_Aim.CrouchspamVal2=x/1000
+    ArsenalBFTable.Player.Anti_Aim.CrouchspamVal2=x/1000
 end)
 PlayerTabAntiAimSection:ToggleSlider("Crouching Yaw",-180,180,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.CrouchYaw=x
-    ArsoniaTable.Player.Anti_Aim.CrouchYawVal=y
+    ArsenalBFTable.Player.Anti_Aim.CrouchYaw=x
+    ArsenalBFTable.Player.Anti_Aim.CrouchYawVal=y
 end)
 PlayerTabAntiAimSection:Dropdown("Crouching Yaw Type",{"Spinning","Offset","Absolute","Random","Inverted"},function(x)
-    ArsoniaTable.Player.Anti_Aim.CrouchYawType=x
+    ArsenalBFTable.Player.Anti_Aim.CrouchYawType=x
 end)
 PlayerTabAntiAimSection:ToggleSlider("Crouching Pitch",-90,90,0,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.CrouchPitch=x
-    ArsoniaTable.Player.Anti_Aim.CrouchPitchVal=-y
+    ArsenalBFTable.Player.Anti_Aim.CrouchPitch=x
+    ArsenalBFTable.Player.Anti_Aim.CrouchPitchVal=-y
 end)
 PlayerTabAntiAimSection:Dropdown("Crouching Pitch Type",{"Absolute","Random"},function(x)
-    ArsoniaTable.Player.Anti_Aim.CrouchPitchType=x
+    ArsenalBFTable.Player.Anti_Aim.CrouchPitchType=x
 end)
 PlayerTabAntiAimSection:Toggle("Fake Lag",function(x)
-    ArsoniaTable.Player.Anti_Aim.FakeLag=x
+    ArsenalBFTable.Player.Anti_Aim.FakeLag=x
 end)
 PlayerTabAntiAimSection:Slider("Fake Lag On Time (ms)",0,5000,2500,function(x)
-    ArsoniaTable.Player.Anti_Aim.FakeLagOnTime=x/1000
+    ArsenalBFTable.Player.Anti_Aim.FakeLagOnTime=x/1000
 end)
 PlayerTabAntiAimSection:Slider("Fake Lag Off Time (ms)",100,1000,100,function(x)
-    ArsoniaTable.Player.Anti_Aim.FakeLagOffTime=x/1000
+    ArsenalBFTable.Player.Anti_Aim.FakeLagOffTime=x/1000
 end)
 PlayerTabAntiAimSection:ToggleSlider("Show Fake Lag",0,10,5,function(x,y)
-    ArsoniaTable.Player.Anti_Aim.FakeLagShow=x
-    ArsoniaTable.Player.Anti_Aim.FakeLagTrans=y/10
+    ArsenalBFTable.Player.Anti_Aim.FakeLagShow=x
+    ArsenalBFTable.Player.Anti_Aim.FakeLagTrans=y/10
 end)
 PlayerTabAntiAimSection:Color("Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Player.Anti_Aim.FakeLagColor=x
+    ArsenalBFTable.Player.Anti_Aim.FakeLagColor=x
 end)
-PlayerTabAntiAimSection:Dropdown("Material",ArsoniaTable.Variables.Materials,function(x)
-    ArsoniaTable.Player.Anti_Aim.FakeLagMaterial=x
+PlayerTabAntiAimSection:Dropdown("Material",ArsenalBFTable.Variables.Materials,function(x)
+    ArsenalBFTable.Player.Anti_Aim.FakeLagMaterial=x
 end)
 PlayerTabAntiAimSection:Textlabel("")
 
@@ -461,39 +461,39 @@ PlayerTabAntiAimSection:Textlabel("")
 
 local PlayerTabMovementSection=PlayerTab:Section("Movement")
 PlayerTabMovementSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Player.Movement.Enabled=x
+    ArsenalBFTable.Player.Movement.Enabled=x
 end)
 PlayerTabMovementSection:ToggleSlider("Fly",10,500,100,function(x,y)
-    ArsoniaTable.Player.Movement.Fly=x
-    ArsoniaTable.Player.Movement.Flyspeed=y
-    ArsoniaTable.Variables.Fly=false
+    ArsenalBFTable.Player.Movement.Fly=x
+    ArsenalBFTable.Player.Movement.Flyspeed=y
+    ArsenalBFTable.Variables.Fly=false
 end)
 PlayerTabMovementSection:Keybind("Key","J",function(x)
     if x then
-        ArsoniaTable.Variables.Fly=not ArsoniaTable.Variables.Fly
+        ArsenalBFTable.Variables.Fly=not ArsenalBFTable.Variables.Fly
     end
 end)
 PlayerTabMovementSection:ToggleSlider("Walkspeed",1,250,16,function(x,y)
-    ArsoniaTable.Player.Movement.Walk=x
-    ArsoniaTable.Player.Movement.Walkspeed=y
+    ArsenalBFTable.Player.Movement.Walk=x
+    ArsenalBFTable.Player.Movement.Walkspeed=y
 end)
 PlayerTabMovementSection:ToggleSlider("Bunny Hop",1,5,1,function(x,y)
-    ArsoniaTable.Player.Movement.Bunnyhop=x
-    ArsoniaTable.Player.Movement.Bunnyhopspeed=y
+    ArsenalBFTable.Player.Movement.Bunnyhop=x
+    ArsenalBFTable.Player.Movement.Bunnyhopspeed=y
 end)
 PlayerTabMovementSection:Dropdown("Bunny Hop Type",{"Legit","Walkspeed","Apply Velocity"},function(x)
-    ArsoniaTable.Player.Movement.BunnyhopType=x
+    ArsenalBFTable.Player.Movement.BunnyhopType=x
 end)
 PlayerTabMovementSection:Toggle("Remove Crouching Speed",function(x)
-    ArsoniaTable.Player.Movement.Removecrouchspeed=x
+    ArsenalBFTable.Player.Movement.Removecrouchspeed=x
     if x then
-        debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.StepModulesNoDeath.BruhHumanoid).speedupdate,151,"__ArsoniaDat143")
+        debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.StepModulesNoDeath.BruhHumanoid).speedupdate,151,"__ArsenalBFDat143")
     else
         debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.StepModulesNoDeath.BruhHumanoid).speedupdate,151,"Crouched")
     end
 end)
 PlayerTabMovementSection:Toggle("Force Double Jump",function(x)
-    ArsoniaTable.Player.Movement.Forcedoublejump=x
+    ArsenalBFTable.Player.Movement.Forcedoublejump=x
     if x then
         debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).jumpme,23,"FireRate")
     else
@@ -501,65 +501,65 @@ PlayerTabMovementSection:Toggle("Force Double Jump",function(x)
     end
 end)
 PlayerTabMovementSection:Toggle("Infinite Double Jump",function(x)
-    ArsoniaTable.Player.Movement.Infdoublejump=x
+    ArsenalBFTable.Player.Movement.Infdoublejump=x
 end)
 PlayerTabMovementSection:Toggle("Auto Air Strafe",function(x)
-    ArsoniaTable.Player.Movement.Autoairstrafe=x
+    ArsenalBFTable.Player.Movement.Autoairstrafe=x
 end)
 PlayerTabMovementSection:Toggle("Auto Air Control",function(x)
-    ArsoniaTable.Player.Movement.Autotakecontrol=x
+    ArsenalBFTable.Player.Movement.Autotakecontrol=x
 end)
 PlayerTabMovementSection:Toggle("Anti Crouch Jump Lock/Speed",function(x)
-    ArsoniaTable.Player.Movement.Anticrouchjumplock=x
+    ArsenalBFTable.Player.Movement.Anticrouchjumplock=x
 end)
 
 
 
 local PlayerTabMiscSection=PlayerTab:Section("Miscellaneous")
 PlayerTabMiscSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Player.Misc.Enabled=x
+    ArsenalBFTable.Player.Misc.Enabled=x
 end)
 PlayerTabMiscSection:Toggle("Anti-Fire",function(x)
-    ArsoniaTable.Player.Misc.AntiFire=x
+    ArsenalBFTable.Player.Misc.AntiFire=x
 end)
 PlayerTabMiscSection:Toggle("Anti-Bleed",function(x)
-    ArsoniaTable.Player.Misc.AntiBleed=x
+    ArsenalBFTable.Player.Misc.AntiBleed=x
 end)
 PlayerTabMiscSection:Toggle("Anti-Fling",function(x)
-    ArsoniaTable.Player.Misc.AntiFling=x
+    ArsenalBFTable.Player.Misc.AntiFling=x
 end)
 PlayerTabMiscSection:Toggle("Semi Fast Heal",function(x)
-    ArsoniaTable.Player.Misc.FastHeal=x
+    ArsenalBFTable.Player.Misc.FastHeal=x
 end)
 PlayerTabMiscSection:Toggle("Demi God",function(x)
-    ArsoniaTable.Player.Misc.DemiGod=x
+    ArsenalBFTable.Player.Misc.DemiGod=x
 end)
 PlayerTabMiscSection:Toggle("Small Root Part",function(x)
-    ArsoniaTable.Player.Misc.SmallRoot=x
+    ArsenalBFTable.Player.Misc.SmallRoot=x
 end)
 PlayerTabMiscSection:Toggle("Slide Walk",function(x)
-    ArsoniaTable.Player.Misc.Slidewalk=x
+    ArsenalBFTable.Player.Misc.Slidewalk=x
 end)
 PlayerTabMiscSection:Toggle("Remove Jump Animation",function(x)
-    ArsoniaTable.Player.Misc.Jumpremove=x
+    ArsenalBFTable.Player.Misc.Jumpremove=x
 end)
 PlayerTabMiscSection:Toggle("Remove Head Collisions",function(x)
-    ArsoniaTable.Player.Misc.Headcollide=x
+    ArsenalBFTable.Player.Misc.Headcollide=x
 end)
 PlayerTabMiscSection:Toggle("Remove Torso Collisions",function(x)
-    ArsoniaTable.Player.Misc.Torsocollide=x
+    ArsenalBFTable.Player.Misc.Torsocollide=x
 end)
 PlayerTabMiscSection:Toggle("Remove Visible Gun",function(x)
-    ArsoniaTable.Player.Misc.Removegun=x
+    ArsenalBFTable.Player.Misc.Removegun=x
 end)
 PlayerTabMiscSection:Slider("Crouch Animation Speed",-100,100,60,function(x)
-    ArsoniaTable.Player.Misc.CrouchSpval=1-(x/100)
+    ArsenalBFTable.Player.Misc.CrouchSpval=1-(x/100)
 end)
 PlayerTabMiscSection:Slider("Uncrouch Animation Speed",-100,100,60,function(x)
-    ArsoniaTable.Player.Misc.CrouchSpunval=1-(x/100)
+    ArsenalBFTable.Player.Misc.CrouchSpunval=1-(x/100)
 end)
 PlayerTabMiscSection:Toggle("Remove Player Check",function(x)
-    ArsoniaTable.Player.Misc.Removeplayercheck=x
+    ArsenalBFTable.Player.Misc.Removeplayercheck=x
     if x then
         pcall(function()game.Players.LocalPlayer.Character.Spawned:Destroy()end)
     else
@@ -572,7 +572,7 @@ end)
 local VisualsTab=Window:Tab("Visuals")
 local VisualsTabMainSection=VisualsTab:Section("Main")
 VisualsTabMainSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Visuals.Main.Enabled=x
+    ArsenalBFTable.Visuals.Main.Enabled=x
     if not x then
         for _,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.GUI.Crosshairs.Crosshair:GetChildren())do
             if v.Name~="Center1"then
@@ -601,38 +601,38 @@ VisualsTabMainSection:Toggle("Enabled",function(x)
     end
 end)
 VisualsTabMainSection:Toggle("Render Client",function(x)
-    ArsoniaTable.Visuals.Main.Renderplayer=x
+    ArsenalBFTable.Visuals.Main.Renderplayer=x
 end)
 VisualsTabMainSection:Toggle("Remove Spawn Flash",function(x)
-    ArsoniaTable.Visuals.Main.Antiflash=x
+    ArsenalBFTable.Visuals.Main.Antiflash=x
 end)
 VisualsTabMainSection:Toggle("Remove Crouch Offset",function(x)
-    ArsoniaTable.Visuals.Main.Anticrouch=x
+    ArsenalBFTable.Visuals.Main.Anticrouch=x
 end)
 VisualsTabMainSection:Toggle("Remove Arm Crouch Offset",function(x)
-    ArsoniaTable.Visuals.Main.Anticrouch2=x
+    ArsenalBFTable.Visuals.Main.Anticrouch2=x
 end)
 VisualsTabMainSection:Slider("Camera Offset X",-10,10,0,function(x)
-    ArsoniaTable.Visuals.Main.CameraoffsetX=x
+    ArsenalBFTable.Visuals.Main.CameraoffsetX=x
 end)
 VisualsTabMainSection:Slider("Camera Offset Y",-10,10,0,function(x)
-    ArsoniaTable.Visuals.Main.CameraoffsetY=x
+    ArsenalBFTable.Visuals.Main.CameraoffsetY=x
 end)
 VisualsTabMainSection:Slider("Camera Offset Z",-10,10,0,function(x)
-    ArsoniaTable.Visuals.Main.CameraoffsetZ=x
+    ArsenalBFTable.Visuals.Main.CameraoffsetZ=x
 end)
 VisualsTabMainSection:Slider("Arm Offset X",-10,10,0,function(x)
-    ArsoniaTable.Visuals.Main.ArmoffsetX=x
+    ArsenalBFTable.Visuals.Main.ArmoffsetX=x
 end)
 VisualsTabMainSection:Slider("Arm Offset Y",-10,10,0,function(x)
-    ArsoniaTable.Visuals.Main.ArmoffsetY=x
+    ArsenalBFTable.Visuals.Main.ArmoffsetY=x
 end)
 VisualsTabMainSection:Slider("Arm Offset Z",-10,10,0,function(x)
-    ArsoniaTable.Visuals.Main.ArmoffsetZ=x
+    ArsenalBFTable.Visuals.Main.ArmoffsetZ=x
 end)
 VisualsTabMainSection:ToggleSlider("X-Ray",0,10,5,function(x,y)
-    ArsoniaTable.Visuals.Main.Xray=x
-    ArsoniaTable.Visuals.Main.XrayTrans=y/10
+    ArsenalBFTable.Visuals.Main.Xray=x
+    ArsenalBFTable.Visuals.Main.XrayTrans=y/10
     if not x then
         if game.Workspace:FindFirstChild("Map")then
             if game.Workspace.Map:FindFirstChild("Xcum")then
@@ -646,7 +646,7 @@ VisualsTabMainSection:ToggleSlider("X-Ray",0,10,5,function(x,y)
                 end
             end
         end
-    elseif ArsoniaTable.Visuals.Main.Enabled then
+    elseif ArsenalBFTable.Visuals.Main.Enabled then
         if game.Workspace:FindFirstChild("Map")then
             if game.Workspace.Map:FindFirstChild("Xcum")then
                 game.Workspace.Map.Xcum:Destroy()
@@ -662,18 +662,18 @@ VisualsTabMainSection:ToggleSlider("X-Ray",0,10,5,function(x,y)
     end
 end)
 VisualsTabMainSection:Color("Crosshair Color",Color3.new(0,1,1),function(x)
-    ArsoniaTable.Visuals.Main.Crosshaircol=x
+    ArsenalBFTable.Visuals.Main.Crosshaircol=x
 end)
 
 
 
 local VisualsTabViewmodelSection=VisualsTab:Section("Viewmodel")
 VisualsTabViewmodelSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Visuals.Viewmodel.Enabled=x
+    ArsenalBFTable.Visuals.Viewmodel.Enabled=x
 end)
 VisualsTabViewmodelSection:ToggleSlider("Arm Chams",0,9,5,function(x,y)
-    ArsoniaTable.Visuals.Viewmodel.Armchams=x
-    ArsoniaTable.Visuals.Viewmodel.ArmchamsTrans=y/10
+    ArsenalBFTable.Visuals.Viewmodel.Armchams=x
+    ArsenalBFTable.Visuals.Viewmodel.ArmchamsTrans=y/10
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         if game.Workspace.CurrentCamera.Arms.CSSArms:FindFirstChild("AnalSex")then
             game.Workspace.CurrentCamera.Arms.CSSArms.AnalSex:Destroy()
@@ -681,7 +681,7 @@ VisualsTabViewmodelSection:ToggleSlider("Arm Chams",0,9,5,function(x,y)
     end
 end)
 VisualsTabViewmodelSection:Color("Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Visuals.Viewmodel.ArmchamsCol=x
+    ArsenalBFTable.Visuals.Viewmodel.ArmchamsCol=x
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         if game.Workspace.CurrentCamera.Arms.CSSArms:FindFirstChild("AnalSex")then
             game.Workspace.CurrentCamera.Arms.CSSArms.AnalSex:Destroy()
@@ -689,8 +689,8 @@ VisualsTabViewmodelSection:Color("Color",Color3.new(1,0,175/255),function(x)
     end
 end)
 VisualsTabViewmodelSection:ToggleSlider("Gun Chams",0,9,5,function(x,y)
-    ArsoniaTable.Visuals.Viewmodel.Gunchams=x
-    ArsoniaTable.Visuals.Viewmodel.GunchamsTrans=y/10
+    ArsenalBFTable.Visuals.Viewmodel.Gunchams=x
+    ArsenalBFTable.Visuals.Viewmodel.GunchamsTrans=y/10
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         if game.Workspace.CurrentCamera.Arms:FindFirstChild("AnalBeads")then
             game.Workspace.CurrentCamera.Arms.AnalBeads:Destroy()
@@ -698,7 +698,7 @@ VisualsTabViewmodelSection:ToggleSlider("Gun Chams",0,9,5,function(x,y)
     end
 end)
 VisualsTabViewmodelSection:Color("Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Visuals.Viewmodel.GunchamsCol=x
+    ArsenalBFTable.Visuals.Viewmodel.GunchamsCol=x
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         if game.Workspace.CurrentCamera.Arms:FindFirstChild("AnalBeads")then
             game.Workspace.CurrentCamera.Arms.AnalBeads:Destroy()
@@ -706,15 +706,15 @@ VisualsTabViewmodelSection:Color("Color",Color3.new(1,0,175/255),function(x)
     end
 end)
 VisualsTabViewmodelSection:Slider("Reflectance",0,10,0,function(x)
-    ArsoniaTable.Visuals.Viewmodel.GunchamsRefl=x/10
+    ArsenalBFTable.Visuals.Viewmodel.GunchamsRefl=x/10
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         if game.Workspace.CurrentCamera.Arms:FindFirstChild("AnalBeads")then
             game.Workspace.CurrentCamera.Arms.AnalBeads:Destroy()
         end
     end
 end)
-VisualsTabViewmodelSection:Dropdown("Material",ArsoniaTable.Variables.Materials,function(x)
-    ArsoniaTable.Visuals.Viewmodel.GunchamsMat=x
+VisualsTabViewmodelSection:Dropdown("Material",ArsenalBFTable.Variables.Materials,function(x)
+    ArsenalBFTable.Visuals.Viewmodel.GunchamsMat=x
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         if game.Workspace.CurrentCamera.Arms:FindFirstChild("AnalBeads")then
             game.Workspace.CurrentCamera.Arms.AnalBeads:Destroy()
@@ -726,73 +726,73 @@ end)
 
 local VisualsTabESPSection=VisualsTab:Section("ESP")
 VisualsTabESPSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Visuals.ESP.Enabled=x
+    ArsenalBFTable.Visuals.ESP.Enabled=x
 end)
 VisualsTabESPSection:Color("Main Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Visuals.ESP.Color=x
+    ArsenalBFTable.Visuals.ESP.Color=x
 end)
 VisualsTabESPSection:Toggle("Box",function(x)
-    ArsoniaTable.Visuals.ESP.Box=x
+    ArsenalBFTable.Visuals.ESP.Box=x
 end)
 VisualsTabESPSection:Toggle("Chams",function(x)
-    ArsoniaTable.Visuals.ESP.Chams=x
+    ArsenalBFTable.Visuals.ESP.Chams=x
 end)
 VisualsTabESPSection:ToggleSlider("Visible Chams Outline",1,10,5,function(x,y)
-    ArsoniaTable.Visuals.ESP.Chamsoutline=x
-    ArsoniaTable.Visuals.ESP.ChamsoutlineSize=y/10
+    ArsenalBFTable.Visuals.ESP.Chamsoutline=x
+    ArsenalBFTable.Visuals.ESP.ChamsoutlineSize=y/10
 end)
 VisualsTabESPSection:Color("Outline Color",Color3.new(50/255,150/255,1),function(x)
-    ArsoniaTable.Visuals.ESP.ChamsoutlineColor=x
+    ArsenalBFTable.Visuals.ESP.ChamsoutlineColor=x
 end)
 VisualsTabESPSection:Toggle("Backtrack Chams",function(x)
-    ArsoniaTable.Visuals.ESP.BacktrackChams=x
+    ArsenalBFTable.Visuals.ESP.BacktrackChams=x
 end)
 VisualsTabESPSection:Toggle("Names",function(x)
-    ArsoniaTable.Visuals.ESP.Names=x
+    ArsenalBFTable.Visuals.ESP.Names=x
 end)
 VisualsTabESPSection:Toggle("Tracers",function(x)
-    ArsoniaTable.Visuals.ESP.Tracers=x
+    ArsenalBFTable.Visuals.ESP.Tracers=x
 end)
 VisualsTabESPSection:Toggle("Health",function(x)
-    ArsoniaTable.Visuals.ESP.Health=x
+    ArsenalBFTable.Visuals.ESP.Health=x
 end)
 
 
 
 local VisualsTabBullettracersSection=VisualsTab:Section("Bullet Tracers")
 VisualsTabBullettracersSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Visuals.Bullettracers.Enabled=x
+    ArsenalBFTable.Visuals.Bullettracers.Enabled=x
 end)
 VisualsTabBullettracersSection:Slider("Width",1,100,5,function(x)
-    ArsoniaTable.Visuals.Bullettracers.Width=x/100
+    ArsenalBFTable.Visuals.Bullettracers.Width=x/100
 end)
 VisualsTabBullettracersSection:Color("Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Visuals.Bullettracers.Color=x
+    ArsenalBFTable.Visuals.Bullettracers.Color=x
 end)
-VisualsTabBullettracersSection:Dropdown("Material",ArsoniaTable.Variables.Materials,function(x)
-    ArsoniaTable.Visuals.Bullettracers.Material=x
+VisualsTabBullettracersSection:Dropdown("Material",ArsenalBFTable.Variables.Materials,function(x)
+    ArsenalBFTable.Visuals.Bullettracers.Material=x
 end)
 VisualsTabBullettracersSection:Slider("Transparency",0,10,5,function(x)
-    ArsoniaTable.Visuals.Bullettracers.Transparency=x/10
+    ArsenalBFTable.Visuals.Bullettracers.Transparency=x/10
 end)
 VisualsTabBullettracersSection:Slider("Reflectance",0,10,5,function(x)
-    ArsoniaTable.Visuals.Bullettracers.Refl=x/10
+    ArsenalBFTable.Visuals.Bullettracers.Refl=x/10
 end)
 VisualsTabBullettracersSection:Slider("Life Time (ms)",1,5000,500,function(x)
-    ArsoniaTable.Visuals.Bullettracers.Lifetime=x/1000
+    ArsenalBFTable.Visuals.Bullettracers.Lifetime=x/1000
 end)
 VisualsTabBullettracersSection:Toggle("Update Position",function(x)
-    ArsoniaTable.Visuals.Bullettracers.Keeptopart=x
+    ArsenalBFTable.Visuals.Bullettracers.Keeptopart=x
 end)
 VisualsTabBullettracersSection:Toggle("Update Color",function(x)
-    ArsoniaTable.Visuals.Bullettracers.Updatecol=x
+    ArsenalBFTable.Visuals.Bullettracers.Updatecol=x
 end)
 
 
 
 local VisualsTabAmbienceSection=VisualsTab:Section("Ambience")
 VisualsTabAmbienceSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Visuals.Worldambience.Enabled=x
+    ArsenalBFTable.Visuals.Worldambience.Enabled=x
     if not x then
         game.Lighting.Ambient=Color3.new(.5,.5,.5)
         game.Lighting.OutdoorAmbient=Color3.new(.5,.5,.5)
@@ -808,13 +808,13 @@ VisualsTabAmbienceSection:Toggle("Enabled",function(x)
     end
 end)
 VisualsTabAmbienceSection:Color("Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Visuals.Worldambience.Ambience=x
+    ArsenalBFTable.Visuals.Worldambience.Ambience=x
 end)
 VisualsTabAmbienceSection:Slider("Time",0,12,12,function(x)
-    ArsoniaTable.Visuals.Worldambience.Time=x
+    ArsenalBFTable.Visuals.Worldambience.Time=x
 end)
 VisualsTabAmbienceSection:Slider("Brightness",0,10,2,function(x)
-    ArsoniaTable.Visuals.Worldambience.Brightness=x
+    ArsenalBFTable.Visuals.Worldambience.Brightness=x
 end)
 
 
@@ -822,84 +822,84 @@ end)
 local AimbotTab=Window:Tab("Aimbot")
 local AimbotTabSilentaimSection=AimbotTab:Section("Silent Aim")
 AimbotTabSilentaimSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Aimbot.Silentaim.Enabled=x
+    ArsenalBFTable.Aimbot.Silentaim.Enabled=x
 end)
 AimbotTabSilentaimSection:Slider("Hit Chance",0,100,100,function(x)
-    ArsoniaTable.Aimbot.Silentaim.Hitchance=x
+    ArsenalBFTable.Aimbot.Silentaim.Hitchance=x
 end)
 AimbotTabSilentaimSection:Slider("FOV",0,1000,100,function(x)
-    ArsoniaTable.Aimbot.Silentaim.Fov=x
+    ArsenalBFTable.Aimbot.Silentaim.Fov=x
 end)
 AimbotTabSilentaimSection:Toggle("Ignore FOV",function(x)
-    ArsoniaTable.Aimbot.Silentaim.Ignorefov=x
+    ArsenalBFTable.Aimbot.Silentaim.Ignorefov=x
 end)
 AimbotTabSilentaimSection:Dropdown("Auto Shoot",{"None","Force Fire","Fake Click","Mouse"},function(x)
-    ArsoniaTable.Aimbot.Silentaim.AutoshootMethod=x
+    ArsenalBFTable.Aimbot.Silentaim.AutoshootMethod=x
 end)
-AimbotTabSilentaimSection:Dropdown("Priority Target",ArsoniaTable.Variables.TargetNames,function(x)
-    ArsoniaTable.Aimbot.Silentaim.Target=x
+AimbotTabSilentaimSection:Dropdown("Priority Target",ArsenalBFTable.Variables.TargetNames,function(x)
+    ArsenalBFTable.Aimbot.Silentaim.Target=x
 end)
 AimbotTabSilentaimSection:Toggle("Only Target Priority",function(x)
-    ArsoniaTable.Aimbot.Silentaim.Onlytarget=x
+    ArsenalBFTable.Aimbot.Silentaim.Onlytarget=x
 end)
 AimbotTabSilentaimSection:Toggle("Fake Lock",function(x)
-    ArsoniaTable.Aimbot.Silentaim.Fakelock=x
+    ArsenalBFTable.Aimbot.Silentaim.Fakelock=x
 end)
 
 
 
 local AimbotTabBacktrackSection=AimbotTab:Section("Backtrack")
 AimbotTabBacktrackSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Aimbot.Backtrack.Enabled=x
+    ArsenalBFTable.Aimbot.Backtrack.Enabled=x
 end)
 AimbotTabBacktrackSection:Slider("Life Time (ms)",0,1000,250,function(x)
-    ArsoniaTable.Aimbot.Backtrack.Lifetime=x/1000
+    ArsenalBFTable.Aimbot.Backtrack.Lifetime=x/1000
 end)
 AimbotTabBacktrackSection:Slider("Transparency",0,10,5,function(x)
-    ArsoniaTable.Aimbot.Backtrack.Trans=x/10
+    ArsenalBFTable.Aimbot.Backtrack.Trans=x/10
 end)
 AimbotTabBacktrackSection:Slider("Reflectance",0,10,5,function(x)
-    ArsoniaTable.Aimbot.Backtrack.Refl=x/10
+    ArsenalBFTable.Aimbot.Backtrack.Refl=x/10
 end)
 AimbotTabBacktrackSection:Color("Color",Color3.new(0,1,1),function(x)
-    ArsoniaTable.Aimbot.Backtrack.Color=x
+    ArsenalBFTable.Aimbot.Backtrack.Color=x
 end)
-AimbotTabBacktrackSection:Dropdown("Material",ArsoniaTable.Variables.Materials,function(x)
-    ArsoniaTable.Aimbot.Backtrack.Material=x
+AimbotTabBacktrackSection:Dropdown("Material",ArsenalBFTable.Variables.Materials,function(x)
+    ArsenalBFTable.Aimbot.Backtrack.Material=x
 end)
 AimbotTabBacktrackSection:Dropdown("Target",{"HeadHB","Torso","LeftArm","RightArm","LeftLeg","RightLeg","All"},function(x)
-    ArsoniaTable.Aimbot.Backtrack.Target=x
+    ArsenalBFTable.Aimbot.Backtrack.Target=x
 end)
 AimbotTabBacktrackSection:Toggle("Render All",function(x)
-    ArsoniaTable.Aimbot.Backtrack.Showall=x
+    ArsenalBFTable.Aimbot.Backtrack.Showall=x
 end)
 
 
 
 local AimbotTabHitboxSection=AimbotTab:Section("Hitbox")
 AimbotTabHitboxSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Enabled=x
+    ArsenalBFTable.Aimbot.Hitboxes.Enabled=x
 end)
 AimbotTabHitboxSection:Slider("Size",0,25,5,function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Size=x
+    ArsenalBFTable.Aimbot.Hitboxes.Size=x
 end)
 AimbotTabHitboxSection:Dropdown("Size Method",{"Absolute","Addition"},function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Sizetype=x
+    ArsenalBFTable.Aimbot.Hitboxes.Sizetype=x
 end)
 AimbotTabHitboxSection:Slider("Transparency",0,10,5,function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Trans=x/10
+    ArsenalBFTable.Aimbot.Hitboxes.Trans=x/10
 end)
 AimbotTabHitboxSection:Slider("Reflectance",0,10,5,function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Refl=x/10
+    ArsenalBFTable.Aimbot.Hitboxes.Refl=x/10
 end)
 AimbotTabHitboxSection:Color("Color",Color3.new(0,1,1),function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Color=x
+    ArsenalBFTable.Aimbot.Hitboxes.Color=x
 end)
-AimbotTabHitboxSection:Dropdown("Material",ArsoniaTable.Variables.Materials,function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Material=x
+AimbotTabHitboxSection:Dropdown("Material",ArsenalBFTable.Variables.Materials,function(x)
+    ArsenalBFTable.Aimbot.Hitboxes.Material=x
 end)
 AimbotTabHitboxSection:Dropdown("Target",{"HeadHB","Torso","LeftArm","RightArm","LeftLeg","RightLeg","All"},function(x)
-    ArsoniaTable.Aimbot.Hitboxes.Target=x
+    ArsenalBFTable.Aimbot.Hitboxes.Target=x
 end)
 
 
@@ -907,87 +907,87 @@ end)
 local CombatTab=Window:Tab("Combat")
 local CombatTabMainSection=CombatTab:Section("Main")
 CombatTabMainSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Combat.Main.Enabled=x
+    ArsenalBFTable.Combat.Main.Enabled=x
 end)
 --[[CombatTabMainSection:Toggle("Projectile Aura",function(x)
-    ArsoniaTable.Combat.Main.ProjectileAura=x
+    ArsenalBFTable.Combat.Main.ProjectileAura=x
 end)
-CombatTabMainSection:Dropdown("Projectile",ArsoniaTable.Variables.Allprojectiles,function(x)
-    ArsoniaTable.Combat.Main.ProjectileAuraMethod=x
+CombatTabMainSection:Dropdown("Projectile",ArsenalBFTable.Variables.Allprojectiles,function(x)
+    ArsenalBFTable.Combat.Main.ProjectileAuraMethod=x
 end)
 CombatTabMainSection:Toggle("Headshot",function(x)
     if x then
-        ArsoniaTable.Combat.Main.ProjectileAuraHead=1
+        ArsenalBFTable.Combat.Main.ProjectileAuraHead=1
     else
-        ArsoniaTable.Combat.Main.ProjectileAuraHead=0
+        ArsenalBFTable.Combat.Main.ProjectileAuraHead=0
     end
 end)
 CombatTabMainSection:Toggle("Air Crit",function(x)
     if x then
-        ArsoniaTable.Combat.Main.ProjectileAuraAir=1
+        ArsenalBFTable.Combat.Main.ProjectileAuraAir=1
     else
-        ArsoniaTable.Combat.Main.ProjectileAuraAir=0
+        ArsenalBFTable.Combat.Main.ProjectileAuraAir=0
     end
 end)]]
 --[[CombatTabMainSection:Toggle("Kill All",function(x)
-    ArsoniaTable.Combat.Main.Killall=x
+    ArsenalBFTable.Combat.Main.Killall=x
 end)
 CombatTabMainSection:Dropdown("Kill All Method",{"Spoofed","Equipped"},function(x)
-    ArsoniaTable.Combat.Main.KillallMethod=x
+    ArsenalBFTable.Combat.Main.KillallMethod=x
 end)]]
 --[[CombatTabMainSection:Toggle("Death Kill",function(x)
-    ArsoniaTable.Combat.Main.Deathkill=x
+    ArsenalBFTable.Combat.Main.Deathkill=x
 end)]]
 --[[CombatTabMainSection:Toggle("Kill Aura",function(x)
-    ArsoniaTable.Combat.Main.Killaura=x
+    ArsenalBFTable.Combat.Main.Killaura=x
 end)
 CombatTabMainSection:Dropdown("Kill Aura Method",{"Flamethrower","Acid Spitter"},function(x)
-    ArsoniaTable.Combat.Main.KillauraMethod=x
+    ArsenalBFTable.Combat.Main.KillauraMethod=x
 end)]]
 CombatTabMainSection:ToggleSlider("Headstomp Aura",1,600,100,function(x,y)
-    ArsoniaTable.Combat.Main.Headstompaura=x
-    ArsoniaTable.Combat.Main.HeadstompauraVal=y
+    ArsenalBFTable.Combat.Main.Headstompaura=x
+    ArsenalBFTable.Combat.Main.HeadstompauraVal=y
 end)
 CombatTabMainSection:Dropdown("Stomp Type",{"Basic","Near Death","Near Death + TP","TP"},function(x)
-    ArsoniaTable.Combat.Main.HeadstompauraType=x
+    ArsenalBFTable.Combat.Main.HeadstompauraType=x
 end)
 --[[CombatTabMainSection:Toggle("Knife Aura",function(x)
-    ArsoniaTable.Combat.Main.Knifeaura=x
+    ArsenalBFTable.Combat.Main.Knifeaura=x
 end)
 CombatTabMainSection:Toggle("Do Fake Animation",function(x)
-    ArsoniaTable.Combat.Main.KnifeauraFakeaim=x
+    ArsenalBFTable.Combat.Main.KnifeauraFakeaim=x
 end)
 CombatTabMainSection:Toggle("Air Crit",function(x)
     if x then
-        ArsoniaTable.Combat.Main.KnifeauraAir=1
+        ArsenalBFTable.Combat.Main.KnifeauraAir=1
     else
-        ArsoniaTable.Combat.Main.KnifeauraAir=0
+        ArsenalBFTable.Combat.Main.KnifeauraAir=0
     end
 end)
 CombatTabMainSection:Dropdown("Knife",{"Basic","Golden"},function(x)
-    ArsoniaTable.Combat.Main.KnifeauraValue=x
+    ArsenalBFTable.Combat.Main.KnifeauraValue=x
 end)
 CombatTabMainSection:Dropdown("Crit",{"None","Basic","Advanced","Backstab"},function(x)
-    ArsoniaTable.Combat.Main.KnifeauraCrit=x
+    ArsenalBFTable.Combat.Main.KnifeauraCrit=x
 end)]]
 --[[CombatTabMainSection:ToggleSlider("Bomb Walk",0,100,25,function(x,y)
-    ArsoniaTable.Combat.Main.Bombwalk=x
-    ArsoniaTable.Combat.Main.BombwalkTime=y
+    ArsenalBFTable.Combat.Main.Bombwalk=x
+    ArsenalBFTable.Combat.Main.BombwalkTime=y
 end)
 CombatTabMainSection:Dropdown("Bomb",{"Basic","Golden","Cherry (Infinite)"},function(x)
-    ArsoniaTable.Combat.Main.BombwalkBomb=x
+    ArsenalBFTable.Combat.Main.BombwalkBomb=x
 end)]]
 
 
 
 local CombatTabGunmodsSection=CombatTab:Section("Weapon")
 CombatTabGunmodsSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Combat.Gunmods.Enabled=x
+    ArsenalBFTable.Combat.Gunmods.Enabled=x
     if x then
-        if ArsoniaTable.Combat.Gunmods.Goldenmelee then
+        if ArsenalBFTable.Combat.Gunmods.Goldenmelee then
             debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools,30,"Golden Knife")
         end
-        --[[if ArsoniaTable.Combat.Gunmods.Removescope then
+        --[[if ArsenalBFTable.Combat.Gunmods.Removescope then
             if not game:GetService("Players").LocalPlayer.PlayerGui.GUI.Crosshairs.Scope:FindFirstChild("Scope2")then
                 for i=1,4 do
                     game:GetService("Players").LocalPlayer.PlayerGui.GUI.Crosshairs["Frame"..i].Transparency=1
@@ -999,32 +999,32 @@ CombatTabGunmodsSection:Toggle("Enabled",function(x)
         end]]
         for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
             if v:FindFirstChild("FireRate")then
-                v.ArsoniaFireRate.Value=v.FireRate.Value-ArsoniaTable.Combat.Gunmods.Firerate
+                v.ArsenalBFFireRate.Value=v.FireRate.Value-ArsenalBFTable.Combat.Gunmods.Firerate
             end
             if v:FindFirstChild("StoredAmmo")then
-                v.ArsoniaStoredAmmo.Value=math.clamp(v.StoredAmmo.Value+ArsoniaTable.Combat.Gunmods.Storedammo,0,199)
+                v.ArsenalBFStoredAmmo.Value=math.clamp(v.StoredAmmo.Value+ArsenalBFTable.Combat.Gunmods.Storedammo,0,199)
             end
             if v:FindFirstChild("Range")and v:FindFirstChild("Melee")and v:FindFirstChild("Backstab")then
-                v.Range.Value=ArsoniaTable.Combat.Gunmods.Kniferange
+                v.Range.Value=ArsenalBFTable.Combat.Gunmods.Kniferange
             end
-            if ArsoniaTable.Combat.Gunmods.Instantreload then
+            if ArsenalBFTable.Combat.Gunmods.Instantreload then
                 if v:FindFirstChild("ReloadTime")then
-                    v.ArsoniaReloadTime.Value=0
+                    v.ArsenalBFReloadTime.Value=0
                 end
                 if v:FindFirstChild("EReloadTime")then
-                    v.ArsoniaEReloadTime.Value=0
+                    v.ArsenalBFEReloadTime.Value=0
                 end
                 if v:FindFirstChild("PumpAction")then
                     v.PumpAction.Name="NotPumpAction"
                 end
             end
-            if ArsoniaTable.Combat.Gunmods.Instantequip then
+            if ArsenalBFTable.Combat.Gunmods.Instantequip then
                 if v:FindFirstChild("EquipTime")then
-                    v.ArsoniaEquipTime.Value=0
+                    v.ArsenalBFEquipTime.Value=0
                 end
             end
-            if ArsoniaTable.Combat.Gunmods.Firemode~="Current"then
-                if ArsoniaTable.Combat.Gunmods.Firemode=="Automatic"then
+            if ArsenalBFTable.Combat.Gunmods.Firemode~="Current"then
+                if ArsenalBFTable.Combat.Gunmods.Firemode=="Automatic"then
                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).mode="automatic"
                 else
                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).mode="__nilvalue"
@@ -1032,10 +1032,10 @@ CombatTabGunmodsSection:Toggle("Enabled",function(x)
             end
         end
     else
-        if ArsoniaTable.Combat.Gunmods.Goldenmelee then
+        if ArsenalBFTable.Combat.Gunmods.Goldenmelee then
             debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools,30,"Knife")
         end
-        --[[if ArsoniaTable.Combat.Gunmods.Removescope then
+        --[[if ArsenalBFTable.Combat.Gunmods.Removescope then
             for i=1,4 do
                 game:GetService("Players").LocalPlayer.PlayerGui.GUI.Crosshairs["Frame"..i].Transparency=0
             end
@@ -1045,25 +1045,25 @@ CombatTabGunmodsSection:Toggle("Enabled",function(x)
         end]]
         for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
             if v:FindFirstChild("FireRate")then
-                v.ArsoniaFireRate.Value=v.FireRate.Value
+                v.ArsenalBFFireRate.Value=v.FireRate.Value
             end
             if v:FindFirstChild("StoredAmmo")then
-                v.ArsoniaStoredAmmo.Value=v.StoredAmmo.Value
+                v.ArsenalBFStoredAmmo.Value=v.StoredAmmo.Value
             end
             if v:FindFirstChild("Range")and v:FindFirstChild("Melee")and v:FindFirstChild("Backstab")then
-                v.Range.Value=v.ArsoniaRange.Value
+                v.Range.Value=v.ArsenalBFRange.Value
             end
             if v:FindFirstChild("ReloadTime")then
-                v.ArsoniaReloadTime.Value=v.ReloadTime.Value
+                v.ArsenalBFReloadTime.Value=v.ReloadTime.Value
             end
             if v:FindFirstChild("EReloadTime")then
-                v.ArsoniaEReloadTime.Value=v.EReloadTime.Value
+                v.ArsenalBFEReloadTime.Value=v.EReloadTime.Value
             end
             if v:FindFirstChild("NotPumpAction")then
                 v.NotPumpAction.Name="PumpAction"
             end
             if v:FindFirstChild("EquipTime")then
-                v.ArsoniaEquipTime.Value=v.EquipTime.Value
+                v.ArsenalBFEquipTime.Value=v.EquipTime.Value
             end
             if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value then
                 if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value:FindFirstChild("Auto")then
@@ -1080,28 +1080,28 @@ CombatTabGunmodsSection:Toggle("Enabled",function(x)
     require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
 end)
 CombatTabGunmodsSection:Slider("Fire Rate Addition",0,500,0,function(x)
-    ArsoniaTable.Combat.Gunmods.Firerate=x/1000
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Firerate=x/1000
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
             if v:FindFirstChild("FireRate")then
-                v.ArsoniaFireRate.Value=v.FireRate.Value-ArsoniaTable.Combat.Gunmods.Firerate
+                v.ArsenalBFFireRate.Value=v.FireRate.Value-ArsenalBFTable.Combat.Gunmods.Firerate
             end
         end
     end
 end)
 CombatTabGunmodsSection:Slider("Clip Size Addition",0,1000,0,function(x)
-    ArsoniaTable.Combat.Gunmods.Clipsize=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Clipsize=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
         require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
     end
 end)
 CombatTabGunmodsSection:Slider("Stored Ammo Addition",0,200,0,function(x)
-    ArsoniaTable.Combat.Gunmods.Storedammo=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Storedammo=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
             if v:FindFirstChild("StoredAmmo")then
-                v.ArsoniaStoredAmmo.Value=math.clamp(v.StoredAmmo.Value+ArsoniaTable.Combat.Gunmods.Storedammo,0,199)
+                v.ArsenalBFStoredAmmo.Value=math.clamp(v.StoredAmmo.Value+ArsenalBFTable.Combat.Gunmods.Storedammo,0,199)
             end
         end
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
@@ -1109,41 +1109,41 @@ CombatTabGunmodsSection:Slider("Stored Ammo Addition",0,200,0,function(x)
     end
 end)
 CombatTabGunmodsSection:Slider("Knife Range",0,50,6,function(x)
-    ArsoniaTable.Combat.Gunmods.Kniferange=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Kniferange=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
             if v:FindFirstChild("Range")and v:FindFirstChild("Melee")and v:FindFirstChild("Backstab")then
-                v.Range.Value=ArsoniaTable.Combat.Gunmods.Kniferange
+                v.Range.Value=ArsenalBFTable.Combat.Gunmods.Kniferange
             end
         end
     end
 end)
 CombatTabGunmodsSection:ToggleSlider("Projectile Gun",0,1000,500,function(x,y)
-    ArsoniaTable.Combat.Gunmods.Baseballgun=x
-    ArsoniaTable.Combat.Gunmods.BaseballgunSpeed=y
+    ArsenalBFTable.Combat.Gunmods.Baseballgun=x
+    ArsenalBFTable.Combat.Gunmods.BaseballgunSpeed=y
 end)
-CombatTabGunmodsSection:Dropdown("Projectile",ArsoniaTable.Variables.BaseBallNamesVisual,function(x)
-    ArsoniaTable.Combat.Gunmods.BaseballgunValue=x
+CombatTabGunmodsSection:Dropdown("Projectile",ArsenalBFTable.Variables.BaseBallNamesVisual,function(x)
+    ArsenalBFTable.Combat.Gunmods.BaseballgunValue=x
 end)
 --[[CombatTabGunmodsSection:Toggle("Laser Gun",function(x)
-    ArsoniaTable.Combat.Gunmods.Lasergun=x
+    ArsenalBFTable.Combat.Gunmods.Lasergun=x
 end)
 CombatTabGunmodsSection:Color("Color",Color3.new(1,0,175/255),function(x)
-    ArsoniaTable.Combat.Gunmods.LasergunCol=x
+    ArsenalBFTable.Combat.Gunmods.LasergunCol=x
 end)
-CombatTabGunmodsSection:Dropdown("Laser Type",ArsoniaTable.Variables.Lasers,function(x)
-    ArsoniaTable.Combat.Gunmods.LasergunValue=x
+CombatTabGunmodsSection:Dropdown("Laser Type",ArsenalBFTable.Variables.Lasers,function(x)
+    ArsenalBFTable.Combat.Gunmods.LasergunValue=x
 end)]]
 CombatTabGunmodsSection:Toggle("Instant Reload",function(x)
-    ArsoniaTable.Combat.Gunmods.Instantreload=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Instantreload=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         if x then
             for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
                 if v:FindFirstChild("ReloadTime")then
-                    v.ArsoniaReloadTime.Value=0
+                    v.ArsenalBFReloadTime.Value=0
                 end
                 if v:FindFirstChild("EReloadTime")then
-                    v.ArsoniaEReloadTime.Value=0
+                    v.ArsenalBFEReloadTime.Value=0
                 end
                 if v:FindFirstChild("PumpAction")then
                     v.PumpAction.Name="NotPumpAction"
@@ -1152,10 +1152,10 @@ CombatTabGunmodsSection:Toggle("Instant Reload",function(x)
         else
             for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
                 if v:FindFirstChild("ReloadTime")then
-                    v.ArsoniaReloadTime.Value=v.ReloadTime.Value
+                    v.ArsenalBFReloadTime.Value=v.ReloadTime.Value
                 end
                 if v:FindFirstChild("EReloadTime")then
-                    v.ArsoniaEReloadTime.Value=v.EReloadTime.Value
+                    v.ArsenalBFEReloadTime.Value=v.EReloadTime.Value
                 end
                 if v:FindFirstChild("NotPumpAction")then
                     v.NotPumpAction.Name="PumpAction"
@@ -1167,26 +1167,26 @@ CombatTabGunmodsSection:Toggle("Instant Reload",function(x)
     end
 end)
 CombatTabGunmodsSection:Toggle("Instant Equip",function(x)
-    ArsoniaTable.Combat.Gunmods.Instantequip=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Instantequip=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         if x then
             for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
                 if v:FindFirstChild("EquipTime")then
-                    v.ArsoniaEquipTime.Value=0
+                    v.ArsenalBFEquipTime.Value=0
                 end
             end
         else
             for _,v in pairs(game.ReplicatedStorage.Weapons:GetChildren())do
                 if v:FindFirstChild("EquipTime")then
-                    v.ArsoniaEquipTime.Value=v.EquipTime.Value
+                    v.ArsenalBFEquipTime.Value=v.EquipTime.Value
                 end
             end
         end
     end
 end)
 CombatTabGunmodsSection:Toggle("Golden Melee",function(x)
-    ArsoniaTable.Combat.Gunmods.Goldenmelee=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Goldenmelee=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         if x then
             debug.setconstant(getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools,30,"Golden Knife")
         else
@@ -1197,54 +1197,54 @@ CombatTabGunmodsSection:Toggle("Golden Melee",function(x)
     end
 end)
 CombatTabGunmodsSection:Toggle("Force Backstab",function(x)
-    ArsoniaTable.Combat.Gunmods.Forcebackstab=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Forcebackstab=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
         require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
     end
 end)
 CombatTabGunmodsSection:Toggle("Remove Fire Animation",function(x)
-    ArsoniaTable.Combat.Gunmods.Removeonfire=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Removeonfire=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
         require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
     end
 end)
 CombatTabGunmodsSection:Toggle("Remove Stab Animation",function(x)
-    ArsoniaTable.Combat.Gunmods.RemoveonfireKnife=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.RemoveonfireKnife=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
         require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
     end
 end)
 CombatTabGunmodsSection:Toggle("Remove Gun Sway",function(x)
-    ArsoniaTable.Combat.Gunmods.Removesway=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Removesway=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
         require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
     end
 end)
 CombatTabGunmodsSection:Toggle("Remove Gun Bob",function(x)
-    ArsoniaTable.Combat.Gunmods.Removebob=x
+    ArsenalBFTable.Combat.Gunmods.Removebob=x
 end)
 CombatTabGunmodsSection:Toggle("Remove Recoil",function(x)
-    ArsoniaTable.Combat.Gunmods.Removerecoil=x
+    ArsenalBFTable.Combat.Gunmods.Removerecoil=x
 end)
 CombatTabGunmodsSection:Toggle("Remove Spread",function(x)
-    ArsoniaTable.Combat.Gunmods.Removespread=x
+    ArsenalBFTable.Combat.Gunmods.Removespread=x
 end)
 CombatTabGunmodsSection:Toggle("Auto Spool",function(x)
-    ArsoniaTable.Combat.Gunmods.Autospool=x
+    ArsenalBFTable.Combat.Gunmods.Autospool=x
 end)
 CombatTabGunmodsSection:Toggle("Infinite Charge",function(x)
-    ArsoniaTable.Combat.Gunmods.Infcharge=x
+    ArsenalBFTable.Combat.Gunmods.Infcharge=x
 end)
 CombatTabGunmodsSection:Toggle("Remove Zoom Effect",function(x)
-    ArsoniaTable.Combat.Gunmods.Keepfov=x
+    ArsenalBFTable.Combat.Gunmods.Keepfov=x
 end)
 --[[CombatTabGunmodsSection:Toggle("Remove Scope Effect",function(x)
-    ArsoniaTable.Combat.Gunmods.Removescope=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Removescope=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         if x then
             for i=1,4 do
                 game:GetService("Players").LocalPlayer.PlayerGui.GUI.Crosshairs["Frame"..i].Transparency=1
@@ -1263,11 +1263,11 @@ end)
     end
 end)]]
 --[[CombatTabGunmodsSection:Toggle("Explosive Bullets",function(x)
-    ArsoniaTable.Combat.Gunmods.ExplosiveBullets=x
+    ArsenalBFTable.Combat.Gunmods.ExplosiveBullets=x
 end)]]
 CombatTabGunmodsSection:Dropdown("Firemode",{"Current","Semi-Automatic","Automatic"},function(x)
-    ArsoniaTable.Combat.Gunmods.Firemode=x
-    if ArsoniaTable.Combat.Gunmods.Enabled then
+    ArsenalBFTable.Combat.Gunmods.Firemode=x
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
         if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value then
             if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value:FindFirstChild("Auto")then
                 if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value.Auto.Value then
@@ -1285,7 +1285,7 @@ end)
 local MiscTab=Window:Tab("Misc")
 local MiscTabMainSection=MiscTab:Section("Main")
 MiscTabMainSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Misc.Main.Enabled=x
+    ArsenalBFTable.Misc.Main.Enabled=x
     if not x then
         if game.Workspace:FindFirstChild("Map")then
             if game.Workspace.Map:FindFirstChild("Clips")then
@@ -1301,52 +1301,52 @@ MiscTabMainSection:Toggle("Enabled",function(x)
         game.ReplicatedStorage.Events.CoolNewRemote:FireServer("MouseButton1")
         game:GetService("ReplicatedStorage").wkspc.CurrentCurse.Value="None"
     else
-        if ArsoniaTable.Misc.Main.Devicespoofer=="Mobile"then
+        if ArsenalBFTable.Misc.Main.Devicespoofer=="Mobile"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("Touch")
-        elseif ArsoniaTable.Misc.Main.Devicespoofer=="PC"then
+        elseif ArsenalBFTable.Misc.Main.Devicespoofer=="PC"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("MouseButton1")
-        elseif ArsoniaTable.Misc.Main.Devicespoofer=="XBOX"then
+        elseif ArsenalBFTable.Misc.Main.Devicespoofer=="XBOX"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("Gamepad1")
-        elseif ArsoniaTable.Misc.Main.Devicespoofer=="None"then
+        elseif ArsenalBFTable.Misc.Main.Devicespoofer=="None"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("none")
         end
-        game:GetService("ReplicatedStorage").wkspc.CurrentCurse.Value=ArsoniaTable.Misc.Main.Curse
+        game:GetService("ReplicatedStorage").wkspc.CurrentCurse.Value=ArsenalBFTable.Misc.Main.Curse
     end
 end)
 MiscTabMainSection:Toggle("Fast Respawn",function(x)
-    ArsoniaTable.Misc.Main.Fastrespawn=x
+    ArsenalBFTable.Misc.Main.Fastrespawn=x
 end)
 MiscTabMainSection:Dropdown("Device Spoofer",{"PC","Mobile","XBOX","Wii Steering Wheel","None"},function(x)
-    ArsoniaTable.Misc.Main.Devicespoofer=x
-    if ArsoniaTable.Misc.Main.Enabled then
-        if ArsoniaTable.Misc.Main.Devicespoofer=="Mobile"then
+    ArsenalBFTable.Misc.Main.Devicespoofer=x
+    if ArsenalBFTable.Misc.Main.Enabled then
+        if ArsenalBFTable.Misc.Main.Devicespoofer=="Mobile"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("Touch")
-        elseif ArsoniaTable.Misc.Main.Devicespoofer=="PC"then
+        elseif ArsenalBFTable.Misc.Main.Devicespoofer=="PC"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("MouseButton1")
-        elseif ArsoniaTable.Misc.Main.Devicespoofer=="XBOX"then
+        elseif ArsenalBFTable.Misc.Main.Devicespoofer=="XBOX"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("Gamepad1")
-        elseif ArsoniaTable.Misc.Main.Devicespoofer=="None"then
+        elseif ArsenalBFTable.Misc.Main.Devicespoofer=="None"then
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer("none")
         end
     end
 end)
 MiscTabMainSection:Dropdown("Ping Spoofer",{"Current","Green","Yellow","Red","Random"},function(x)
-    ArsoniaTable.Misc.Main.Pingspoofer=x
+    ArsenalBFTable.Misc.Main.Pingspoofer=x
 end)
 MiscTabMainSection:Toggle("Auto Deploy",function(x)
-    ArsoniaTable.Misc.Main.Autodeploy=x
+    ArsenalBFTable.Misc.Main.Autodeploy=x
 end)
-MiscTabMainSection:Dropdown("Curse",ArsoniaTable.Variables.Curses,function(x)
-    ArsoniaTable.Misc.Main.Curse=x
-    if ArsoniaTable.Misc.Main.Enabled then
-        game:GetService("ReplicatedStorage").wkspc.CurrentCurse.Value=ArsoniaTable.Misc.Main.Curse
+MiscTabMainSection:Dropdown("Curse",ArsenalBFTable.Variables.Curses,function(x)
+    ArsenalBFTable.Misc.Main.Curse=x
+    if ArsenalBFTable.Misc.Main.Enabled then
+        game:GetService("ReplicatedStorage").wkspc.CurrentCurse.Value=ArsenalBFTable.Misc.Main.Curse
     end
 end)
 MiscTabMainSection:Toggle("Double Chat",function(x)
-    ArsoniaTable.Misc.Main.Doublechat=x
+    ArsenalBFTable.Misc.Main.Doublechat=x
 end)
 MiscTabMainSection:Toggle("Remove Map Borders",function(x)
-    ArsoniaTable.Misc.Main.Removemapborders=x
+    ArsenalBFTable.Misc.Main.Removemapborders=x
     if not x then
         if game.Workspace:FindFirstChild("Map")then
             if game.Workspace.Map:FindFirstChild("Clips")then
@@ -1364,16 +1364,16 @@ MiscTabMainSection:Toggle("Remove Map Borders",function(x)
     end
 end)
 --[[MiscTabMainSection:Toggle("Cloud Spam",function(x)
-    ArsoniaTable.Misc.Main.Cloudspam=x
+    ArsenalBFTable.Misc.Main.Cloudspam=x
 end)]]
 MiscTabMainSection:Toggle("Anti Team Leader Effect",function(x)
-    ArsoniaTable.Misc.Main.Antiteamleader=x
+    ArsenalBFTable.Misc.Main.Antiteamleader=x
 end)
 MiscTabMainSection:Toggle("Anti Monkey ESP",function(x)
-    ArsoniaTable.Misc.Main.Antimonkey=x
+    ArsenalBFTable.Misc.Main.Antimonkey=x
 end)
 --[[MiscTabMainSection:Toggle("Wall Protect",function(x)
-    ArsoniaTable.Misc.Main.Wallprotect=x
+    ArsenalBFTable.Misc.Main.Wallprotect=x
 end)]]
 --[[MiscTabMainSection:Button("Place Wall",function()
     game.ReplicatedStorage.Events.BuildWall:FireServer(
@@ -1386,10 +1386,10 @@ MiscTabMainSection:Button("Remove Wall",function()
         Vector3.new(math.huge,math.huge,math.huge))
 end)]]
 MiscTabMainSection:Toggle("Auto Pickup Ball",function(x)
-    ArsoniaTable.Misc.Main.Autopickupball=x
+    ArsenalBFTable.Misc.Main.Autopickupball=x
 end)
 MiscTabMainSection:Toggle("Collect Bananas",function(x)
-    ArsoniaTable.Misc.Main.Autopickupbanana=x
+    ArsenalBFTable.Misc.Main.Autopickupbanana=x
 end)
 MiscTabMainSection:Button("Teleport To Fireworks",function()
     game.TeleportService:Teleport(4690140579,game.Players.LocalPlayer,{SuperSecretCode="NotSoSuperSecretPoggyWoggy"})
@@ -1423,49 +1423,49 @@ MiscTabMenuSection:Textbox("Menu Title","ARSENAL",function(x)
     game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.Title.DropShadow.Text=c
 end)
 MiscTabMenuSection:Textbox("Menu User",game.Players.LocalPlayer.Name,function(x)
-    ArsoniaTable.Variables.Levels.Name=x
+    ArsenalBFTable.Variables.Levels.Name=x
 end)
-MiscTabMenuSection:Textbox("Menu Level",ArsoniaTable.Variables.Levels.Level,function(x)
-    ArsoniaTable.Variables.Levels.Level=x
+MiscTabMenuSection:Textbox("Menu Level",ArsenalBFTable.Variables.Levels.Level,function(x)
+    ArsenalBFTable.Variables.Levels.Level=x
 end)
 MiscTabMenuSection:Slider("XP Bar",0,100,50,function(x)
-    ArsoniaTable.Variables.Levels.StartBar=x
-    ArsoniaTable.Variables.Levels.EndBar=100
+    ArsenalBFTable.Variables.Levels.StartBar=x
+    ArsenalBFTable.Variables.Levels.EndBar=100
 end)
 
 
 local MiscTabTrollingSection=MiscTab:Section("Trolling")
 MiscTabTrollingSection:Toggle("Enabled",function(x)
-    ArsoniaTable.Misc.Trolling.Enabled=x
+    ArsenalBFTable.Misc.Trolling.Enabled=x
 end)
 MiscTabTrollingSection:Toggle("Bullet Annoy",function(x)
-    ArsoniaTable.Misc.Trolling.Bulletannoy=x
+    ArsenalBFTable.Misc.Trolling.Bulletannoy=x
 end)
 MiscTabTrollingSection:Toggle("Voice Annoy",function(x)
-    ArsoniaTable.Misc.Trolling.Voiceannoy=x
+    ArsenalBFTable.Misc.Trolling.Voiceannoy=x
 end)
 MiscTabTrollingSection:Toggle("Delete Ball On Pickup",function(x)
-    ArsoniaTable.Misc.Trolling.Deleteball=x
+    ArsenalBFTable.Misc.Trolling.Deleteball=x
 end)
 MiscTabTrollingSection:Toggle("Auto Player Surf",function(x)
-    ArsoniaTable.Misc.Trolling.PlayerSurf=x
+    ArsenalBFTable.Misc.Trolling.PlayerSurf=x
 end)
 --[[MiscTabTrollingSection:Toggle("Wall Trap",function(x)
-    ArsoniaTable.Misc.Trolling.WallTrap=x
+    ArsenalBFTable.Misc.Trolling.WallTrap=x
 end)
 MiscTabTrollingSection:Dropdown("Trap Type",{"Forward","Sideways"},function(x)
-    ArsoniaTable.Misc.Trolling.WallTrapType=x
-    if ArsoniaTable.Misc.Trolling.WallTrap and ArsoniaTable.Misc.Trolling.Enabled then
+    ArsenalBFTable.Misc.Trolling.WallTrapType=x
+    if ArsenalBFTable.Misc.Trolling.WallTrap and ArsenalBFTable.Misc.Trolling.Enabled then
         for _,v in pairs(game.Players:GetChildren())do
-            if string.find(string.lower(tostring(v)),string.lower(ArsoniaTable.Misc.Trolling.WallTrapName))then
-                ArsoniaTable.Variables.TrapPosOld=v.Character.HumanoidRootPart.Position
-                if ArsoniaTable.Misc.Trolling.WallTrapType=="Forward"then
+            if string.find(string.lower(tostring(v)),string.lower(ArsenalBFTable.Misc.Trolling.WallTrapName))then
+                ArsenalBFTable.Variables.TrapPosOld=v.Character.HumanoidRootPart.Position
+                if ArsenalBFTable.Misc.Trolling.WallTrapType=="Forward"then
                     game.ReplicatedStorage.Events.BuildWall:FireServer(
                         v.Character.HumanoidRootPart.Position+
                         v.Character.HumanoidRootPart.CFrame.RightVector*-7,
                         v.Character.HumanoidRootPart.CFrame.RightVector*10000000000)
                     break
-                elseif ArsoniaTable.Misc.Trolling.WallTrapType=="Sideways"then
+                elseif ArsenalBFTable.Misc.Trolling.WallTrapType=="Sideways"then
                     game.ReplicatedStorage.Events.BuildWall:FireServer(
                         v.Character.HumanoidRootPart.Position+
                         v.Character.HumanoidRootPart.CFrame.LookVector*-7,
@@ -1477,13 +1477,13 @@ MiscTabTrollingSection:Dropdown("Trap Type",{"Forward","Sideways"},function(x)
     end
 end)
 MiscTabTrollingSection:Textbox("Player Name","",function(x)
-    ArsoniaTable.Misc.Trolling.WallTrapName=x
+    ArsenalBFTable.Misc.Trolling.WallTrapName=x
 end)]]
 --[[MiscTabTrollingSection:Toggle("Fling Aura (BAN RISK)",function(x)
-    ArsoniaTable.Misc.Trolling.Flingaura=x
+    ArsenalBFTable.Misc.Trolling.Flingaura=x
 end)
 MiscTabTrollingSection:Toggle("Fling All (BAN RISK)",function(x)
-    ArsoniaTable.Misc.Trolling.Flingall=x
+    ArsenalBFTable.Misc.Trolling.Flingall=x
 end)
 MiscTabTrollingSection:Button("Crash Clients",function()
     for _=1,5000 do
@@ -1496,19 +1496,19 @@ end)]]
 local MiscTabSaveSection=MiscTab:Section("Save/Load")
 MiscTabSaveSection:Button("Save",function()
     pcall(function()
-        delfile("Arsonia_SAVE_.lua")
+        delfile("ArsenalBF_SAVE_.lua")
     end)
-    writefile("Arsonia_SAVE_.lua","return"..ArsoniaTable.Variables.Functions.Unpacktable(getgenv().ArsoniaSettings))
+    writefile("ArsenalBF_SAVE_.lua","return"..ArsenalBFTable.Variables.Functions.Unpacktable(getgenv().ArsenalBFSettings))
 end)
 MiscTabSaveSection:Button("Load",function()
     local a=0
     local b=0
-    for i,v in pairs(loadfile("Arsonia_SAVE_.lua")())do
+    for i,v in pairs(loadfile("ArsenalBF_SAVE_.lua")())do
         a=a+1
         for _=1,25 do
             if pcall(function()
-                    if getgenv().ArsoniaSettings[i].Val[1]~=v.Val[1]then
-                        if not pcall(function()getgenv().ArsoniaSettings[i].SetVal(unpack(v.Val))end)then
+                    if getgenv().ArsenalBFSettings[i].Val[1]~=v.Val[1]then
+                        if not pcall(function()getgenv().ArsenalBFSettings[i].SetVal(unpack(v.Val))end)then
                             b=b+1
                         end
                     end
@@ -1554,15 +1554,15 @@ end)
 Section:Textlabel("Text")
 ]]
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(x)
-    ArsoniaTable.Variables.KeysPressed[x]=true
+    ArsenalBFTable.Variables.KeysPressed[x]=true
 end)
 game.Players.LocalPlayer:GetMouse().KeyUp:Connect(function(x)
-    ArsoniaTable.Variables.KeysPressed[x]=false
+    ArsenalBFTable.Variables.KeysPressed[x]=false
 end)
 --Character Child Added
 game.Players.LocalPlayer.Character.ChildAdded:Connect(function(x)
-    if ArsoniaTable.Player.Misc.Enabled then
-        if ArsoniaTable.Player.Misc.Removeplayercheck then
+    if ArsenalBFTable.Player.Misc.Enabled then
+        if ArsenalBFTable.Player.Misc.Removeplayercheck then
             if x.Name=="Spawned"then
                 wait(.3)
                 x:Destroy()
@@ -1572,15 +1572,15 @@ game.Players.LocalPlayer.Character.ChildAdded:Connect(function(x)
 end)
 --Character Child Removed
 game.Players.LocalPlayer.Character.ChildRemoved:Connect(function(x)
-    if ArsoniaTable.Player.Misc.Enabled then
-        if ArsoniaTable.Player.Misc.DemiGod then
+    if ArsenalBFTable.Player.Misc.Enabled then
+        if ArsenalBFTable.Player.Misc.DemiGod then
             if x.Name=="Spawned"and not game.ReplicatedStorage.wkspc.Status.RoundOver.Value and game.Players.LocalPlayer.Status.Team.Value~="Spectator"then
                 local a=game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
                 local b=game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
                 repeat
                     game.RunService.RenderStepped:Wait()
                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).reviveme=true
-                until game.Players.LocalPlayer.Character:FindFirstChild("Spawned")or not ArsoniaTable.Player.Misc.DemiGod or game.Players.LocalPlayer.Status.Team.Value=="Spectator"or not ArsoniaTable.Player.Misc.Enabled
+                until game.Players.LocalPlayer.Character:FindFirstChild("Spawned")or not ArsenalBFTable.Player.Misc.DemiGod or game.Players.LocalPlayer.Status.Team.Value=="Spectator"or not ArsenalBFTable.Player.Misc.Enabled
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=b
                 game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity=a
             end
@@ -1589,59 +1589,59 @@ game.Players.LocalPlayer.Character.ChildRemoved:Connect(function(x)
 end)
 --General RS
 game.RunService.RenderStepped:Connect(function()
-    ArsoniaTable.Variables.Crouching=false
+    ArsenalBFTable.Variables.Crouching=false
     if game.Players.LocalPlayer.Character:FindFirstChild("Crouched")then
-        ArsoniaTable.Variables.Crouching=true
+        ArsenalBFTable.Variables.Crouching=true
     end
-    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.StartXP.Text~=ArsoniaTable.Variables.Levels.StartXp.." xp"then
-        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.StartXP.Text=ArsoniaTable.Variables.Levels.StartXp.." xp"
+    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.StartXP.Text~=ArsenalBFTable.Variables.Levels.StartXp.." xp"then
+        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.StartXP.Text=ArsenalBFTable.Variables.Levels.StartXp.." xp"
     end
-    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.EndXP.Text~=ArsoniaTable.Variables.Levels.EndXp.." xp"then
-        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.EndXP.Text=ArsoniaTable.Variables.Levels.EndXp.." xp"
+    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.EndXP.Text~=ArsenalBFTable.Variables.Levels.EndXp.." xp"then
+        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.EndXP.Text=ArsenalBFTable.Variables.Levels.EndXp.." xp"
     end
-    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.FILL.FILL.Size~=UDim2.new(ArsoniaTable.Variables.Levels.StartBar/ArsoniaTable.Variables.Levels.EndBar,0,1,0)then
-        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.FILL.FILL.Size=UDim2.new(ArsoniaTable.Variables.Levels.StartBar/ArsoniaTable.Variables.Levels.EndBar,0,1,0)
+    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.FILL.FILL.Size~=UDim2.new(ArsenalBFTable.Variables.Levels.StartBar/ArsenalBFTable.Variables.Levels.EndBar,0,1,0)then
+        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.LevelMeter.FILL.FILL.Size=UDim2.new(ArsenalBFTable.Variables.Levels.StartBar/ArsenalBFTable.Variables.Levels.EndBar,0,1,0)
     end
-    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.PlrName.Text~=ArsoniaTable.Variables.Levels.Name.." - Level: "..ArsoniaTable.Variables.Levels.Level then
-        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.PlrName.Text=ArsoniaTable.Variables.Levels.Name.." - Level: "..ArsoniaTable.Variables.Levels.Level
+    if game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.PlrName.Text~=ArsenalBFTable.Variables.Levels.Name.." - Level: "..ArsenalBFTable.Variables.Levels.Level then
+        game:GetService("Players").LocalPlayer.PlayerGui.Menew.Main.PlrName.Text=ArsenalBFTable.Variables.Levels.Name.." - Level: "..ArsenalBFTable.Variables.Levels.Level
     end
     if tostring(game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value)==game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.melee.Value then
-        ArsoniaTable.Variables.IsKnife=true
+        ArsenalBFTable.Variables.IsKnife=true
     else
-        ArsoniaTable.Variables.IsKnife=false
+        ArsenalBFTable.Variables.IsKnife=false
     end
     if game.Players.LocalPlayer.Character:FindFirstChild("IsAPlayer")then
-        ArsoniaTable.Variables.IsAlive=true
+        ArsenalBFTable.Variables.IsAlive=true
     else
-        ArsoniaTable.Variables.IsAlive=false
+        ArsenalBFTable.Variables.IsAlive=false
     end
-    ArsoniaTable.Variables.Offset_GUN=Vector3.new()
+    ArsenalBFTable.Variables.Offset_GUN=Vector3.new()
     if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
         for _,v in pairs(game.Workspace.CurrentCamera.Arms:GetChildren())do
             if v:IsA("Vector3Value")then
-                ArsoniaTable.Variables.Offset_GUN=v.Value
+                ArsenalBFTable.Variables.Offset_GUN=v.Value
                 break
             end
         end
     end
     if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value then
-        ArsoniaTable.Variables.Killmethods.Equipped=game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value
+        ArsenalBFTable.Variables.Killmethods.Equipped=game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value
     end
     if getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).lastlook~=10000 then
         getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).lastlook=10000
     end
-    ArsoniaTable.Variables.IsFall=false
+    ArsenalBFTable.Variables.IsFall=false
     if game.Players.LocalPlayer.Character.Humanoid:GetState()==Enum.HumanoidStateType.Ragdoll or game.Players.LocalPlayer.Character.Humanoid:GetState()==Enum.HumanoidStateType.GettingUp then
-        ArsoniaTable.Variables.IsFall=true
+        ArsenalBFTable.Variables.IsFall=true
     end
     if game.Players.LocalPlayer.Character.Head.Size~=Vector3.new(1,.1,1)then
         game.Players.LocalPlayer.Character.Head.Size=Vector3.new(1,.1,1)
     end
-    ArsoniaTable.Variables.CamAngles={game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()}
+    ArsenalBFTable.Variables.CamAngles={game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()}
 end)
 --Player Anti Aim RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Player.Anti_Aim.IsHead then
+    if ArsenalBFTable.Player.Anti_Aim.IsHead then
         if game.Players.LocalPlayer.Character:FindFirstChild("HeadHB")then
             game.Players.LocalPlayer.Character:FindFirstChild("HeadHB"):Destroy()
         end
@@ -1649,7 +1649,7 @@ game.RunService.RenderStepped:Connect(function()
             game.Players.LocalPlayer.Character:FindFirstChild("FakeHead"):Destroy()
         end
     end
-    if ArsoniaTable.Player.Anti_Aim.IsLegs then
+    if ArsenalBFTable.Player.Anti_Aim.IsLegs then
         for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren())do
             if string.find(string.lower(v.Name),"foot")or string.find(string.lower(v.Name),"leg")then
                 if v:IsA("BasePart")then
@@ -1658,70 +1658,70 @@ game.RunService.RenderStepped:Connect(function()
             end
         end
     end
-    if ArsoniaTable.Player.Anti_Aim.Enabled then
-        if not ArsoniaTable.Variables.Functions.IsRoundOver()then
-            if ArsoniaTable.Player.Anti_Aim.Yaw then
+    if ArsenalBFTable.Player.Anti_Aim.Enabled then
+        if not ArsenalBFTable.Variables.Functions.IsRoundOver()then
+            if ArsenalBFTable.Player.Anti_Aim.Yaw then
                 local _,a=game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()
-                if ArsoniaTable.Player.Anti_Aim.YawType=="Spinning"then
-                    ArsoniaTable.Variables.Yaw=ArsoniaTable.Variables.Yaw+ArsoniaTable.Player.Anti_Aim.YawValue
+                if ArsenalBFTable.Player.Anti_Aim.YawType=="Spinning"then
+                    ArsenalBFTable.Variables.Yaw=ArsenalBFTable.Variables.Yaw+ArsenalBFTable.Player.Anti_Aim.YawValue
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                    CFrame.Angles(0,math.rad(ArsoniaTable.Variables.Yaw),0)
-                elseif ArsoniaTable.Player.Anti_Aim.YawType=="Offset"then
+                    CFrame.Angles(0,math.rad(ArsenalBFTable.Variables.Yaw),0)
+                elseif ArsenalBFTable.Player.Anti_Aim.YawType=="Offset"then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                    CFrame.Angles(0,a+math.rad(ArsoniaTable.Player.Anti_Aim.YawValue),0)
-                elseif ArsoniaTable.Player.Anti_Aim.YawType=="Absolute"then
+                    CFrame.Angles(0,a+math.rad(ArsenalBFTable.Player.Anti_Aim.YawValue),0)
+                elseif ArsenalBFTable.Player.Anti_Aim.YawType=="Absolute"then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                    CFrame.Angles(0,math.rad(ArsoniaTable.Player.Anti_Aim.YawValue),0)
-                elseif ArsoniaTable.Player.Anti_Aim.YawType=="Random"then
-                    ArsoniaTable.Variables.Yaw=ArsoniaTable.Variables.Yaw+math.random(-ArsoniaTable.Player.Anti_Aim.YawValue,ArsoniaTable.Player.Anti_Aim.YawValue)
+                    CFrame.Angles(0,math.rad(ArsenalBFTable.Player.Anti_Aim.YawValue),0)
+                elseif ArsenalBFTable.Player.Anti_Aim.YawType=="Random"then
+                    ArsenalBFTable.Variables.Yaw=ArsenalBFTable.Variables.Yaw+math.random(-ArsenalBFTable.Player.Anti_Aim.YawValue,ArsenalBFTable.Player.Anti_Aim.YawValue)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                    CFrame.Angles(0,math.rad(ArsoniaTable.Variables.Yaw),0)
-                elseif ArsoniaTable.Player.Anti_Aim.YawType=="Inverted"then
+                    CFrame.Angles(0,math.rad(ArsenalBFTable.Variables.Yaw),0)
+                elseif ArsenalBFTable.Player.Anti_Aim.YawType=="Inverted"then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
                     CFrame.Angles(0,-a,0)
-                elseif ArsoniaTable.Player.Anti_Aim.YawType=="Frozen"then
-                    if ArsoniaTable.Variables.EngluarFix then
-                        ArsoniaTable.Variables.Yaw=ArsoniaTable.Variables.EngluarFix.Y
+                elseif ArsenalBFTable.Player.Anti_Aim.YawType=="Frozen"then
+                    if ArsenalBFTable.Variables.EngluarFix then
+                        ArsenalBFTable.Variables.Yaw=ArsenalBFTable.Variables.EngluarFix.Y
                     end
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                    CFrame.Angles(0,ArsoniaTable.Variables.Yaw,0)
+                    CFrame.Angles(0,ArsenalBFTable.Variables.Yaw,0)
                 end
             end
-            if ArsoniaTable.Player.Anti_Aim.CrouchYaw then
-                if ArsoniaTable.Variables.Crouching then
+            if ArsenalBFTable.Player.Anti_Aim.CrouchYaw then
+                if ArsenalBFTable.Variables.Crouching then
                     local _,a=game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()
-                    if ArsoniaTable.Player.Anti_Aim.CrouchYawType=="Spinning"then
-                        ArsoniaTable.Variables.CrouchYaw=ArsoniaTable.Variables.CrouchYaw+ArsoniaTable.Player.Anti_Aim.CrouchYawVal
+                    if ArsenalBFTable.Player.Anti_Aim.CrouchYawType=="Spinning"then
+                        ArsenalBFTable.Variables.CrouchYaw=ArsenalBFTable.Variables.CrouchYaw+ArsenalBFTable.Player.Anti_Aim.CrouchYawVal
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                        CFrame.Angles(0,math.rad(ArsoniaTable.Variables.CrouchYaw),0)
-                    elseif ArsoniaTable.Player.Anti_Aim.CrouchYawType=="Offset"then
+                        CFrame.Angles(0,math.rad(ArsenalBFTable.Variables.CrouchYaw),0)
+                    elseif ArsenalBFTable.Player.Anti_Aim.CrouchYawType=="Offset"then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                        CFrame.Angles(0,a+math.rad(ArsoniaTable.Player.Anti_Aim.CrouchYawVal),0)
-                    elseif ArsoniaTable.Player.Anti_Aim.CrouchYawType=="Absolute"then
+                        CFrame.Angles(0,a+math.rad(ArsenalBFTable.Player.Anti_Aim.CrouchYawVal),0)
+                    elseif ArsenalBFTable.Player.Anti_Aim.CrouchYawType=="Absolute"then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                        CFrame.Angles(0,math.rad(ArsoniaTable.Player.Anti_Aim.CrouchYawVal),0)
-                    elseif ArsoniaTable.Player.Anti_Aim.CrouchYawType=="Random"then
-                        ArsoniaTable.Variables.CrouchYaw=ArsoniaTable.Variables.CrouchYaw+math.random(-ArsoniaTable.Player.Anti_Aim.CrouchYawVal,ArsoniaTable.Player.Anti_Aim.CrouchYawVal)
+                        CFrame.Angles(0,math.rad(ArsenalBFTable.Player.Anti_Aim.CrouchYawVal),0)
+                    elseif ArsenalBFTable.Player.Anti_Aim.CrouchYawType=="Random"then
+                        ArsenalBFTable.Variables.CrouchYaw=ArsenalBFTable.Variables.CrouchYaw+math.random(-ArsenalBFTable.Player.Anti_Aim.CrouchYawVal,ArsenalBFTable.Player.Anti_Aim.CrouchYawVal)
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                        CFrame.Angles(0,math.rad(ArsoniaTable.Variables.CrouchYaw),0)
-                    elseif ArsoniaTable.Player.Anti_Aim.CrouchYawType=="Inverted"then
+                        CFrame.Angles(0,math.rad(ArsenalBFTable.Variables.CrouchYaw),0)
+                    elseif ArsenalBFTable.Player.Anti_Aim.CrouchYawType=="Inverted"then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
                         CFrame.Angles(0,-a,0)
                     end
                 end
             end
-            if ArsoniaTable.Player.Anti_Aim.Wall then
+            if ArsenalBFTable.Player.Anti_Aim.Wall then
                 local _,a=game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()
                 local b={low={},high={},none={},equal={}}
                 local Ignore=
@@ -1748,14 +1748,14 @@ game.RunService.RenderStepped:Connect(function()
                     if i~=0 and i~=180 and i~=360 then
                         if i<=180 then
                             local Ray=Ray.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
-                                (CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*CFrame.Angles(0,a-math.rad(i),0)).LookVector*ArsoniaTable.Player.Anti_Aim.WallDist)
+                                (CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*CFrame.Angles(0,a-math.rad(i),0)).LookVector*ArsenalBFTable.Player.Anti_Aim.WallDist)
                             local part,pos,offset=game.Workspace:FindPartOnRayWithIgnoreList(Ray,Ignore)
                             if part then
                                 table.insert(b.low,{i,pos,offset})
                             end
                         else
                             local Ray=Ray.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
-                                (CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*CFrame.Angles(0,a+math.rad(i-180),0)).LookVector*ArsoniaTable.Player.Anti_Aim.WallDist)
+                                (CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*CFrame.Angles(0,a+math.rad(i-180),0)).LookVector*ArsenalBFTable.Player.Anti_Aim.WallDist)
                             local part,pos,offset=game.Workspace:FindPartOnRayWithIgnoreList(Ray,Ignore)
                             if part then
                                 table.insert(b.high,{i,pos,offset})
@@ -1770,7 +1770,7 @@ game.RunService.RenderStepped:Connect(function()
                     table.insert(b.equal,v)
                 end
                 local a="none"
-                local rade=math.deg(ArsoniaTable.Player.Anti_Aim.WallValue)
+                local rade=math.deg(ArsenalBFTable.Player.Anti_Aim.WallValue)
                 if #b.low>#b.high then
                     a="low"
                 elseif #b.low==0 and #b.high==0 then
@@ -1799,8 +1799,8 @@ game.RunService.RenderStepped:Connect(function()
                     CFrame.Angles(0,math.rad(game.Players.LocalPlayer.Character.HumanoidRootPart.Orientation.Y),0)
                 end
             end
-            if ArsoniaTable.Player.Movement.Enabled then
-                if ArsoniaTable.Player.Movement.Autoairstrafe then
+            if ArsenalBFTable.Player.Movement.Enabled then
+                if ArsenalBFTable.Player.Movement.Autoairstrafe then
                     if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air then
                         local _,a=game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
@@ -1809,16 +1809,16 @@ game.RunService.RenderStepped:Connect(function()
                     end
                 end
             end
-            if ArsoniaTable.Aimbot.Silentaim.Enabled then
-                if ArsoniaTable.Aimbot.Silentaim.Fakelock then
-                    if ArsoniaTable.Variables.__SilentAimTarget then
+            if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+                if ArsenalBFTable.Aimbot.Silentaim.Fakelock then
+                    if ArsenalBFTable.Variables.__SilentAimTarget then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                        CFrame.Angles(0,ArsoniaTable.Variables.EngluarFix.Y,0)
+                        CFrame.Angles(0,ArsenalBFTable.Variables.EngluarFix.Y,0)
                     end
                 end
             end
-            if ArsoniaTable.Player.Anti_Aim.Upsidedown and not ArsoniaTable.Variables.IsFall then
+            if ArsenalBFTable.Player.Anti_Aim.Upsidedown and not ArsenalBFTable.Variables.IsFall then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                 CFrame.new(
                     game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -1834,44 +1834,44 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Player Movement RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Player.Movement.Enabled then
-        if ArsoniaTable.Player.Movement.Fly then
-            if ArsoniaTable.Variables.Fly then
+    if ArsenalBFTable.Player.Movement.Enabled then
+        if ArsenalBFTable.Player.Movement.Fly then
+            if ArsenalBFTable.Variables.Fly then
                 local b=0
                 local c=false
-                if ArsoniaTable.Variables.KeysPressed.w and ArsoniaTable.Variables.KeysPressed.s then
+                if ArsenalBFTable.Variables.KeysPressed.w and ArsenalBFTable.Variables.KeysPressed.s then
                     b=0
-                elseif ArsoniaTable.Variables.KeysPressed.a and ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.a and ArsenalBFTable.Variables.KeysPressed.d then
                     b=0
-                elseif ArsoniaTable.Variables.KeysPressed.w and ArsoniaTable.Variables.KeysPressed.a then
+                elseif ArsenalBFTable.Variables.KeysPressed.w and ArsenalBFTable.Variables.KeysPressed.a then
                     b=45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.w and ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.w and ArsenalBFTable.Variables.KeysPressed.d then
                     b=-45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.s and ArsoniaTable.Variables.KeysPressed.a then
+                elseif ArsenalBFTable.Variables.KeysPressed.s and ArsenalBFTable.Variables.KeysPressed.a then
                     b=180-45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.s and ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.s and ArsenalBFTable.Variables.KeysPressed.d then
                     b=180+45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.w then
+                elseif ArsenalBFTable.Variables.KeysPressed.w then
                     b=0
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.a then
+                elseif ArsenalBFTable.Variables.KeysPressed.a then
                     b=90
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.d then
                     b=-90
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.s then
+                elseif ArsenalBFTable.Variables.KeysPressed.s then
                     b=180
                     c=true
                 end
                 if c then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity=
                     (game.Workspace.CurrentCamera.CFrame*CFrame.Angles(0,math.rad(b),0)).LookVector*
-                    ArsoniaTable.Player.Movement.Flyspeed
+                    ArsenalBFTable.Player.Movement.Flyspeed
                 else
                     game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity=Vector3.new()
@@ -1881,50 +1881,50 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Player.Movement.Bunnyhop then
-            if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air or ArsoniaTable.Variables.KeysPressed[" "]then
+        if ArsenalBFTable.Player.Movement.Bunnyhop then
+            if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air or ArsenalBFTable.Variables.KeysPressed[" "]then
                 local _,a=game.Workspace.CurrentCamera.CFrame:ToEulerAnglesYXZ()
                 local b=0
                 local c=false
-                if ArsoniaTable.Variables.KeysPressed.w and ArsoniaTable.Variables.KeysPressed.s then
+                if ArsenalBFTable.Variables.KeysPressed.w and ArsenalBFTable.Variables.KeysPressed.s then
                     b=0
-                elseif ArsoniaTable.Variables.KeysPressed.a and ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.a and ArsenalBFTable.Variables.KeysPressed.d then
                     b=0
-                elseif ArsoniaTable.Variables.KeysPressed.w and ArsoniaTable.Variables.KeysPressed.a then
+                elseif ArsenalBFTable.Variables.KeysPressed.w and ArsenalBFTable.Variables.KeysPressed.a then
                     b=45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.w and ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.w and ArsenalBFTable.Variables.KeysPressed.d then
                     b=-45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.s and ArsoniaTable.Variables.KeysPressed.a then
+                elseif ArsenalBFTable.Variables.KeysPressed.s and ArsenalBFTable.Variables.KeysPressed.a then
                     b=180-45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.s and ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.s and ArsenalBFTable.Variables.KeysPressed.d then
                     b=180+45
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.w then
+                elseif ArsenalBFTable.Variables.KeysPressed.w then
                     b=0
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.a then
+                elseif ArsenalBFTable.Variables.KeysPressed.a then
                     b=90
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.d then
+                elseif ArsenalBFTable.Variables.KeysPressed.d then
                     b=-90
                     c=true
-                elseif ArsoniaTable.Variables.KeysPressed.s then
+                elseif ArsenalBFTable.Variables.KeysPressed.s then
                     b=180
                     c=true
                 end
-                if ArsoniaTable.Player.Movement.BunnyhopType=="Apply Velocity"or ArsoniaTable.Player.Movement.BunnyhopType=="Walkspeed"then
-                    if ArsoniaTable.Variables.KeysPressed[" "]then
+                if ArsenalBFTable.Player.Movement.BunnyhopType=="Apply Velocity"or ArsenalBFTable.Player.Movement.BunnyhopType=="Walkspeed"then
+                    if ArsenalBFTable.Variables.KeysPressed[" "]then
                         game.Players.LocalPlayer.Character.Humanoid.Jump=true
                     end
                 end
                 if c then
-                    if ArsoniaTable.Player.Movement.BunnyhopType=="Apply Velocity"then
-                        ArsoniaTable.Variables.Functions.OldApplyVelocity(
+                    if ArsenalBFTable.Player.Movement.BunnyhopType=="Apply Velocity"then
+                        ArsenalBFTable.Variables.Functions.OldApplyVelocity(
                             game.Players.LocalPlayer.Character,
-                            CFrame.Angles(0,a+math.rad(b),0).LookVector*(ArsoniaTable.Player.Movement.Bunnyhopspeed/3.5),
+                            CFrame.Angles(0,a+math.rad(b),0).LookVector*(ArsenalBFTable.Player.Movement.Bunnyhopspeed/3.5),
                             1,
                             nil,
                             game.Players.LocalPlayer.Name,
@@ -1935,24 +1935,24 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Player.Movement.Infdoublejump then
+        if ArsenalBFTable.Player.Movement.Infdoublejump then
             if game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.airjumps.Value~=0 then
                 game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.airjumps.Value=0
             end
         end
-        if ArsoniaTable.Player.Movement.Autoairstrafe then
-            if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air or ArsoniaTable.Variables.KeysPressed[" "]then
+        if ArsenalBFTable.Player.Movement.Autoairstrafe then
+            if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air or ArsenalBFTable.Variables.KeysPressed[" "]then
                 local a=Instance.new("IntValue")
                 a.Name="changedirection"
                 a.Parent=game.Players.LocalPlayer.Character
             end
         end
-        if ArsoniaTable.Player.Movement.Autotakecontrol then
+        if ArsenalBFTable.Player.Movement.Autotakecontrol then
             if not game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.takecontrol.Value then
                 game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.takecontrol.Value=true
             end
         end
-        if ArsoniaTable.Player.Movement.Anticrouchjumplock then
+        if ArsenalBFTable.Player.Movement.Anticrouchjumplock then
             if getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.StepModulesNoDeath.BruhHumanoid).crouchJump then
                 getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.StepModulesNoDeath.BruhHumanoid).crouchJump=false
             end
@@ -1961,30 +1961,30 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Player Misc RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Player.Misc.Enabled then
-        if ArsoniaTable.Player.Misc.Slidewalk then
+    if ArsenalBFTable.Player.Misc.Enabled then
+        if ArsenalBFTable.Player.Misc.Slidewalk then
             for _,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks())do
                 if v.Animation.AnimationId~="rbxassetid://2475459560"then
                     v:Stop()
                 end
             end
         end
-        if ArsoniaTable.Player.Misc.AntiFire then
+        if ArsenalBFTable.Player.Misc.AntiFire then
             if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Engulfed")then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.Engulfed:Destroy()
             end
         end
-        if ArsoniaTable.Player.Misc.AntiBleed then
+        if ArsenalBFTable.Player.Misc.AntiBleed then
             if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Bleed")then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.Bleed:Destroy()
             end
         end
-        if ArsoniaTable.Player.Misc.AntiFling then
+        if ArsenalBFTable.Player.Misc.AntiFling then
             if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("WindEffect")then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.WindEffect:Destroy()
             end
         end
-        if ArsoniaTable.Player.Misc.FastHeal then
+        if ArsenalBFTable.Player.Misc.FastHeal then
             if game.Players.LocalPlayer.NRPBS.Health.Value<=99 then
                 for _,v in pairs(game.Workspace.Debris:GetChildren())do
                     if v.Name=="DeadHP"then
@@ -1994,28 +1994,28 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Player.Misc.Headcollide then
+        if ArsenalBFTable.Player.Misc.Headcollide then
             if game.Players.LocalPlayer.Character.Head.CollisionGroupId~=game.Players.LocalPlayer.Character.UpperTorso.CollisionGroupId then
                 game.Players.LocalPlayer.Character.Head.CollisionGroupId=game.Players.LocalPlayer.Character.UpperTorso.CollisionGroupId
             end
         elseif game.Players.LocalPlayer.Character.Head.CollisionGroupId~=game.Players.LocalPlayer.Character.HumanoidRootPart.CollisionGroupId then
             game.Players.LocalPlayer.Character.Head.CollisionGroupId=game.Players.LocalPlayer.Character.HumanoidRootPart.CollisionGroupId
         end
-        if ArsoniaTable.Player.Misc.Torsocollide then
+        if ArsenalBFTable.Player.Misc.Torsocollide then
             if game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide=false
             end
         elseif not game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide=true
         end
-        if ArsoniaTable.Player.Misc.SmallRoot then
+        if ArsenalBFTable.Player.Misc.SmallRoot then
             if game.Players.LocalPlayer.Character.HumanoidRootPart.Size~=Vector3.new(1,.1,1)then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.Size=Vector3.new(1,.1,1)
             end
         elseif game.Players.LocalPlayer.Character.HumanoidRootPart.Size~=Vector3.new(1,2,1)then
             game.Players.LocalPlayer.Character.HumanoidRootPart.Size=Vector3.new(1,2,1)
         end
-        if ArsoniaTable.Player.Misc.Removegun then
+        if ArsenalBFTable.Player.Misc.Removegun then
             if game.Players.LocalPlayer.Character:FindFirstChild("Gun")then
                 for _,v in pairs(game.Players.LocalPlayer.Character.Gun:GetDescendants())do
                     if v:IsA("BasePart")then
@@ -2040,15 +2040,15 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Visuals ESP RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Visuals.ESP.Enabled then
-        for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+    if ArsenalBFTable.Visuals.ESP.Enabled then
+        for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
             local part=v.Character.HumanoidRootPart
             local _,b=game.Workspace.CurrentCamera:WorldToViewportPoint(part.Position)
             if b then
                 --[[if lookdirection then
                     local b=Drawing.new("Line")
                     b.Visible=true
-                    b.Color=ArsoniaTable.Visuals.ESP.Color
+                    b.Color=ArsenalBFTable.Visuals.ESP.Color
                     b.Thickness=thick
                     b.Transparency=1
                     local pos=
@@ -2076,7 +2076,7 @@ game.RunService.RenderStepped:Connect(function()
                         b:Remove()
                     end)()
                 end]]
-                if ArsoniaTable.Visuals.ESP.Names then
+                if ArsenalBFTable.Visuals.ESP.Names then
                     local a=Drawing.new("Text")
                     a.Text=v.Name
                     a.Size=math.clamp(25-(part.Position-game.Workspace.CurrentCamera.CFrame.Position).Magnitude,25,100)
@@ -2086,7 +2086,7 @@ game.RunService.RenderStepped:Connect(function()
                     a.Font=Drawing.Fonts.UI
                     a.Visible=true
                     a.Transparency=1
-                    a.Color=ArsoniaTable.Visuals.ESP.Color
+                    a.Color=ArsenalBFTable.Visuals.ESP.Color
                     a.Position=Vector2.new(
                         game.Workspace.CurrentCamera:WorldToViewportPoint(part.CFrame.Position+part.CFrame.UpVector*(3+(part.Position-game.Workspace.CurrentCamera.CFrame.Position).Magnitude/25)).X,
                         game.Workspace.CurrentCamera:WorldToViewportPoint(part.CFrame.Position+part.CFrame.UpVector*(3+(part.Position-game.Workspace.CurrentCamera.CFrame.Position).Magnitude/25)).Y)
@@ -2095,10 +2095,10 @@ game.RunService.RenderStepped:Connect(function()
                         a:Remove()
                     end)()
                 end
-                if ArsoniaTable.Visuals.ESP.Box then
+                if ArsenalBFTable.Visuals.ESP.Box then
                     local a=Drawing.new("Quad")
                     a.Visible=true
-                    a.Color=ArsoniaTable.Visuals.ESP.Color
+                    a.Color=ArsenalBFTable.Visuals.ESP.Color
                     a.Thickness=1
                     a.Transparency=1
                     a.Filled=false
@@ -2119,10 +2119,10 @@ game.RunService.RenderStepped:Connect(function()
                         a:Remove()
                     end)()
                 end
-                if ArsoniaTable.Visuals.ESP.Tracers then
+                if ArsenalBFTable.Visuals.ESP.Tracers then
                     local b=Drawing.new("Line")
                     b.Visible=true
-                    b.Color=ArsoniaTable.Visuals.ESP.Color
+                    b.Color=ArsenalBFTable.Visuals.ESP.Color
                     b.Thickness=1
                     b.Transparency=1
                     b.To=Vector2.new(
@@ -2134,12 +2134,12 @@ game.RunService.RenderStepped:Connect(function()
                         b:Remove()
                     end)()
                 end
-                if ArsoniaTable.Visuals.ESP.Health then
+                if ArsenalBFTable.Visuals.ESP.Health then
                     local healthnum=v.NRPBS.Health.Value
                     local maxhealth=v.NRPBS.MaxHealth.Value
                     local c=Drawing.new("Quad")
                     c.Visible=true
-                    c.Color=ArsoniaTable.Visuals.ESP.Color
+                    c.Color=ArsenalBFTable.Visuals.ESP.Color
                     c.Thickness=1
                     c.Transparency=1
                     c.Filled=false
@@ -2206,23 +2206,23 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Visuals Main RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Visuals.Main.Enabled then
+    if ArsenalBFTable.Visuals.Main.Enabled then
         for _,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.GUI.Crosshairs.Crosshair:GetChildren())do
             if v.Name~="Center1"then
-                v.BackgroundColor3=ArsoniaTable.Visuals.Main.Crosshaircol
+                v.BackgroundColor3=ArsenalBFTable.Visuals.Main.Crosshaircol
             end
         end
         game.Workspace.CurrentCamera.CFrame=
         game.Workspace.CurrentCamera.CFrame*
-        CFrame.new(ArsoniaTable.Visuals.Main.CameraoffsetX,ArsoniaTable.Visuals.Main.CameraoffsetY,ArsoniaTable.Visuals.Main.CameraoffsetZ)
-        if ArsoniaTable.Visuals.Main.Antiflash then
+        CFrame.new(ArsenalBFTable.Visuals.Main.CameraoffsetX,ArsenalBFTable.Visuals.Main.CameraoffsetY,ArsenalBFTable.Visuals.Main.CameraoffsetZ)
+        if ArsenalBFTable.Visuals.Main.Antiflash then
             if game.Players.LocalPlayer.PlayerGui.GUI.Black.Size~=UDim2.new()then
                 game.Players.LocalPlayer.PlayerGui.GUI.Black.Size=UDim2.new()
             end
         elseif game.Players.LocalPlayer.PlayerGui.GUI.Black.Size~=UDim2.new(2,0,2,0)then
             game.Players.LocalPlayer.PlayerGui.GUI.Black.Size=UDim2.new(2,0,2,0)
         end
-        if ArsoniaTable.Visuals.Main.Xray then
+        if ArsenalBFTable.Visuals.Main.Xray then
             if game.Workspace:FindFirstChild("Map")then
                 if not(game.ReplicatedStorage.wkspc.Status.RoundOver.Value or game.ReplicatedStorage.wkspc.Status.Preparation.Value)then
                     if not game.Workspace.Map:FindFirstChild("Xcum")then
@@ -2238,7 +2238,7 @@ game.RunService.RenderStepped:Connect(function()
                                         a.Value=v.Transparency
                                         a.Name="Transcock"
                                     end
-                                    v.Transparency=v.Transparency+ArsoniaTable.Visuals.Main.XrayTrans
+                                    v.Transparency=v.Transparency+ArsenalBFTable.Visuals.Main.XrayTrans
                                 end
                             end
                         end
@@ -2254,8 +2254,8 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Visuals Viewmodel RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Visuals.Viewmodel.Enabled then
-        if ArsoniaTable.Visuals.Viewmodel.Gunchams then
+    if ArsenalBFTable.Visuals.Viewmodel.Enabled then
+        if ArsenalBFTable.Visuals.Viewmodel.Gunchams then
             if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
                 if not game.Workspace.CurrentCamera.Arms:FindFirstChild("AnalBeads")then
                     local a=Instance.new("Folder")
@@ -2265,10 +2265,10 @@ game.RunService.RenderStepped:Connect(function()
                         if v.Name~="CSSArms"then
                             if v:IsA("BasePart")then
                                 if v.Transparency~=1 then
-                                    v.Color=ArsoniaTable.Visuals.Viewmodel.GunchamsCol
-                                    v.Reflectance=ArsoniaTable.Visuals.Viewmodel.GunchamsRefl
-                                    v.Transparency=ArsoniaTable.Visuals.Viewmodel.GunchamsTrans
-                                    v.Material=Enum.Material[ArsoniaTable.Visuals.Viewmodel.GunchamsMat]
+                                    v.Color=ArsenalBFTable.Visuals.Viewmodel.GunchamsCol
+                                    v.Reflectance=ArsenalBFTable.Visuals.Viewmodel.GunchamsRefl
+                                    v.Transparency=ArsenalBFTable.Visuals.Viewmodel.GunchamsTrans
+                                    v.Material=Enum.Material[ArsenalBFTable.Visuals.Viewmodel.GunchamsMat]
                                 end
                             end
                             if v:IsA("MeshPart")then
@@ -2276,10 +2276,10 @@ game.RunService.RenderStepped:Connect(function()
                             end
                             for _,c in pairs(v:GetDescendants())do
                                 if c:IsA("BasePart")then
-                                    c.Color=ArsoniaTable.Visuals.Viewmodel.GunchamsCol
-                                    c.Reflectance=ArsoniaTable.Visuals.Viewmodel.GunchamsRefl
-                                    c.Transparency=ArsoniaTable.Visuals.Viewmodel.GunchamsTrans
-                                    c.Material=Enum.Material[ArsoniaTable.Visuals.Viewmodel.GunchamsMat]
+                                    c.Color=ArsenalBFTable.Visuals.Viewmodel.GunchamsCol
+                                    c.Reflectance=ArsenalBFTable.Visuals.Viewmodel.GunchamsRefl
+                                    c.Transparency=ArsenalBFTable.Visuals.Viewmodel.GunchamsTrans
+                                    c.Material=Enum.Material[ArsenalBFTable.Visuals.Viewmodel.GunchamsMat]
                                 end
                                 if c:IsA("MeshPart")then
                                     c.TextureID=""
@@ -2293,7 +2293,7 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Visuals.Viewmodel.Armchams then
+        if ArsenalBFTable.Visuals.Viewmodel.Armchams then
             if game.Workspace.CurrentCamera:FindFirstChild("Arms")then
                 if not game.Workspace.CurrentCamera.Arms.CSSArms:FindFirstChild("AnalSex")then
                     local a=Instance.new("Folder")
@@ -2302,8 +2302,8 @@ game.RunService.RenderStepped:Connect(function()
                     for _,v in pairs(game.Workspace.CurrentCamera.Arms.CSSArms:GetDescendants())do
                         if v:IsA("BasePart")then
                             if v.Transparency~=1 then
-                                v.Color=ArsoniaTable.Visuals.Viewmodel.ArmchamsCol
-                                v.Transparency=ArsoniaTable.Visuals.Viewmodel.ArmchamsTrans
+                                v.Color=ArsenalBFTable.Visuals.Viewmodel.ArmchamsCol
+                                v.Transparency=ArsenalBFTable.Visuals.Viewmodel.ArmchamsTrans
                             end
                         elseif v:IsA("SpecialMesh")then
                             v.TextureId=""
@@ -2318,37 +2318,37 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Visuals World Ambience RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Visuals.Worldambience.Enabled then
-        if game.Lighting.Ambient~=ArsoniaTable.Visuals.Worldambience.Ambience then
-            game.Lighting.Ambient=ArsoniaTable.Visuals.Worldambience.Ambience
+    if ArsenalBFTable.Visuals.Worldambience.Enabled then
+        if game.Lighting.Ambient~=ArsenalBFTable.Visuals.Worldambience.Ambience then
+            game.Lighting.Ambient=ArsenalBFTable.Visuals.Worldambience.Ambience
         end
-        if game.Lighting.OutdoorAmbient~=ArsoniaTable.Visuals.Worldambience.Ambience then
-            game.Lighting.OutdoorAmbient=ArsoniaTable.Visuals.Worldambience.Ambience
+        if game.Lighting.OutdoorAmbient~=ArsenalBFTable.Visuals.Worldambience.Ambience then
+            game.Lighting.OutdoorAmbient=ArsenalBFTable.Visuals.Worldambience.Ambience
         end
-        if game.Lighting.Brightness~=ArsoniaTable.Visuals.Worldambience.Brightness then
-            game.Lighting.Brightness=ArsoniaTable.Visuals.Worldambience.Brightness
+        if game.Lighting.Brightness~=ArsenalBFTable.Visuals.Worldambience.Brightness then
+            game.Lighting.Brightness=ArsenalBFTable.Visuals.Worldambience.Brightness
         end
-        if game.Lighting.ClockTime~=ArsoniaTable.Visuals.Worldambience.Time then
-            game.Lighting.ClockTime=ArsoniaTable.Visuals.Worldambience.Time
+        if game.Lighting.ClockTime~=ArsenalBFTable.Visuals.Worldambience.Time then
+            game.Lighting.ClockTime=ArsenalBFTable.Visuals.Worldambience.Time
         end
     end
 end)
 --Aimbot Silent Aim RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Aimbot.Silentaim.Enabled then
-        ArsoniaTable.Variables.__SilentAimTarget=nil
+    if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+        ArsenalBFTable.Variables.__SilentAimTarget=nil
         local a
         local b=math.huge
-        if ArsoniaTable.Aimbot.Silentaim.Ignorefov then
-            if ArsoniaTable.Variables.TargetableParts[ArsoniaTable.Aimbot.Silentaim.Target][1]then
-                for _,v in pairs(ArsoniaTable.Variables.TargetableParts[ArsoniaTable.Aimbot.Silentaim.Target])do
+        if ArsenalBFTable.Aimbot.Silentaim.Ignorefov then
+            if ArsenalBFTable.Variables.TargetableParts[ArsenalBFTable.Aimbot.Silentaim.Target][1]then
+                for _,v in pairs(ArsenalBFTable.Variables.TargetableParts[ArsenalBFTable.Aimbot.Silentaim.Target])do
                     if b>(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Position).Magnitude then
                         a=v
                         b=(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Position).Magnitude
                     end
                 end
-            elseif not ArsoniaTable.Aimbot.Silentaim.Onlytarget then
-                for _,v in pairs(ArsoniaTable.Variables.TargetableParts)do
+            elseif not ArsenalBFTable.Aimbot.Silentaim.Onlytarget then
+                for _,v in pairs(ArsenalBFTable.Variables.TargetableParts)do
                     for _,c in pairs(v)do
                         if b>(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-c.Position).Magnitude then
                             a=c
@@ -2365,14 +2365,14 @@ game.RunService.RenderStepped:Connect(function()
             circ.Thickness=2.5
             circ.Transparency=1
             circ.NumSides=100
-            circ.Radius=ArsoniaTable.Aimbot.Silentaim.Fov
+            circ.Radius=ArsenalBFTable.Aimbot.Silentaim.Fov
             coroutine.wrap(function()
                 game.RunService.RenderStepped:wait()
                 circ:Remove()
             end)()
             local test_anal=false
-            for _,v in pairs(ArsoniaTable.Variables.TargetableParts[ArsoniaTable.Aimbot.Silentaim.Target])do
-                if(Vector2.new(game.Workspace.CurrentCamera:WorldToScreenPoint(v.Position).X,game.Workspace.CurrentCamera:WorldToScreenPoint(v.Position).Y)-Vector2.new(game.Players.LocalPlayer:GetMouse().X,game.Players.LocalPlayer:GetMouse().Y)).Magnitude<=ArsoniaTable.Aimbot.Silentaim.Fov then
+            for _,v in pairs(ArsenalBFTable.Variables.TargetableParts[ArsenalBFTable.Aimbot.Silentaim.Target])do
+                if(Vector2.new(game.Workspace.CurrentCamera:WorldToScreenPoint(v.Position).X,game.Workspace.CurrentCamera:WorldToScreenPoint(v.Position).Y)-Vector2.new(game.Players.LocalPlayer:GetMouse().X,game.Players.LocalPlayer:GetMouse().Y)).Magnitude<=ArsenalBFTable.Aimbot.Silentaim.Fov then
                     if b>(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Position).Magnitude then
                         a=v
                         b=(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Position).Magnitude
@@ -2380,12 +2380,12 @@ game.RunService.RenderStepped:Connect(function()
                     end
                 end
             end
-            if not test_anal and not ArsoniaTable.Aimbot.Silentaim.Onlytarget then
-                for _,v in pairs(ArsoniaTable.Variables.TargetableParts)do
+            if not test_anal and not ArsenalBFTable.Aimbot.Silentaim.Onlytarget then
+                for _,v in pairs(ArsenalBFTable.Variables.TargetableParts)do
                     for _,c in pairs(v)do
                         local _,d=game.Workspace.CurrentCamera:WorldToScreenPoint(c.Position)
                         if d then
-                            if(Vector2.new(game.Workspace.CurrentCamera:WorldToScreenPoint(c.Position).X,game.Workspace.CurrentCamera:WorldToScreenPoint(c.Position).Y)-Vector2.new(game.Players.LocalPlayer:GetMouse().X,game.Players.LocalPlayer:GetMouse().Y)).Magnitude<=ArsoniaTable.Aimbot.Silentaim.Fov then
+                            if(Vector2.new(game.Workspace.CurrentCamera:WorldToScreenPoint(c.Position).X,game.Workspace.CurrentCamera:WorldToScreenPoint(c.Position).Y)-Vector2.new(game.Players.LocalPlayer:GetMouse().X,game.Players.LocalPlayer:GetMouse().Y)).Magnitude<=ArsenalBFTable.Aimbot.Silentaim.Fov then
                                 if b>(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-c.Position).Magnitude then
                                     a=c
                                     b=(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-c.Position).Magnitude
@@ -2396,15 +2396,15 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        ArsoniaTable.Variables.__SilentAimTarget=a
-        if ArsoniaTable.Aimbot.Silentaim.Fakelock then
-            ArsoniaTable.Variables.EngluarFix=nil
-            if ArsoniaTable.Variables.__SilentAimTarget then
-                ArsoniaTable.Variables.EngluarFix=Vector3.new(CFrame.new(game.Players.LocalPlayer.Character.Head.Position,ArsoniaTable.Variables.__SilentAimTarget.Position):ToEulerAnglesYXZ())
-                if not ArsoniaTable.Player.Anti_Aim.Enabled then
+        ArsenalBFTable.Variables.__SilentAimTarget=a
+        if ArsenalBFTable.Aimbot.Silentaim.Fakelock then
+            ArsenalBFTable.Variables.EngluarFix=nil
+            if ArsenalBFTable.Variables.__SilentAimTarget then
+                ArsenalBFTable.Variables.EngluarFix=Vector3.new(CFrame.new(game.Players.LocalPlayer.Character.Head.Position,ArsenalBFTable.Variables.__SilentAimTarget.Position):ToEulerAnglesYXZ())
+                if not ArsenalBFTable.Player.Anti_Aim.Enabled then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                     CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*
-                    CFrame.Angles(0,ArsoniaTable.Variables.EngluarFix.Y,0)
+                    CFrame.Angles(0,ArsenalBFTable.Variables.EngluarFix.Y,0)
                 end
             end
         end
@@ -2412,55 +2412,55 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Aimbot Backtrack RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Aimbot.Backtrack.Enabled then
-        if ArsoniaTable.Aimbot.Backtrack.Target~="All"then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
-                for _,c in pairs(ArsoniaTable.Variables.R6TR15[ArsoniaTable.Aimbot.Backtrack.Target])do
+    if ArsenalBFTable.Aimbot.Backtrack.Enabled then
+        if ArsenalBFTable.Aimbot.Backtrack.Target~="All"then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
+                for _,c in pairs(ArsenalBFTable.Variables.R6TR15[ArsenalBFTable.Aimbot.Backtrack.Target])do
                     if v.Character:FindFirstChild(c)then
                         local part=v.Character[c]
                         local a=Instance.new("Part")
                         a.Parent=part
                         a.Size=part.Size
-                        a.Color=ArsoniaTable.Aimbot.Backtrack.Color
+                        a.Color=ArsenalBFTable.Aimbot.Backtrack.Color
                         a.CanCollide=false
                         a.Anchored=true
                         a.CFrame=part.CFrame
                         a.Name="Backtrack"
-                        a.Reflectance=ArsoniaTable.Aimbot.Backtrack.Refl
-                        a.Material=ArsoniaTable.Aimbot.Backtrack.Material
-                        table.insert(ArsoniaTable.Variables.Backtracks,a)
-                        if ArsoniaTable.Aimbot.Backtrack.Showall then
-                            if ArsoniaTable.Visuals.ESP.Enabled and ArsoniaTable.Visuals.ESP.BacktrackChams then
+                        a.Reflectance=ArsenalBFTable.Aimbot.Backtrack.Refl
+                        a.Material=ArsenalBFTable.Aimbot.Backtrack.Material
+                        table.insert(ArsenalBFTable.Variables.Backtracks,a)
+                        if ArsenalBFTable.Aimbot.Backtrack.Showall then
+                            if ArsenalBFTable.Visuals.ESP.Enabled and ArsenalBFTable.Visuals.ESP.BacktrackChams then
                                 a.Transparency=1
                             else
-                                a.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                                a.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                             end
                         else
                             a.Transparency=1
                         end
                         local b=Instance.new("BoxHandleAdornment")
-                        if ArsoniaTable.Visuals.ESP.Enabled and ArsoniaTable.Visuals.ESP.BacktrackChams then
+                        if ArsenalBFTable.Visuals.ESP.Enabled and ArsenalBFTable.Visuals.ESP.BacktrackChams then
                             b.Size=a.Size
                             b.Parent=game.CoreGui
                             b.AlwaysOnTop=true
                             b.Adornee=a
                             b.ZIndex=0
-                            if ArsoniaTable.Aimbot.Backtrack.Showall then
-                                b.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                            if ArsenalBFTable.Aimbot.Backtrack.Showall then
+                                b.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                             else
                                 b.Transparency=1
                             end
-                            b.Color3=ArsoniaTable.Aimbot.Backtrack.Color
+                            b.Color3=ArsenalBFTable.Aimbot.Backtrack.Color
                         else
                             b:Destroy()
                         end
                         coroutine.wrap(function()
-                            wait(ArsoniaTable.Aimbot.Backtrack.Lifetime)
+                            wait(ArsenalBFTable.Aimbot.Backtrack.Lifetime)
                             game.RunService.RenderStepped:Wait()
-                            if not(ArsoniaTable.Visuals.ESP.Enabled and ArsoniaTable.Visuals.ESP.BacktrackChams)then
-                                a.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                            if not(ArsenalBFTable.Visuals.ESP.Enabled and ArsenalBFTable.Visuals.ESP.BacktrackChams)then
+                                a.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                             end
-                            b.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                            b.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                             game.RunService.RenderStepped:Wait()
                             a:Destroy()
                             b:Destroy()
@@ -2473,27 +2473,27 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Aimbot Hitboxes RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Aimbot.Hitboxes.Enabled then
-        for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
-            for _,c in pairs(ArsoniaTable.Variables.R6TR15[ArsoniaTable.Aimbot.Hitboxes.Target])do
+    if ArsenalBFTable.Aimbot.Hitboxes.Enabled then
+        for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
+            for _,c in pairs(ArsenalBFTable.Variables.R6TR15[ArsenalBFTable.Aimbot.Hitboxes.Target])do
                 if v.Character:FindFirstChild(c)then
                     local part=v.Character[c]
                     local a=Instance.new("Part")
                     a.Name="Backtrack"
                     a.Parent=part
-                    if ArsoniaTable.Aimbot.Hitboxes.Sizetype=="Absolute"then
-                        a.Size=Vector3.new(ArsoniaTable.Aimbot.Hitboxes.Size,ArsoniaTable.Aimbot.Hitboxes.Size,ArsoniaTable.Aimbot.Hitboxes.Size)
+                    if ArsenalBFTable.Aimbot.Hitboxes.Sizetype=="Absolute"then
+                        a.Size=Vector3.new(ArsenalBFTable.Aimbot.Hitboxes.Size,ArsenalBFTable.Aimbot.Hitboxes.Size,ArsenalBFTable.Aimbot.Hitboxes.Size)
                     else
-                        a.Size=part.Size+Vector3.new(ArsoniaTable.Aimbot.Hitboxes.Size,ArsoniaTable.Aimbot.Hitboxes.Size,ArsoniaTable.Aimbot.Hitboxes.Size)
+                        a.Size=part.Size+Vector3.new(ArsenalBFTable.Aimbot.Hitboxes.Size,ArsenalBFTable.Aimbot.Hitboxes.Size,ArsenalBFTable.Aimbot.Hitboxes.Size)
                     end
-                    a.Color=ArsoniaTable.Aimbot.Hitboxes.Color
+                    a.Color=ArsenalBFTable.Aimbot.Hitboxes.Color
                     a.CanCollide=false
                     a.Anchored=true
                     a.CFrame=part.CFrame
-                    a.Reflectance=ArsoniaTable.Aimbot.Hitboxes.Refl
-                    a.Material=ArsoniaTable.Aimbot.Hitboxes.Material
-                    a.Transparency=ArsoniaTable.Aimbot.Hitboxes.Trans
-                    table.insert(ArsoniaTable.Variables.Backtracks,a)
+                    a.Reflectance=ArsenalBFTable.Aimbot.Hitboxes.Refl
+                    a.Material=ArsenalBFTable.Aimbot.Hitboxes.Material
+                    a.Transparency=ArsenalBFTable.Aimbot.Hitboxes.Trans
+                    table.insert(ArsenalBFTable.Variables.Backtracks,a)
                     coroutine.wrap(function()
                         game.RunService.RenderStepped:Wait()
                         a:Destroy()
@@ -2505,12 +2505,12 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Combat Main RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Combat.Main.Enabled then
-        if ArsoniaTable.Combat.Main.Headstompaura then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
-                if ArsoniaTable.Combat.Main.HeadstompauraType=="Near Death + TP"then
+    if ArsenalBFTable.Combat.Main.Enabled then
+        if ArsenalBFTable.Combat.Main.Headstompaura then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
+                if ArsenalBFTable.Combat.Main.HeadstompauraType=="Near Death + TP"then
                     if v.NRPBS.Health.Value~=1 then
-                        if not ArsoniaTable.Variables.Functions.IsHackula()then
+                        if not ArsenalBFTable.Variables.Functions.IsHackula()then
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                             v.Character.HumanoidRootPart.CFrame+
                             Vector3.new(0,4.5,0)
@@ -2523,9 +2523,9 @@ game.RunService.RenderStepped:Connect(function()
                             break
                         end
                     end
-                elseif ArsoniaTable.Combat.Main.HeadstompauraType=="TP"then
+                elseif ArsenalBFTable.Combat.Main.HeadstompauraType=="TP"then
                     if v.NRPBS.Health.Value~=1 then
-                        if not ArsoniaTable.Variables.Functions.IsHackula()then
+                        if not ArsenalBFTable.Variables.Functions.IsHackula()then
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                             v.Character.HumanoidRootPart.CFrame+
                             Vector3.new(0,4.5,0)
@@ -2540,10 +2540,10 @@ game.RunService.RenderStepped:Connect(function()
                     end
                 else
                     if(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).Magnitude<50 then
-                        if ArsoniaTable.Combat.Main.HeadstompauraType=="Basic"then
-                            game.ReplicatedStorage.Events.FallDamage:FireServer(ArsoniaTable.Combat.Main.HeadstompauraVal/4,v.Character.Hitbox)
+                        if ArsenalBFTable.Combat.Main.HeadstompauraType=="Basic"then
+                            game.ReplicatedStorage.Events.FallDamage:FireServer(ArsenalBFTable.Combat.Main.HeadstompauraVal/4,v.Character.Hitbox)
                             break
-                        elseif ArsoniaTable.Combat.Main.HeadstompauraType=="Near Death"then
+                        elseif ArsenalBFTable.Combat.Main.HeadstompauraType=="Near Death"then
                             if v.NRPBS.Health.Value~=1 then
                                 game.ReplicatedStorage.Events.FallDamage:FireServer(math.clamp((v.NRPBS.Health.Value-1)/4,0,600),v.Character.Hitbox)
                                 break
@@ -2553,28 +2553,28 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Combat.Main.Killaura then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+        if ArsenalBFTable.Combat.Main.Killaura then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                 if(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).Magnitude<50 then
                     game.ReplicatedStorage.Events.Burn:FireServer(
                         v.Character.Head,
-                        game.ReplicatedStorage.Weapons[ArsoniaTable.Combat.Main.KillauraMethod],
+                        game.ReplicatedStorage.Weapons[ArsenalBFTable.Combat.Main.KillauraMethod],
                         1,
                         v.Character.Head.Position+Vector3.new(math.random(),math.random(),math.random()))
                 end
             end
         end
-        if ArsoniaTable.Combat.Main.ProjectileAura then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+        if ArsenalBFTable.Combat.Main.ProjectileAura then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                 if(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).Magnitude<50 then
                     local Partpos=v.Character.Head.Position+Vector3.new(math.random(),math.random(),math.random())
                     local Packedstring=string.pack(
-                        ArsoniaTable.Variables.Hitparter,
+                        ArsenalBFTable.Variables.Hitparter,
                         Partpos.X,
                         Partpos.Y,
                         Partpos.Z,
-                        ArsoniaTable.Combat.Main.ProjectileAuraMethod,
-                        ArsoniaTable.Combat.Main.ProjectileAuraHead,--headshot=1 none=0
+                        ArsenalBFTable.Combat.Main.ProjectileAuraMethod,
+                        ArsenalBFTable.Combat.Main.ProjectileAuraHead,--headshot=1 none=0
                         0,--unknown
                         0,--backstab=1 none=0
                         0,--forcecrit=1 none=0
@@ -2584,25 +2584,25 @@ game.RunService.RenderStepped:Connect(function()
                         0,--Player Distance
                         1,--Current Spell
                         0,--scope=1 noscope=0
-                        ArsoniaTable.Combat.Main.ProjectileAuraAir--aircrit=1 none=0
+                        ArsenalBFTable.Combat.Main.ProjectileAuraAir--aircrit=1 none=0
                     )
                     game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,Packedstring)
                 end
             end
         end
-        if ArsoniaTable.Combat.Main.Killall then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+        if ArsenalBFTable.Combat.Main.Killall then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                 --[[game.ReplicatedStorage.Events.Burn:FireServer(
                     v.Character.Head,
-                    ArsoniaTable.Variables.MaxDamage,
+                    ArsenalBFTable.Variables.MaxDamage,
                     1,
                     v.Character.Head.Position+Vector3.new(math.random(),math.random(),math.random()))
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                 v.Character.HumanoidRootPart.CFrame]]
                 local Partpos=v.Character.Head.Position+Vector3.new(math.random(),math.random(),math.random())
-                if ArsoniaTable.Combat.Main.KillallMethod=="Max Crits"then
+                if ArsenalBFTable.Combat.Main.KillallMethod=="Max Crits"then
                     local Packedstring=string.pack(
-                        ArsoniaTable.Variables.Hitparter,
+                        ArsenalBFTable.Variables.Hitparter,
                         Partpos.X,
                         Partpos.Y,
                         Partpos.Z,
@@ -2620,9 +2620,9 @@ game.RunService.RenderStepped:Connect(function()
                         1--aircrit=1 none=0
                     )
                     game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,Packedstring)
-                elseif ArsoniaTable.Combat.Main.KillallMethod=="Spoofed"then
+                elseif ArsenalBFTable.Combat.Main.KillallMethod=="Spoofed"then
                     local Packedstring=string.pack(
-                        ArsoniaTable.Variables.Hitparter,
+                        ArsenalBFTable.Variables.Hitparter,
                         Partpos.X,
                         Partpos.Y,
                         Partpos.Z,
@@ -2640,13 +2640,13 @@ game.RunService.RenderStepped:Connect(function()
                         0--aircrit=1 none=0
                     )
                     game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,Packedstring)
-                elseif ArsoniaTable.Combat.Main.KillallMethod=="Equipped"then
+                elseif ArsenalBFTable.Combat.Main.KillallMethod=="Equipped"then
                     local Packedstring=string.pack(
-                        ArsoniaTable.Variables.Hitparter,
+                        ArsenalBFTable.Variables.Hitparter,
                         Partpos.X,
                         Partpos.Y,
                         Partpos.Z,
-                        tostring(ArsoniaTable.Variables.Killmethods.Equipped),
+                        tostring(ArsenalBFTable.Variables.Killmethods.Equipped),
                         0,--headshot=1 none=0
                         0,--unknown
                         0,--backstab=1 none=0
@@ -2663,22 +2663,22 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Combat.Main.Deathkill then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
-                if not v.Character:FindFirstChild("__Arsonia_Beta")then
+        if ArsenalBFTable.Combat.Main.Deathkill then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
+                if not v.Character:FindFirstChild("__ArsenalBF_Beta")then
                     local a=Instance.new("Folder")
-                    a.Name="__Arsonia_Beta"
+                    a.Name="__ArsenalBF_Beta"
                     a.Parent=v.Character
                     v.Character.ChildAdded:Connect(function(x)
                         if tostring(x)=="IKilled"then
-                            if ArsoniaTable.Combat.Main.Deathkill and ArsoniaTable.Combat.Main.Enabled then
+                            if ArsenalBFTable.Combat.Main.Deathkill and ArsenalBFTable.Combat.Main.Enabled then
                                 if x.Value==game.Players.LocalPlayer.Name then
                                     repeat 
                                         wait()
                                         local Partpos=v.Character.Head.Position+Vector3.new(math.random(),math.random(),math.random())
-                                        if ArsoniaTable.Combat.Main.DeathkillMethod=="Max Crits"then
+                                        if ArsenalBFTable.Combat.Main.DeathkillMethod=="Max Crits"then
                                             local Packedstring=string.pack(
-                                                ArsoniaTable.Variables.Hitparter,
+                                                ArsenalBFTable.Variables.Hitparter,
                                                 Partpos.X,
                                                 Partpos.Y,
                                                 Partpos.Z,
@@ -2696,9 +2696,9 @@ game.RunService.RenderStepped:Connect(function()
                                                 1--aircrit=1 none=0
                                             )
                                             game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,Packedstring)
-                                        elseif ArsoniaTable.Combat.Main.DeathkillMethod=="Spoofed"then
+                                        elseif ArsenalBFTable.Combat.Main.DeathkillMethod=="Spoofed"then
                                             local Packedstring=string.pack(
-                                                ArsoniaTable.Variables.Hitparter,
+                                                ArsenalBFTable.Variables.Hitparter,
                                                 Partpos.X,
                                                 Partpos.Y,
                                                 Partpos.Z,
@@ -2729,33 +2729,33 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Combat Gunmods RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Combat.Gunmods.Enabled then
-        if ArsoniaTable.Combat.Gunmods.Firemode~="Current"then
-            if ArsoniaTable.Combat.Gunmods.Firemode=="Automatic"then
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
+        if ArsenalBFTable.Combat.Gunmods.Firemode~="Current"then
+            if ArsenalBFTable.Combat.Gunmods.Firemode=="Automatic"then
                 getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).mode="automatic"
             else
                 getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).mode="__nilvalue"
             end
         end
-        if ArsoniaTable.Combat.Gunmods.Autospool then
+        if ArsenalBFTable.Combat.Gunmods.Autospool then
             if tostring(game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value)=="Minigun"then
                 game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.Held2.Value=true
             end
         end
-        if ArsoniaTable.Combat.Gunmods.Infcharge then
+        if ArsenalBFTable.Combat.Gunmods.Infcharge then
             game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.overheat.Value=0
         end
     end
 end)
 --Misc Main RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Misc.Main.Enabled then
-        if ArsoniaTable.Misc.Main.Antimonkey then
+    if ArsenalBFTable.Misc.Main.Enabled then
+        if ArsenalBFTable.Misc.Main.Antimonkey then
             if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Donkey")then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.Donkey:Destroy()
             end
         end
-        if ArsoniaTable.Misc.Main.Autopickupbanana then
+        if ArsenalBFTable.Misc.Main.Autopickupbanana then
             if game.Workspace:FindFirstChild("Debris")then
                 if game.Workspace.Debris.Bananas then
                     for _,v in pairs(game.Workspace.Debris.Bananas:GetChildren())do
@@ -2767,7 +2767,7 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Misc.Main.Autopickupball then
+        if ArsenalBFTable.Misc.Main.Autopickupball then
             if game.Workspace:FindFirstChild("Debris")then
                 if game.Workspace.Debris:FindFirstChild("Oddball")then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
@@ -2775,7 +2775,7 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Misc.Main.Removemapborders then
+        if ArsenalBFTable.Misc.Main.Removemapborders then
             if not game.ReplicatedStorage.wkspc.Status.Preparation.Value and not game.ReplicatedStorage.wkspc.Status.RoundOver.Value then
                 if game.Workspace:FindFirstChild("Map")then
                     if game.Workspace.Map:FindFirstChild("Clips")then
@@ -2801,18 +2801,18 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Misc.Main.Devicespoofer=="Wii Steering Wheel"then
+        if ArsenalBFTable.Misc.Main.Devicespoofer=="Wii Steering Wheel"then
             local a={"Touch","MouseButton1","Gamepad1","none"}
             game.ReplicatedStorage.Events.CoolNewRemote:FireServer(a[math.random(1,#a)])
         end
-        if ArsoniaTable.Misc.Main.Pingspoofer=="Random"then
+        if ArsenalBFTable.Misc.Main.Pingspoofer=="Random"then
             local a={0,.25,.5}
             game.ReplicatedStorage.Events.UpdatePing:FireServer(a[math.random(1,#a)])
         end
-        if ArsoniaTable.Misc.Main.Fastrespawn then
+        if ArsenalBFTable.Misc.Main.Fastrespawn then
             getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).reviveme=true
         end
-        if ArsoniaTable.Misc.Main.Autodeploy then
+        if ArsenalBFTable.Misc.Main.Autodeploy then
             if not game.ReplicatedStorage.wkspc.Status.Preparation.Value and not game.ReplicatedStorage.wkspc.Status.RoundOver.Value then
                 if game:GetService("Players").LocalPlayer.Status.Team.Value=="Spectator"then
                     local teamto="TRC"
@@ -2857,7 +2857,7 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Misc.Main.Antiteamleader then
+        if ArsenalBFTable.Misc.Main.Antiteamleader then
             if game.Players.LocalPlayer:FindFirstChild("TeamLeader")then
                 game.Players.LocalPlayer.TeamLeader:Destroy()
             end
@@ -2866,9 +2866,9 @@ game.RunService.RenderStepped:Connect(function()
 end)
 --Misc Trolling RS
 game.RunService.RenderStepped:Connect(function()
-    if ArsoniaTable.Misc.Trolling.Enabled then
-        if ArsoniaTable.Misc.Trolling.Flingaura then
-            for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+    if ArsenalBFTable.Misc.Trolling.Enabled then
+        if ArsenalBFTable.Misc.Trolling.Flingaura then
+            for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                 if(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).Magnitude<50 then
                     game.ReplicatedStorage.Events.Burn:FireServer(
                         v.Character.Head,
@@ -2878,21 +2878,21 @@ game.RunService.RenderStepped:Connect(function()
                 end
             end
         end
-        if ArsoniaTable.Misc.Trolling.Deleteball then
+        if ArsenalBFTable.Misc.Trolling.Deleteball then
             if tostring(game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value)=="OddBall"then
                 game:GetService("ReplicatedStorage").Events.ThrowBall:FireServer(
                     game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
                     Vector3.new(0,-math.huge,0))
             end
         end
-        if ArsoniaTable.Misc.Trolling.PlayerSurf then
+        if ArsenalBFTable.Misc.Trolling.PlayerSurf then
             local Raycock=Ray.new(
                 game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
                 Vector3.new(0,-5,0)
             )
-            local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsoniaTable.Variables.Functions.GetTrueIgnore())
+            local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsenalBFTable.Variables.Functions.GetTrueIgnore())
             if part then
-                for _,v in pairs(ArsoniaTable.Variables.Functions.GetPlayers())do
+                for _,v in pairs(ArsenalBFTable.Variables.Functions.GetPlayers())do
                     if part:IsDescendantOf(v.Character)then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
                         (game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame-
@@ -2924,78 +2924,78 @@ mt.__namecall=newcclosure(function(a,b,c,d,e,...)
     local method=getnamecallmethod()
     if tostring(method)=="FireServer"then
         if tostring(a)=="ControlTurn"then
-            if ArsoniaTable.Player.Anti_Aim.Enabled then
-                if not ArsoniaTable.Variables.Functions.IsRoundOver()then
-                    if ArsoniaTable.Player.Anti_Aim.Pitch then
-                        if ArsoniaTable.Player.Anti_Aim.PitchType=="Spinning"then
-                            ArsoniaTable.Variables.Pitch=ArsoniaTable.Variables.Pitch+ArsoniaTable.Player.Anti_Aim.PitchValue
-                            b=ArsoniaTable.Variables.Pitch
-                        elseif ArsoniaTable.Player.Anti_Aim.PitchType=="Offset"then
-                            b=b+ArsoniaTable.Player.Anti_Aim.PitchValue
-                        elseif ArsoniaTable.Player.Anti_Aim.PitchType=="Absolute"then
-                            b=ArsoniaTable.Player.Anti_Aim.PitchValue
-                        elseif ArsoniaTable.Player.Anti_Aim.PitchType=="Down"then
+            if ArsenalBFTable.Player.Anti_Aim.Enabled then
+                if not ArsenalBFTable.Variables.Functions.IsRoundOver()then
+                    if ArsenalBFTable.Player.Anti_Aim.Pitch then
+                        if ArsenalBFTable.Player.Anti_Aim.PitchType=="Spinning"then
+                            ArsenalBFTable.Variables.Pitch=ArsenalBFTable.Variables.Pitch+ArsenalBFTable.Player.Anti_Aim.PitchValue
+                            b=ArsenalBFTable.Variables.Pitch
+                        elseif ArsenalBFTable.Player.Anti_Aim.PitchType=="Offset"then
+                            b=b+ArsenalBFTable.Player.Anti_Aim.PitchValue
+                        elseif ArsenalBFTable.Player.Anti_Aim.PitchType=="Absolute"then
+                            b=ArsenalBFTable.Player.Anti_Aim.PitchValue
+                        elseif ArsenalBFTable.Player.Anti_Aim.PitchType=="Down"then
                             b=math.huge
-                        elseif ArsoniaTable.Player.Anti_Aim.PitchType=="Random"then
-                            b=math.rad(math.random(math.deg(ArsoniaTable.Player.Anti_Aim.PitchValue),-math.deg(ArsoniaTable.Player.Anti_Aim.PitchValue)))
-                        elseif ArsoniaTable.Player.Anti_Aim.PitchType=="Inverted"then
+                        elseif ArsenalBFTable.Player.Anti_Aim.PitchType=="Random"then
+                            b=math.rad(math.random(math.deg(ArsenalBFTable.Player.Anti_Aim.PitchValue),-math.deg(ArsenalBFTable.Player.Anti_Aim.PitchValue)))
+                        elseif ArsenalBFTable.Player.Anti_Aim.PitchType=="Inverted"then
                             b=-b
-                        elseif ArsoniaTable.Player.Anti_Aim.PitchType=="Frozen"then
-                            if ArsoniaTable.Variables.EngluarFix then
-                                ArsoniaTable.Variables.Pitch=ArsoniaTable.Variables.EngluarFix.X
+                        elseif ArsenalBFTable.Player.Anti_Aim.PitchType=="Frozen"then
+                            if ArsenalBFTable.Variables.EngluarFix then
+                                ArsenalBFTable.Variables.Pitch=ArsenalBFTable.Variables.EngluarFix.X
                             end
-                            b=ArsoniaTable.Variables.Pitch
+                            b=ArsenalBFTable.Variables.Pitch
                         end
                     end
-                    if ArsoniaTable.Player.Anti_Aim.CrouchPitch then
-                        if ArsoniaTable.Variables.Crouching then
-                            if ArsoniaTable.Player.Anti_Aim.CrouchPitchType=="Absolute"then
-                                b=ArsoniaTable.Player.Anti_Aim.CrouchPitchVal
-                            elseif ArsoniaTable.Player.Anti_Aim.CrouchPitchType=="Random"then
-                                b=math.rad(math.random(math.deg(ArsoniaTable.Player.Anti_Aim.CrouchPitchVal),-math.deg(ArsoniaTable.Player.Anti_Aim.CrouchPitchVal)))
+                    if ArsenalBFTable.Player.Anti_Aim.CrouchPitch then
+                        if ArsenalBFTable.Variables.Crouching then
+                            if ArsenalBFTable.Player.Anti_Aim.CrouchPitchType=="Absolute"then
+                                b=ArsenalBFTable.Player.Anti_Aim.CrouchPitchVal
+                            elseif ArsenalBFTable.Player.Anti_Aim.CrouchPitchType=="Random"then
+                                b=math.rad(math.random(math.deg(ArsenalBFTable.Player.Anti_Aim.CrouchPitchVal),-math.deg(ArsenalBFTable.Player.Anti_Aim.CrouchPitchVal)))
                             end
                         end
                     end
-                    if ArsoniaTable.Player.Anti_Aim.Torso then
-                        if ArsoniaTable.Player.Anti_Aim.TorsoType=="Offset"then
+                    if ArsenalBFTable.Player.Anti_Aim.Torso then
+                        if ArsenalBFTable.Player.Anti_Aim.TorsoType=="Offset"then
                             c=
                             (
                                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*
-                                CFrame.Angles(0,ArsoniaTable.Player.Anti_Aim.TorsoValue,0)
+                                CFrame.Angles(0,ArsenalBFTable.Player.Anti_Aim.TorsoValue,0)
                             ).LookVector
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="Down"then
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="Down"then
                             c=Vector3.new()
                             b=b*2
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="Sideways"then
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="Sideways"then
                             c=Vector3.new(0,1,0)
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="-Sideways"then
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="-Sideways"then
                             c=Vector3.new(0,-1,0)
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="Random"then
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="Random"then
                             c=Vector3.new(math.random(-10,10),math.random(-10,10),math.random(-10,10))
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="Spinning"then
-                            ArsoniaTable.Variables.TorsoYaw=ArsoniaTable.Variables.TorsoYaw-ArsoniaTable.Player.Anti_Aim.TorsoValue
-                            c=CFrame.Angles(0,ArsoniaTable.Variables.TorsoYaw,0).LookVector
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="Absolute"then
-                            c=CFrame.Angles(0,ArsoniaTable.Player.Anti_Aim.TorsoValue,0).LookVector
-                        elseif ArsoniaTable.Player.Anti_Aim.TorsoType=="Cam"then
-                            c=CFrame.Angles(0,ArsoniaTable.Variables.CamAngles[2],0).LookVector
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="Spinning"then
+                            ArsenalBFTable.Variables.TorsoYaw=ArsenalBFTable.Variables.TorsoYaw-ArsenalBFTable.Player.Anti_Aim.TorsoValue
+                            c=CFrame.Angles(0,ArsenalBFTable.Variables.TorsoYaw,0).LookVector
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="Absolute"then
+                            c=CFrame.Angles(0,ArsenalBFTable.Player.Anti_Aim.TorsoValue,0).LookVector
+                        elseif ArsenalBFTable.Player.Anti_Aim.TorsoType=="Cam"then
+                            c=CFrame.Angles(0,ArsenalBFTable.Variables.CamAngles[2],0).LookVector
                         end
                     end
                 end
             end
-            if ArsoniaTable.Aimbot.Silentaim.Enabled then
-                if ArsoniaTable.Aimbot.Silentaim.Fakelock then
-                    if ArsoniaTable.Variables.EngluarFix then
-                        b=ArsoniaTable.Variables.EngluarFix.X
+            if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+                if ArsenalBFTable.Aimbot.Silentaim.Fakelock then
+                    if ArsenalBFTable.Variables.EngluarFix then
+                        b=ArsenalBFTable.Variables.EngluarFix.X
                         c=nil
                     end
                 end
             end
         elseif tostring(a)=="CreateProjectile"then
-            if ArsoniaTable.Aimbot.Silentaim.Enabled then
-                if ArsoniaTable.Variables.__SilentAimTarget then
-                    if ArsoniaTable.Aimbot.Silentaim.Hitchance>=math.random(1,100)then
-                        d=ArsoniaTable.Variables.__SilentAimTarget.Position
+            if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+                if ArsenalBFTable.Variables.__SilentAimTarget then
+                    if ArsenalBFTable.Aimbot.Silentaim.Hitchance>=math.random(1,100)then
+                        d=ArsenalBFTable.Variables.__SilentAimTarget.Position
                         e=CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0))
                     end
                 end
@@ -3014,38 +3014,38 @@ mt.__namecall=newcclosure(function(a,b,c,d,e,...)
                 end
             end
         elseif tostring(a)=="CoolNewRemote"then
-            if ArsoniaTable.Misc.Main.Enabled then
-                if ArsoniaTable.Misc.Main.Devicespoofer=="Mobile"then
+            if ArsenalBFTable.Misc.Main.Enabled then
+                if ArsenalBFTable.Misc.Main.Devicespoofer=="Mobile"then
                     b="Touch"
-                elseif ArsoniaTable.Misc.Main.Devicespoofer=="PC"then
+                elseif ArsenalBFTable.Misc.Main.Devicespoofer=="PC"then
                     b="MouseButton1"
-                elseif ArsoniaTable.Misc.Main.Devicespoofer=="XBOX"then
+                elseif ArsenalBFTable.Misc.Main.Devicespoofer=="XBOX"then
                     b="Gamepad1"
-                elseif ArsoniaTable.Misc.Main.Devicespoofer=="None"then
+                elseif ArsenalBFTable.Misc.Main.Devicespoofer=="None"then
                     b="none"
                 end
             end
         elseif tostring(a)=="UpdatePing"then
-            if ArsoniaTable.Misc.Main.Enabled then
-                if ArsoniaTable.Misc.Main.Pingspoofer=="Green"then
+            if ArsenalBFTable.Misc.Main.Enabled then
+                if ArsenalBFTable.Misc.Main.Pingspoofer=="Green"then
                     b=0
-                elseif ArsoniaTable.Misc.Main.Pingspoofer=="Yellow"then
+                elseif ArsenalBFTable.Misc.Main.Pingspoofer=="Yellow"then
                     b=.25
-                elseif ArsoniaTable.Misc.Main.Pingspoofer=="Red"then
+                elseif ArsenalBFTable.Misc.Main.Pingspoofer=="Red"then
                     b=.5
                 end
             end
         elseif tostring(a)=="PlayerChatted"then
-            if ArsoniaTable.Misc.Main.Enabled then
-                if ArsoniaTable.Misc.Main.Doublechat then
+            if ArsenalBFTable.Misc.Main.Enabled then
+                if ArsenalBFTable.Misc.Main.Doublechat then
                     b=b.."\n: "..b
                 end
             end
         end
     elseif tostring(method)=="LoadAnimation"then
         if tostring(a)=="Guy"then
-            if ArsoniaTable.Combat.Gunmods.Enabled then
-                if ArsoniaTable.Combat.Gunmods.Forcebackstab then
+            if ArsenalBFTable.Combat.Gunmods.Enabled then
+                if ArsenalBFTable.Combat.Gunmods.Forcebackstab then
                     if tostring(b)=="fire"or tostring(b)=="fire2"or tostring(b)=="fire3"then
                         if b.Parent then
                             pcall(function()
@@ -3054,101 +3054,101 @@ mt.__namecall=newcclosure(function(a,b,c,d,e,...)
                         end
                     end
                 end
-                if ArsoniaTable.Combat.Gunmods.Enabled then
-                    if ArsoniaTable.Combat.Gunmods.Instantequip then
+                if ArsenalBFTable.Combat.Gunmods.Enabled then
+                    if ArsenalBFTable.Combat.Gunmods.Instantequip then
                         if string.find(string.lower(tostring(b)),"equip")then
-                            b=ArsoniaTable.Variables.Animations.NoAnimation
+                            b=ArsenalBFTable.Variables.Animations.NoAnimation
                         end
                     end
                 end
-                if ArsoniaTable.Combat.Gunmods.Instantreload then
+                if ArsenalBFTable.Combat.Gunmods.Instantreload then
                     if string.find(string.lower(tostring(b)),"reload")then
-                        b=ArsoniaTable.Variables.Animations.NoAnimation
+                        b=ArsenalBFTable.Variables.Animations.NoAnimation
                     end
                 end
             end
         end
     elseif tostring(method)=="Play"then
         if tostring(a)=="Fall"or tostring(a)=="Jump"then
-            if ArsoniaTable.Player.Misc.Enabled then
-                if ArsoniaTable.Player.Misc.Jumpremove then
+            if ArsenalBFTable.Player.Misc.Enabled then
+                if ArsenalBFTable.Player.Misc.Jumpremove then
                     a:AdjustSpeed(0)
                 end
             end
         elseif tostring(a)=="idle"then
-            if ArsoniaTable.Combat.Gunmods.Enabled then
-                if ArsoniaTable.Combat.Gunmods.Removesway then
+            if ArsenalBFTable.Combat.Gunmods.Enabled then
+                if ArsenalBFTable.Combat.Gunmods.Removesway then
                     a:AdjustSpeed(0)
                 end
             end
         elseif string.find(tostring(a),"fire")then
-            if ArsoniaTable.Combat.Gunmods.Enabled then
-                if ArsoniaTable.Combat.Gunmods.Removeonfire and not ArsoniaTable.Variables.IsKnife then
+            if ArsenalBFTable.Combat.Gunmods.Enabled then
+                if ArsenalBFTable.Combat.Gunmods.Removeonfire and not ArsenalBFTable.Variables.IsKnife then
                     a:AdjustSpeed(0)
                 end
-                if ArsoniaTable.Combat.Gunmods.RemoveonfireKnife and ArsoniaTable.Variables.IsKnife then
+                if ArsenalBFTable.Combat.Gunmods.RemoveonfireKnife and ArsenalBFTable.Variables.IsKnife then
                     a:AdjustSpeed(0)
                 end
             end
         elseif tostring(a)=="CrouchIdle"then
-            if ArsoniaTable.Player.Misc.Enabled then
+            if ArsenalBFTable.Player.Misc.Enabled then
                 if b==.4 then
-                    b=ArsoniaTable.Player.Misc.CrouchSpval
+                    b=ArsenalBFTable.Player.Misc.CrouchSpval
                 end
             end
         end
     elseif tostring(method)=="Stop"then
         if tostring(a)=="CrouchIdle"then
-            if ArsoniaTable.Player.Misc.Enabled then
+            if ArsenalBFTable.Player.Misc.Enabled then
                 if b==.4 then
-                    b=ArsoniaTable.Player.Misc.CrouchSpunval
+                    b=ArsenalBFTable.Player.Misc.CrouchSpunval
                 end
             end
         end
     elseif tostring(method)=="SetPrimaryPartCFrame"then
         if tostring(a)=="Arms"then
-            if ArsoniaTable.Combat.Gunmods.Enabled then
-                if ArsoniaTable.Combat.Gunmods.Removebob then
+            if ArsenalBFTable.Combat.Gunmods.Enabled then
+                if ArsenalBFTable.Combat.Gunmods.Removebob then
                     if not game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.ads.Value then
-                        if ArsoniaTable.Variables.IsAlive then
+                        if ArsenalBFTable.Variables.IsAlive then
                             if game.Players.LocalPlayer.CameraMode~=0 then
-                                b=game.Workspace.CurrentCamera.CFrame*CFrame.new(ArsoniaTable.Variables.Offset_GUN)
+                                b=game.Workspace.CurrentCamera.CFrame*CFrame.new(ArsenalBFTable.Variables.Offset_GUN)
                             end
                         end
                     end
                 end
             end
-            if ArsoniaTable.Visuals.Main.Enabled then
-                if ArsoniaTable.Visuals.Main.Anticrouch then
-                    if not ArsoniaTable.Visuals.Main.Anticrouch2 then
-                        b=b+Vector3.new(0,ArsoniaTable.Variables.CrouchOffset,0)
+            if ArsenalBFTable.Visuals.Main.Enabled then
+                if ArsenalBFTable.Visuals.Main.Anticrouch then
+                    if not ArsenalBFTable.Visuals.Main.Anticrouch2 then
+                        b=b+Vector3.new(0,ArsenalBFTable.Variables.CrouchOffset,0)
                     end
                 end
             end
-            if ArsoniaTable.Visuals.Main.Enabled then
-                b=b*CFrame.new(ArsoniaTable.Visuals.Main.ArmoffsetX,ArsoniaTable.Visuals.Main.ArmoffsetY,ArsoniaTable.Visuals.Main.ArmoffsetZ)
+            if ArsenalBFTable.Visuals.Main.Enabled then
+                b=b*CFrame.new(ArsenalBFTable.Visuals.Main.ArmoffsetX,ArsenalBFTable.Visuals.Main.ArmoffsetY,ArsenalBFTable.Visuals.Main.ArmoffsetZ)
             end
         end
     elseif tostring(method)=="FindPartOnRayWithIgnoreList"then
         local doeshit=false
-        if ArsoniaTable.Aimbot.Silentaim.Hitchance>=math.random(1,100)then
+        if ArsenalBFTable.Aimbot.Silentaim.Hitchance>=math.random(1,100)then
             doeshit=true
         end
-        if ArsoniaTable.Combat.Gunmods.Enabled then
-            if ArsoniaTable.Variables.Functions.GetPos1FromRay(b)==game.Workspace.CurrentCamera.CFrame.Position then
-                if ArsoniaTable.Combat.Gunmods.Baseballgun then
-                    ArsoniaTable.Variables.Functions.SummonBaseBall(ArsoniaTable.Combat.Gunmods.BaseballgunValue,ArsoniaTable.Combat.Gunmods.BaseballgunSpeed)
+        if ArsenalBFTable.Combat.Gunmods.Enabled then
+            if ArsenalBFTable.Variables.Functions.GetPos1FromRay(b)==game.Workspace.CurrentCamera.CFrame.Position then
+                if ArsenalBFTable.Combat.Gunmods.Baseballgun then
+                    ArsenalBFTable.Variables.Functions.SummonBaseBall(ArsenalBFTable.Combat.Gunmods.BaseballgunValue,ArsenalBFTable.Combat.Gunmods.BaseballgunSpeed)
                 end
-                if ArsoniaTable.Combat.Gunmods.Lasergun then
-                    ArsoniaTable.Variables.Functions.SummonLaser(ArsoniaTable.Combat.Gunmods.LasergunCol,ArsoniaTable.Combat.Gunmods.LasergunValue)
+                if ArsenalBFTable.Combat.Gunmods.Lasergun then
+                    ArsenalBFTable.Variables.Functions.SummonLaser(ArsenalBFTable.Combat.Gunmods.LasergunCol,ArsenalBFTable.Combat.Gunmods.LasergunValue)
                 end
-                if ArsoniaTable.Combat.Gunmods.ExplosiveBullets then
+                if ArsenalBFTable.Combat.Gunmods.ExplosiveBullets then
                     local Raycock=
                     Ray.new(
                         game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5,0)+Vector3.new(0,game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0),
                         game.Workspace.CurrentCamera.CFrame.LookVector*5000
                     )
-                    local part,pos=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsoniaTable.Variables.Functions.GetIgnore())
+                    local part,pos=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsenalBFTable.Variables.Functions.GetIgnore())
                     game:GetService("ReplicatedStorage").Events.ApplyGun:FireServer(
                         game:GetService("ReplicatedStorage").Weapons["Bomb"]
                     )
@@ -3164,12 +3164,12 @@ mt.__namecall=newcclosure(function(a,b,c,d,e,...)
                 end
             end
         end
-        if ArsoniaTable.Visuals.Bullettracers.Enabled then
-            if ArsoniaTable.Variables.Functions.GetPos1FromRay(b)==game.Workspace.CurrentCamera.CFrame.Position then
+        if ArsenalBFTable.Visuals.Bullettracers.Enabled then
+            if ArsenalBFTable.Variables.Functions.GetPos1FromRay(b)==game.Workspace.CurrentCamera.CFrame.Position then
                 local start=game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0)
                 local notend
-                if doeshit and ArsoniaTable.Variables.__SilentAimTarget then
-                    notend=ArsoniaTable.Variables.__SilentAimTarget.Position
+                if doeshit and ArsenalBFTable.Variables.__SilentAimTarget then
+                    notend=ArsenalBFTable.Variables.__SilentAimTarget.Position
                 else
                     local _,nooot=oldNamecall(a,b,c,d,e,...)
                     notend=nooot
@@ -3180,42 +3180,42 @@ mt.__namecall=newcclosure(function(a,b,c,d,e,...)
                 part.Anchored=true
                 part.CFrame=(CFrame.new(start,notend)+(CFrame.new(start,notend).LookVector*(start-notend).Magnitude/2))*CFrame.Angles(0,math.rad(90),0)
                 part.Shape="Cylinder"
-                part.Transparency=ArsoniaTable.Visuals.Bullettracers.Transparency
-                part.Material=ArsoniaTable.Visuals.Bullettracers.Material
-                part.Size=Vector3.new((start-notend).Magnitude,ArsoniaTable.Visuals.Bullettracers.Width,ArsoniaTable.Visuals.Bullettracers.Width)
-                part.Color=ArsoniaTable.Visuals.Bullettracers.Color
-                part.Reflectance=ArsoniaTable.Visuals.Bullettracers.Refl
+                part.Transparency=ArsenalBFTable.Visuals.Bullettracers.Transparency
+                part.Material=ArsenalBFTable.Visuals.Bullettracers.Material
+                part.Size=Vector3.new((start-notend).Magnitude,ArsenalBFTable.Visuals.Bullettracers.Width,ArsenalBFTable.Visuals.Bullettracers.Width)
+                part.Color=ArsenalBFTable.Visuals.Bullettracers.Color
+                part.Reflectance=ArsenalBFTable.Visuals.Bullettracers.Refl
                 local megacummy=true
-                if ArsoniaTable.Visuals.Bullettracers.Keeptopart then
+                if ArsenalBFTable.Visuals.Bullettracers.Keeptopart then
                     game:GetService("RunService").RenderStepped:Connect(function()
                         if megacummy then
                             start=game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0)
                             part.CFrame=(CFrame.new(start,notend)+(CFrame.new(start,notend).LookVector*(start-notend).Magnitude/2))*CFrame.Angles(0,math.rad(90),0)
-                            part.Size=Vector3.new((start-notend).Magnitude,ArsoniaTable.Visuals.Bullettracers.Width,ArsoniaTable.Visuals.Bullettracers.Width)
+                            part.Size=Vector3.new((start-notend).Magnitude,ArsenalBFTable.Visuals.Bullettracers.Width,ArsenalBFTable.Visuals.Bullettracers.Width)
                         end
                     end)
                 end
-                if ArsoniaTable.Visuals.Bullettracers.Updatecol then
+                if ArsenalBFTable.Visuals.Bullettracers.Updatecol then
                     game:GetService("RunService").RenderStepped:Connect(function()
                         if megacummy then
-                            part.Color=ArsoniaTable.Visuals.Bullettracers.Color
+                            part.Color=ArsenalBFTable.Visuals.Bullettracers.Color
                         end
                     end)
                 end
                 coroutine.wrap(function()
-                    wait(ArsoniaTable.Visuals.Bullettracers.Lifetime)
+                    wait(ArsenalBFTable.Visuals.Bullettracers.Lifetime)
                     megacummy=false
                     part:Destroy()
                 end)()
             end
         end
-        if ArsoniaTable.Aimbot.Silentaim.Enabled then
-            if ArsoniaTable.Variables.Functions.GetPos1FromRay(b)==game.Workspace.CurrentCamera.CFrame.Position then
-                if ArsoniaTable.Variables.__SilentAimTarget then
+        if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+            if ArsenalBFTable.Variables.Functions.GetPos1FromRay(b)==game.Workspace.CurrentCamera.CFrame.Position then
+                if ArsenalBFTable.Variables.__SilentAimTarget then
                     if doeshit then
                         b=Ray.new(
                             game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0),
-                            ArsoniaTable.Variables.__SilentAimTarget.Position-(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0))
+                            ArsenalBFTable.Variables.__SilentAimTarget.Position-(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0))
                         )
                     end
                 end
@@ -3233,70 +3233,70 @@ end)
 
 --Newindex
 mt.__newindex=newcclosure(function(a,b,c)
-    if ArsoniaTable.Combat.Gunmods.Enabled then
-        if ArsoniaTable.Combat.Gunmods.Keepfov then
-            if ArsoniaTable.Variables.IsAlive then
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
+        if ArsenalBFTable.Combat.Gunmods.Keepfov then
+            if ArsenalBFTable.Variables.IsAlive then
                 if tostring(a)=="Camera"and b=="FieldOfView"then
                     return oldnewIndex(a,b,game:GetService("Players").LocalPlayer.Settings.FOV.Value)
                 end
             end
         end
     end
-    if ArsoniaTable.Player.Anti_Aim.Enabled then
-        if not ArsoniaTable.Variables.Functions.IsRoundOver()then
-            if ArsoniaTable.Player.Anti_Aim.Upsidedown then
+    if ArsenalBFTable.Player.Anti_Aim.Enabled then
+        if not ArsenalBFTable.Variables.Functions.IsRoundOver()then
+            if ArsenalBFTable.Player.Anti_Aim.Upsidedown then
                 if tostring(a)=="Humanoid"and b=="CameraOffset"then
-                    ArsoniaTable.Variables.CrouchOffset=0
+                    ArsenalBFTable.Variables.CrouchOffset=0
                     return oldnewIndex(a,b,Vector3.new(0,-3,0))
                 end
             end
-            if ArsoniaTable.Player.Anti_Aim.Yaw or ArsoniaTable.Player.Anti_Aim.Wall then
+            if ArsenalBFTable.Player.Anti_Aim.Yaw or ArsenalBFTable.Player.Anti_Aim.Wall then
                 if tostring(a)=="Humanoid"and b=="AutoRotate"then
                     return oldnewIndex(a,b,false)
                 end
             end
-            if ArsoniaTable.Player.Anti_Aim.CrouchYaw and ArsoniaTable.Variables.Crouching then
+            if ArsenalBFTable.Player.Anti_Aim.CrouchYaw and ArsenalBFTable.Variables.Crouching then
                 if tostring(a)=="Humanoid"and b=="AutoRotate"then
                     return oldnewIndex(a,b,false)
                 end
             end
-            if ArsoniaTable.Player.Anti_Aim.Hip then
+            if ArsenalBFTable.Player.Anti_Aim.Hip then
                 if tostring(a)=="Humanoid"and b=="HipHeight"then
-                    return oldnewIndex(a,b,ArsoniaTable.Player.Anti_Aim.Hipheight)
+                    return oldnewIndex(a,b,ArsenalBFTable.Player.Anti_Aim.Hipheight)
                 end
             end
         end
     end
-    if ArsoniaTable.Aimbot.Silentaim.Enabled then
-        if ArsoniaTable.Aimbot.Silentaim.Fakelock then
-            if ArsoniaTable.Variables.__SilentAimTarget then
+    if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+        if ArsenalBFTable.Aimbot.Silentaim.Fakelock then
+            if ArsenalBFTable.Variables.__SilentAimTarget then
                 if tostring(a)=="Humanoid"and b=="AutoRotate"then
                     return oldnewIndex(a,b,false)
                 end
             end
         end
     end
-    if ArsoniaTable.Visuals.Main.Enabled then
-        if ArsoniaTable.Visuals.Main.Anticrouch then
+    if ArsenalBFTable.Visuals.Main.Enabled then
+        if ArsenalBFTable.Visuals.Main.Anticrouch then
             if tostring(a)=="Humanoid"and b=="CameraOffset"then
-                ArsoniaTable.Variables.CrouchOffset=c.Y
+                ArsenalBFTable.Variables.CrouchOffset=c.Y
                 return oldnewIndex(a,b,Vector3.new())
             end
         end
     end
-    if ArsoniaTable.Player.Movement.Enabled then
-        if ArsoniaTable.Player.Movement.Bunnyhop then
-            if ArsoniaTable.Player.Movement.BunnyhopType=="Walkspeed"then
+    if ArsenalBFTable.Player.Movement.Enabled then
+        if ArsenalBFTable.Player.Movement.Bunnyhop then
+            if ArsenalBFTable.Player.Movement.BunnyhopType=="Walkspeed"then
                 if tostring(a)=="Humanoid"and b=="WalkSpeed"then
-                    if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air or ArsoniaTable.Variables.KeysPressed[" "]then
-                        return oldnewIndex(a,b,ArsoniaTable.Player.Movement.Bunnyhopspeed*25)
+                    if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial==Enum.Material.Air or ArsenalBFTable.Variables.KeysPressed[" "]then
+                        return oldnewIndex(a,b,ArsenalBFTable.Player.Movement.Bunnyhopspeed*25)
                     end
                 end
             end
         end
-        if ArsoniaTable.Player.Movement.Walk then
+        if ArsenalBFTable.Player.Movement.Walk then
             if tostring(a)=="Humanoid"and b=="WalkSpeed"then
-                return oldnewIndex(a,b,ArsoniaTable.Player.Movement.Walkspeed)
+                return oldnewIndex(a,b,ArsenalBFTable.Player.Movement.Walkspeed)
             end
         end
     end
@@ -3312,8 +3312,8 @@ end)
 --Index
 mt.__index=newcclosure(function(a,b)
     if tostring(a)=="HumanoidRootPart"and tostring(b)=="CFrame"then
-        if ArsoniaTable.Combat.Gunmods.Enabled then
-            if ArsoniaTable.Combat.Gunmods.Forcebackstab then
+        if ArsenalBFTable.Combat.Gunmods.Enabled then
+            if ArsenalBFTable.Combat.Gunmods.Forcebackstab then
                 if a~=game.Players.LocalPlayer.Character.HumanoidRootPart then
                     return CFrame.new(a.Position,game.Players.LocalPlayer.Character.HumanoidRootPart.Position)*CFrame.Angles(0,math.rad(180),0)
                 end
@@ -3329,55 +3329,55 @@ coroutine.wrap(function()
     local suck=.1
     while wait(suck)do
         pcall(function()
-            if ArsoniaTable.Aimbot.Backtrack.Enabled then
-                if ArsoniaTable.Aimbot.Backtrack.Target=="All"then
-                    for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
-                        for _,c in pairs(ArsoniaTable.Variables.R6TR15[ArsoniaTable.Aimbot.Backtrack.Target])do
+            if ArsenalBFTable.Aimbot.Backtrack.Enabled then
+                if ArsenalBFTable.Aimbot.Backtrack.Target=="All"then
+                    for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
+                        for _,c in pairs(ArsenalBFTable.Variables.R6TR15[ArsenalBFTable.Aimbot.Backtrack.Target])do
                             if v.Character:FindFirstChild(c)then
                                 local part=v.Character[c]
                                 local a=Instance.new("Part")
                                 a.Parent=part
                                 a.Size=part.Size
-                                a.Color=ArsoniaTable.Aimbot.Backtrack.Color
+                                a.Color=ArsenalBFTable.Aimbot.Backtrack.Color
                                 a.CanCollide=false
                                 a.Anchored=true
                                 a.CFrame=part.CFrame
                                 a.Name="Backtrack"
-                                a.Reflectance=ArsoniaTable.Aimbot.Backtrack.Refl
-                                a.Material=ArsoniaTable.Aimbot.Backtrack.Material
-                                table.insert(ArsoniaTable.Variables.Backtracks,a)
-                                if ArsoniaTable.Aimbot.Backtrack.Showall then
-                                    if ArsoniaTable.Visuals.ESP.Enabled and ArsoniaTable.Visuals.ESP.BacktrackChams then
+                                a.Reflectance=ArsenalBFTable.Aimbot.Backtrack.Refl
+                                a.Material=ArsenalBFTable.Aimbot.Backtrack.Material
+                                table.insert(ArsenalBFTable.Variables.Backtracks,a)
+                                if ArsenalBFTable.Aimbot.Backtrack.Showall then
+                                    if ArsenalBFTable.Visuals.ESP.Enabled and ArsenalBFTable.Visuals.ESP.BacktrackChams then
                                         a.Transparency=1
                                     else
-                                        a.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                                        a.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                                     end
                                 else
                                     a.Transparency=1
                                 end
                                 local b=Instance.new("BoxHandleAdornment")
-                                if ArsoniaTable.Visuals.ESP.Enabled and ArsoniaTable.Visuals.ESP.BacktrackChams then
+                                if ArsenalBFTable.Visuals.ESP.Enabled and ArsenalBFTable.Visuals.ESP.BacktrackChams then
                                     b.Size=a.Size
                                     b.Parent=game.CoreGui
                                     b.AlwaysOnTop=true
                                     b.Adornee=a
                                     b.ZIndex=0
-                                    if ArsoniaTable.Aimbot.Backtrack.Showall then
-                                        b.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                                    if ArsenalBFTable.Aimbot.Backtrack.Showall then
+                                        b.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                                     else
                                         b.Transparency=1
                                     end
-                                    b.Color3=ArsoniaTable.Aimbot.Backtrack.Color
+                                    b.Color3=ArsenalBFTable.Aimbot.Backtrack.Color
                                 else
                                     b:Destroy()
                                 end
                                 coroutine.wrap(function()
-                                    wait(ArsoniaTable.Aimbot.Backtrack.Lifetime)
+                                    wait(ArsenalBFTable.Aimbot.Backtrack.Lifetime)
                                     wait(suck)
-                                    if not(ArsoniaTable.Visuals.ESP.Enabled and ArsoniaTable.Visuals.ESP.BacktrackChams)then
-                                        a.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                                    if not(ArsenalBFTable.Visuals.ESP.Enabled and ArsenalBFTable.Visuals.ESP.BacktrackChams)then
+                                        a.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                                     end
-                                    b.Transparency=ArsoniaTable.Aimbot.Backtrack.Trans
+                                    b.Transparency=ArsenalBFTable.Aimbot.Backtrack.Trans
                                     wait(suck)
                                     a:Destroy()
                                     b:Destroy()
@@ -3392,12 +3392,12 @@ coroutine.wrap(function()
 end)()
 coroutine.wrap(function()
     while wait(.1)do
-        if ArsoniaTable.Aimbot.Silentaim.Enabled then
+        if ArsenalBFTable.Aimbot.Silentaim.Enabled then
             pcall(function()
-                ArsoniaTable.Variables.TargetableParts={HeadHB={},Torso={},LeftArm={},RightArm={},LeftLeg={},RightLeg={},Backtrack_HeadHB={},Backtrack_Torso={},Backtrack_LeftArm={},Backtrack_RightArm={},Backtrack_LeftLeg={},Backtrack_RightLeg={}}
-                for _,x in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+                ArsenalBFTable.Variables.TargetableParts={HeadHB={},Torso={},LeftArm={},RightArm={},LeftLeg={},RightLeg={},Backtrack_HeadHB={},Backtrack_Torso={},Backtrack_LeftArm={},Backtrack_RightArm={},Backtrack_LeftLeg={},Backtrack_RightLeg={}}
+                for _,x in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                     local arget=x.Character
-                    for i,v in pairs(ArsoniaTable.Variables.TargetsWithoutFull)do
+                    for i,v in pairs(ArsenalBFTable.Variables.TargetsWithoutFull)do
                         if arget:FindFirstChild(i)then
                             local start=game.Players.LocalPlayer.Character.HumanoidRootPart.Position+
                             Vector3.new(0,1.5,0)+
@@ -3407,9 +3407,9 @@ coroutine.wrap(function()
                                     start,
                                     arget[i].Position-start
                                 )
-                            local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsoniaTable.Variables.Functions.GetIgnore())
+                            local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsenalBFTable.Variables.Functions.GetIgnore())
                             if part==arget[i]or part:IsDescendantOf(arget)then
-                                table.insert(ArsoniaTable.Variables.TargetableParts[v[2]],arget[i])
+                                table.insert(ArsenalBFTable.Variables.TargetableParts[v[2]],arget[i])
                             end
                             local backtrack
                             for _,v in pairs(arget[i]:GetChildren())do
@@ -3427,9 +3427,9 @@ coroutine.wrap(function()
                                         start,
                                         backtrack.Position-start
                                     )
-                                local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsoniaTable.Variables.Functions.GetIgnore())
+                                local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsenalBFTable.Variables.Functions.GetIgnore())
                                 if part==backtrack or part:IsDescendantOf(arget)then
-                                    table.insert(ArsoniaTable.Variables.TargetableParts["Backtrack_"..v[2]],backtrack)
+                                    table.insert(ArsenalBFTable.Variables.TargetableParts["Backtrack_"..v[2]],backtrack)
                                 end
                             end
                         end
@@ -3442,11 +3442,11 @@ end)()
 coroutine.wrap(function()
     while game.RunService.RenderStepped:Wait()do
         pcall(function()
-            if ArsoniaTable.Player.Movement.Bunnyhop then
-                if ArsoniaTable.Player.Movement.BunnyhopType=="Legit"then
-                    if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial~=Enum.Material.Air and ArsoniaTable.Variables.KeysPressed[" "]then
+            if ArsenalBFTable.Player.Movement.Bunnyhop then
+                if ArsenalBFTable.Player.Movement.BunnyhopType=="Legit"then
+                    if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial~=Enum.Material.Air and ArsenalBFTable.Variables.KeysPressed[" "]then
                         wait(.3)
-                        if ArsoniaTable.Variables.KeysPressed[" "]then
+                        if ArsenalBFTable.Variables.KeysPressed[" "]then
                             game.Players.LocalPlayer.Character.Humanoid.Jump=true
                         end
                     end
@@ -3458,10 +3458,10 @@ end)()
 --[[coroutine.wrap(function()
     while game.RunService.RenderStepped:Wait()do
         pcall(function()
-            if ArsoniaTable.Player.Misc.Enabled then
-                if ArsoniaTable.Player.Misc.FastHeal then
+            if ArsenalBFTable.Player.Misc.Enabled then
+                if ArsenalBFTable.Player.Misc.FastHeal then
                     if game.Players.LocalPlayer.NRPBS.Health.Value<=99 then
-                        if ArsoniaTable.Player.Misc.Removeplayercheck and ArsoniaTable.Player.Misc.Enabled then
+                        if ArsenalBFTable.Player.Misc.Removeplayercheck and ArsenalBFTable.Player.Misc.Enabled then
                             if game.Players.LocalPlayer.Character:FindFirstChild("IsAPlayer")then
                                 game.ReplicatedStorage.Events.ApplyGun:FireServer(game.ReplicatedStorage.Weapons["Stake Launcher"])
                                 game.ReplicatedStorage.Events.HealBoy:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart)
@@ -3485,8 +3485,8 @@ end)()]]
 coroutine.wrap(function()
     while wait(1)do
         pcall(function()
-            if ArsoniaTable.Misc.Main.Enabled then
-                if ArsoniaTable.Misc.Main.Cloudspam then
+            if ArsenalBFTable.Misc.Main.Enabled then
+                if ArsenalBFTable.Misc.Main.Cloudspam then
                     game:GetService("ReplicatedStorage").Events.DJ:FireServer(25)
                 end
             end
@@ -3496,15 +3496,15 @@ end)()
 coroutine.wrap(function()
     while wait(.7)do
         pcall(function()
-            if ArsoniaTable.Misc.Trolling.Enabled then
-                if ArsoniaTable.Misc.Trolling.Voiceannoy then
+            if ArsenalBFTable.Misc.Trolling.Enabled then
+                if ArsenalBFTable.Misc.Trolling.Voiceannoy then
                     for _,v in pairs(game.Players:GetChildren())do
                         if v.Character then
                             if v.Character:FindFirstChild("Head")then
                                 if v.Character.Head:FindFirstChild("Voice")then
                                     game.ReplicatedStorage.Events.PlayVoice:FireServer(
                                         v.Character.Head.Voice,
-                                        ArsoniaTable.Variables.Voices[math.random(1,#ArsoniaTable.Variables.Voices)]
+                                        ArsenalBFTable.Variables.Voices[math.random(1,#ArsenalBFTable.Variables.Voices)]
                                     )
                                 end
                             end
@@ -3518,8 +3518,8 @@ end)()
 coroutine.wrap(function()
     while wait(.05)do
         pcall(function()
-            if ArsoniaTable.Misc.Trolling.Enabled then
-                if ArsoniaTable.Misc.Trolling.Bulletannoy then
+            if ArsenalBFTable.Misc.Trolling.Enabled then
+                if ArsenalBFTable.Misc.Trolling.Bulletannoy then
                     for _,v in pairs(game.Players:GetChildren())do
                         game:GetService("ReplicatedStorage").Events.Whizz:FireServer(v)
                     end
@@ -3531,9 +3531,9 @@ end)()
 coroutine.wrap(function()
     while wait(.1)do
         pcall(function()
-            if ArsoniaTable.Misc.Trolling.Enabled then
-                if ArsoniaTable.Misc.Trolling.Flingall then
-                    for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+            if ArsenalBFTable.Misc.Trolling.Enabled then
+                if ArsenalBFTable.Misc.Trolling.Flingall then
+                    for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                         game:GetService("ReplicatedStorage").Events.Burn:FireServer(
                             {
                                 ["Parent"]=v.Character,
@@ -3551,10 +3551,10 @@ end)()
 coroutine.wrap(function()
     while wait(1)do
         pcall(function()
-            if ArsoniaTable.Visuals.ESP.Enabled then
-                if ArsoniaTable.Visuals.ESP.Chams then
-                    for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
-                        for _,c in pairs(ArsoniaTable.Variables.HumParts)do
+            if ArsenalBFTable.Visuals.ESP.Enabled then
+                if ArsenalBFTable.Visuals.ESP.Chams then
+                    for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
+                        for _,c in pairs(ArsenalBFTable.Variables.HumParts)do
                             if v.Character:FindFirstChild(c)then
                                 local part=v.Character[c]
                                 local a=Instance.new("BoxHandleAdornment")
@@ -3567,15 +3567,15 @@ coroutine.wrap(function()
                                 a.AlwaysOnTop=true
                                 a.Adornee=part
                                 a.ZIndex=0
-                                a.Color3=ArsoniaTable.Visuals.ESP.Color
+                                a.Color3=ArsenalBFTable.Visuals.ESP.Color
                                 coroutine.wrap(function()
                                     wait(1.1)
                                     a:Destroy()
                                 end)()
-                                if ArsoniaTable.Visuals.ESP.Chamsoutline then
+                                if ArsenalBFTable.Visuals.ESP.Chamsoutline then
                                     local part=v.Character[c]
                                     local a=Instance.new("BoxHandleAdornment")
-                                    local off=ArsoniaTable.Visuals.ESP.ChamsoutlineSize
+                                    local off=ArsenalBFTable.Visuals.ESP.ChamsoutlineSize
                                     if c=="Head"then
                                         a.Size=Vector3.new(1+off,1+off,1+off)
                                     else
@@ -3585,7 +3585,7 @@ coroutine.wrap(function()
                                     a.AlwaysOnTop=false
                                     a.Adornee=part
                                     a.ZIndex=0
-                                    a.Color3=ArsoniaTable.Visuals.ESP.ChamsoutlineColor
+                                    a.Color3=ArsenalBFTable.Visuals.ESP.ChamsoutlineColor
                                     coroutine.wrap(function()
                                         wait(1.1)
                                         a:Destroy()
@@ -3602,8 +3602,8 @@ end)()
 coroutine.wrap(function()
     while wait(.25)do
         pcall(function()
-            if ArsoniaTable.Visuals.Main.Enabled then
-                if ArsoniaTable.Visuals.Main.Renderplayer then
+            if ArsenalBFTable.Visuals.Main.Enabled then
+                if ArsenalBFTable.Visuals.Main.Renderplayer then
                     for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants())do
                         if v:IsA("BasePart")or v:IsA("Decal")then
                             if v.LocalTransparencyModifier~=0 then
@@ -3619,20 +3619,20 @@ end)()
 coroutine.wrap(function()
     while game.RunService.RenderStepped:Wait()do
         pcall(function()
-            if ArsoniaTable.Aimbot.Silentaim.Enabled then
+            if ArsenalBFTable.Aimbot.Silentaim.Enabled then
                 if not game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.equipping.Value then
-                    if ArsoniaTable.Aimbot.Silentaim.AutoshootMethod=="Force Fire"then
-                        if ArsoniaTable.Variables.__SilentAimTarget then
+                    if ArsenalBFTable.Aimbot.Silentaim.AutoshootMethod=="Force Fire"then
+                        if ArsenalBFTable.Variables.__SilentAimTarget then
                             require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).firebullet()
                         end
-                    elseif ArsoniaTable.Aimbot.Silentaim.AutoshootMethod=="Fake Click"then
-                        if ArsoniaTable.Variables.__SilentAimTarget then
+                    elseif ArsenalBFTable.Aimbot.Silentaim.AutoshootMethod=="Fake Click"then
+                        if ArsenalBFTable.Variables.__SilentAimTarget then
                             game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.Held.Value=not game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.Held.Value
                         elseif game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.Held.Value then
                             game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.Held.Value=false
                         end
-                    elseif ArsoniaTable.Aimbot.Silentaim.AutoshootMethod=="Mouse"then
-                        if ArsoniaTable.Variables.__SilentAimTarget then
+                    elseif ArsenalBFTable.Aimbot.Silentaim.AutoshootMethod=="Mouse"then
+                        if ArsenalBFTable.Variables.__SilentAimTarget then
                             mouse1press()wait()mouse1release()
                         end
                     end
@@ -3644,22 +3644,22 @@ end)()
 coroutine.wrap(function()
     while game.RunService.RenderStepped:Wait()do
         pcall(function()
-            if ArsoniaTable.Player.Anti_Aim.Enabled then
-                if ArsoniaTable.Player.Anti_Aim.Crouchspam then
-                    if ArsoniaTable.Variables.IsAlive and not game.Players.LocalPlayer.Character:FindFirstChild("ShuckyHAX")and game.Players.LocalPlayer.Status.Team.Value~="Spectator"and not game.ReplicatedStorage.wkspc.Status.RoundOver.Value and not game.ReplicatedStorage.wkspc.Status.Preparation.Value then
-                        if not(ArsoniaTable.Variables.KeysPressed[" "]and ArsoniaTable.Player.Movement.Bunnyhop)and game.Players.LocalPlayer.Character.Humanoid.FloorMaterial~=Enum.Material.Air and game.Players.LocalPlayer.Character.Humanoid:GetState()~=3 or ArsoniaTable.Player.Anti_Aim.Crouchjumpspam then
-                            if ArsoniaTable.Variables.Croucher or ArsoniaTable.Player.Anti_Aim.Crouchon then
+            if ArsenalBFTable.Player.Anti_Aim.Enabled then
+                if ArsenalBFTable.Player.Anti_Aim.Crouchspam then
+                    if ArsenalBFTable.Variables.IsAlive and not game.Players.LocalPlayer.Character:FindFirstChild("ShuckyHAX")and game.Players.LocalPlayer.Status.Team.Value~="Spectator"and not game.ReplicatedStorage.wkspc.Status.RoundOver.Value and not game.ReplicatedStorage.wkspc.Status.Preparation.Value then
+                        if not(ArsenalBFTable.Variables.KeysPressed[" "]and ArsenalBFTable.Player.Movement.Bunnyhop)and game.Players.LocalPlayer.Character.Humanoid.FloorMaterial~=Enum.Material.Air and game.Players.LocalPlayer.Character.Humanoid:GetState()~=3 or ArsenalBFTable.Player.Anti_Aim.Crouchjumpspam then
+                            if ArsenalBFTable.Variables.Croucher or ArsenalBFTable.Player.Anti_Aim.Crouchon then
                                 game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.ctrlcrouch.Value=true
-                                if ArsoniaTable.Player.Anti_Aim.CrouchspamVal==0 then
+                                if ArsenalBFTable.Player.Anti_Aim.CrouchspamVal==0 then
                                     game.RunService.RenderStepped:Wait()
                                 else
-                                    wait(ArsoniaTable.Player.Anti_Aim.CrouchspamVal)
+                                    wait(ArsenalBFTable.Player.Anti_Aim.CrouchspamVal)
                                 end
                                 game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.ctrlcrouch.Value=false
-                                if ArsoniaTable.Player.Anti_Aim.CrouchspamVal2==0 then
+                                if ArsenalBFTable.Player.Anti_Aim.CrouchspamVal2==0 then
                                     game.RunService.RenderStepped:Wait()
                                 else
-                                    wait(ArsoniaTable.Player.Anti_Aim.CrouchspamVal2)
+                                    wait(ArsenalBFTable.Player.Anti_Aim.CrouchspamVal2)
                                 end
                             end
                         end
@@ -3674,26 +3674,26 @@ end)()
 coroutine.wrap(function()
     while wait(.1)do
         pcall(function()
-            if ArsoniaTable.Misc.Main.Enabled then
-                if ArsoniaTable.Misc.Main.Wallprotect then
+            if ArsenalBFTable.Misc.Main.Enabled then
+                if ArsenalBFTable.Misc.Main.Wallprotect then
                     pcall(function()
-                        ArsoniaTable.Variables.WallTargets={}
-                        for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+                        ArsenalBFTable.Variables.WallTargets={}
+                        for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                             if v.Character:FindFirstChild("HumanoidRootPart")then
                                 local start=game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5,0)+Vector3.new(0,game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0)
                                 local Raycock=Ray.new(start,v.Character.HumanoidRootPart.Position-start)
-                                local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsoniaTable.Variables.Functions.GetIgnore())
+                                local part=game.Workspace:FindPartOnRayWithIgnoreList(Raycock,ArsenalBFTable.Variables.Functions.GetIgnore())
                                 if part==v.Character.HumanoidRootPart or part:IsDescendantOf(v.Character)then
-                                    table.insert(ArsoniaTable.Variables.WallTargets,v.Character.HumanoidRootPart)
+                                    table.insert(ArsenalBFTable.Variables.WallTargets,v.Character.HumanoidRootPart)
                                 end
                             end
                         end
                     end)
                     pcall(function()
-                        if ArsoniaTable.Variables.WallTargets[1]then
+                        if ArsenalBFTable.Variables.WallTargets[1]then
                             local b=math.huge
                             local wallplayer
-                            for _,v in pairs(ArsoniaTable.Variables.WallTargets)do
+                            for _,v in pairs(ArsenalBFTable.Variables.WallTargets)do
                                 if(v.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude<b then
                                     b=(v.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
                                     wallplayer=v
@@ -3716,30 +3716,30 @@ end)()
 coroutine.wrap(function()
     while game.RunService.RenderStepped:Wait()do
         pcall(function()
-            if ArsoniaTable.Combat.Main.Enabled then
-                if ArsoniaTable.Combat.Main.Knifeaura then
-                    for _,v in pairs(ArsoniaTable.Variables.Functions.GetEnemys())do
+            if ArsenalBFTable.Combat.Main.Enabled then
+                if ArsenalBFTable.Combat.Main.Knifeaura then
+                    for _,v in pairs(ArsenalBFTable.Variables.Functions.GetEnemys())do
                         if(game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).Magnitude<=25 then
                             local knife
-                            if ArsoniaTable.Combat.Main.KnifeauraValue=="Basic"then
+                            if ArsenalBFTable.Combat.Main.KnifeauraValue=="Basic"then
                                 knife=game.ReplicatedStorage.Weapons.Knife
                             else
                                 knife=game.ReplicatedStorage.Weapons["Golden Knife"]
                             end
                             local arg1,arg2,arg3=0,0,0
-                            if ArsoniaTable.Combat.Main.KnifeauraCrit=="Basic"then
+                            if ArsenalBFTable.Combat.Main.KnifeauraCrit=="Basic"then
                                 arg1=1
                             end
-                            if ArsoniaTable.Combat.Main.KnifeauraCrit=="Advanced"then
+                            if ArsenalBFTable.Combat.Main.KnifeauraCrit=="Advanced"then
                                 arg2=1
                             end
-                            if ArsoniaTable.Combat.Main.KnifeauraCrit=="Backstab"then
+                            if ArsenalBFTable.Combat.Main.KnifeauraCrit=="Backstab"then
                                 arg3=1
                             end
                             game.ReplicatedStorage.Events.ApplyGun:FireServer(knife,false)
                             local Partpos=v.Character.Head.Position+Vector3.new(math.random(),math.random(),math.random())
                             local Packedstring=string.pack(
-                                ArsoniaTable.Variables.Hitparter,
+                                ArsenalBFTable.Variables.Hitparter,
                                 Partpos.X,
                                 Partpos.Y,
                                 Partpos.Z,
@@ -3754,10 +3754,10 @@ coroutine.wrap(function()
                                 0,--Player Distance
                                 1,--Current Spell
                                 0,--scope=1 noscope=0
-                                ArsoniaTable.Combat.Main.KnifeauraAir--aircrit=1 none=0
+                                ArsenalBFTable.Combat.Main.KnifeauraAir--aircrit=1 none=0
                             )
                             game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,Packedstring)
-                            if ArsoniaTable.Combat.Main.KnifeauraFakeaim then
+                            if ArsenalBFTable.Combat.Main.KnifeauraFakeaim then
                                 local bs={}
                                 for _,v in pairs(game.ReplicatedStorage.Melees[game.Players.LocalPlayer.Data.Melee.Value]:GetChildren())do
                                     if string.sub(v.Name,1,4)=="Fire"then
@@ -3789,16 +3789,16 @@ end)()
 coroutine.wrap(function()
     while game.RunService.RenderStepped:Wait()do
         pcall(function()
-            if ArsoniaTable.Player.Anti_Aim.Enabled then
-                if ArsoniaTable.Player.Anti_Aim.FakeLag then
-                    if ArsoniaTable.Variables.IsAlive then
-                        if not ArsoniaTable.Variables.Functions.IsRoundOver()then
-                            if ArsoniaTable.Player.Anti_Aim.FakeLagOffTime==1 then
+            if ArsenalBFTable.Player.Anti_Aim.Enabled then
+                if ArsenalBFTable.Player.Anti_Aim.FakeLag then
+                    if ArsenalBFTable.Variables.IsAlive then
+                        if not ArsenalBFTable.Variables.Functions.IsRoundOver()then
+                            if ArsenalBFTable.Player.Anti_Aim.FakeLagOffTime==1 then
                                 game.RunService.RenderStepped:Wait()
-                            elseif ArsoniaTable.Player.Anti_Aim.FakeLagOffTime~=0 then
-                                wait(ArsoniaTable.Player.Anti_Aim.FakeLagOffTime)
+                            elseif ArsenalBFTable.Player.Anti_Aim.FakeLagOffTime~=0 then
+                                wait(ArsenalBFTable.Player.Anti_Aim.FakeLagOffTime)
                             end
-                            if ArsoniaTable.Player.Anti_Aim.FakeLagShow then
+                            if ArsenalBFTable.Player.Anti_Aim.FakeLagShow then
                                 if not game.Workspace.Ray_Ignore:FindFirstChild("Character_FAKE")then
                                     local a=Instance.new("Folder")
                                     a.Parent=game.Workspace.Ray_Ignore
@@ -3811,9 +3811,9 @@ coroutine.wrap(function()
                                             a.CanCollide=false
                                             a.Parent=game.Workspace.Ray_Ignore.Character_FAKE
                                             a.Anchored=true
-                                            a.Color=ArsoniaTable.Player.Anti_Aim.FakeLagColor
-                                            a.Material=ArsoniaTable.Player.Anti_Aim.FakeLagMaterial
-                                            a.Transparency=ArsoniaTable.Player.Anti_Aim.FakeLagTrans
+                                            a.Color=ArsenalBFTable.Player.Anti_Aim.FakeLagColor
+                                            a.Material=ArsenalBFTable.Player.Anti_Aim.FakeLagMaterial
+                                            a.Transparency=ArsenalBFTable.Player.Anti_Aim.FakeLagTrans
                                             a.Reflectance=0
                                             if a:IsA("MeshPart")then
                                                 a.TextureID=""
@@ -3857,7 +3857,7 @@ coroutine.wrap(function()
                                     end
                                 end
                             end)()]]
-                            wait(ArsoniaTable.Player.Anti_Aim.FakeLagOnTime)
+                            wait(ArsenalBFTable.Player.Anti_Aim.FakeLagOnTime)
                             if game.Workspace.Ray_Ignore:FindFirstChild("Character_FAKE")then
                                 game.Workspace.Ray_Ignore.Character_FAKE:Destroy()
                             end
@@ -3872,9 +3872,9 @@ end)()
 coroutine.wrap(function()
     while wait(.5)do
         pcall(function()
-            if ArsoniaTable.Combat.Main.Enabled then
-                if ArsoniaTable.Combat.Main.Bombwalk then
-                    if ArsoniaTable.Combat.Main.BombwalkBomb=="Basic"then
+            if ArsenalBFTable.Combat.Main.Enabled then
+                if ArsenalBFTable.Combat.Main.Bombwalk then
+                    if ArsenalBFTable.Combat.Main.BombwalkBomb=="Basic"then
                         game:GetService("ReplicatedStorage").Events.ApplyGun:FireServer(
                             game:GetService("ReplicatedStorage").Weapons.Bomb
                         )
@@ -3882,12 +3882,12 @@ coroutine.wrap(function()
                             Vector3.new(),
                             1+math.random(),--unknown
                             false,--unknown
-                            ArsoniaTable.Combat.Main.BombwalkTime/10--time
+                            ArsenalBFTable.Combat.Main.BombwalkTime/10--time
                         )
                         game:GetService("ReplicatedStorage").Events.ApplyGun:FireServer(
                             game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value
                         )
-                    elseif ArsoniaTable.Combat.Main.BombwalkBomb=="Golden"then
+                    elseif ArsenalBFTable.Combat.Main.BombwalkBomb=="Golden"then
                         game:GetService("ReplicatedStorage").Events.ApplyGun:FireServer(
                             game:GetService("ReplicatedStorage").Weapons["Golden Bomb"]
                         )
@@ -3895,12 +3895,12 @@ coroutine.wrap(function()
                             Vector3.new(),
                             1+math.random(),--unknown
                             false,--unknown
-                            ArsoniaTable.Combat.Main.BombwalkTime/10--time
+                            ArsenalBFTable.Combat.Main.BombwalkTime/10--time
                         )
                         game:GetService("ReplicatedStorage").Events.ApplyGun:FireServer(
                             game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.gun.Value
                         )
-                    elseif ArsoniaTable.Combat.Main.BombwalkBomb=="Cherry (Infinite)"then
+                    elseif ArsenalBFTable.Combat.Main.BombwalkBomb=="Cherry (Infinite)"then
                         game:GetService("ReplicatedStorage").Events.ApplyGun:FireServer(
                             game:GetService("ReplicatedStorage").Weapons.Bomb
                         )
@@ -3922,18 +3922,18 @@ end)()
 coroutine.wrap(function()
     while wait(.1)do
         pcall(function()
-            if ArsoniaTable.Misc.Trolling.WallTrap and ArsoniaTable.Misc.Trolling.Enabled then
+            if ArsenalBFTable.Misc.Trolling.WallTrap and ArsenalBFTable.Misc.Trolling.Enabled then
                 for _,v in pairs(game.Players:GetChildren())do
-                    if string.find(string.lower(tostring(v)),string.lower(ArsoniaTable.Misc.Trolling.WallTrapName))then
-                        if Vector3.new(math.floor(ArsoniaTable.Variables.TrapPosOld.X),math.floor(ArsoniaTable.Variables.TrapPosOld.Y),math.floor(ArsoniaTable.Variables.TrapPosOld.Z))~=Vector3.new(math.floor(v.Character.HumanoidRootPart.Position.X),math.floor(v.Character.HumanoidRootPart.Position.Y),math.floor(v.Character.HumanoidRootPart.Position.Z))then
-                            ArsoniaTable.Variables.TrapPosOld=v.Character.HumanoidRootPart.Position
-                            if ArsoniaTable.Misc.Trolling.WallTrapType=="Forward"then
+                    if string.find(string.lower(tostring(v)),string.lower(ArsenalBFTable.Misc.Trolling.WallTrapName))then
+                        if Vector3.new(math.floor(ArsenalBFTable.Variables.TrapPosOld.X),math.floor(ArsenalBFTable.Variables.TrapPosOld.Y),math.floor(ArsenalBFTable.Variables.TrapPosOld.Z))~=Vector3.new(math.floor(v.Character.HumanoidRootPart.Position.X),math.floor(v.Character.HumanoidRootPart.Position.Y),math.floor(v.Character.HumanoidRootPart.Position.Z))then
+                            ArsenalBFTable.Variables.TrapPosOld=v.Character.HumanoidRootPart.Position
+                            if ArsenalBFTable.Misc.Trolling.WallTrapType=="Forward"then
                                 game.ReplicatedStorage.Events.BuildWall:FireServer(
                                     v.Character.HumanoidRootPart.Position+
                                     v.Character.HumanoidRootPart.CFrame.RightVector*-7,
                                     v.Character.HumanoidRootPart.CFrame.RightVector*10000000000)
                                 break
-                            elseif ArsoniaTable.Misc.Trolling.WallTrapType=="Sideways"then
+                            elseif ArsenalBFTable.Misc.Trolling.WallTrapType=="Sideways"then
                                 game.ReplicatedStorage.Events.BuildWall:FireServer(
                                     v.Character.HumanoidRootPart.Position+
                                     v.Character.HumanoidRootPart.CFrame.LookVector*-7,
@@ -3952,29 +3952,29 @@ end)()
 
 --Function Hooks
 require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.General).applyvelocity=function(...)
-    if ArsoniaTable.Player.Misc.Enabled then
-        if ArsoniaTable.Player.Misc.AntiFling then
+    if ArsenalBFTable.Player.Misc.Enabled then
+        if ArsenalBFTable.Player.Misc.AntiFling then
             local args={...}
             if args[5]~=game.Players.LocalPlayer.Name then
                 return
             end
         end
     end
-    return ArsoniaTable.Variables.Functions.OldApplyVelocity(...)
+    return ArsenalBFTable.Variables.Functions.OldApplyVelocity(...)
 end
 require(game.ReplicatedStorage.Modules.ClientFunctions).CreateProjectile=function(a,b,c,d,e,...)
-    if ArsoniaTable.Aimbot.Silentaim.Enabled then
-        if ArsoniaTable.Variables.__SilentAimTarget then
+    if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+        if ArsenalBFTable.Variables.__SilentAimTarget then
             if tostring(a)==game.Players.LocalPlayer.Name then
                 if b=="Arrow"then
                     --[[game.ReplicatedStorage.Events.Burn:FireServer(
-                        ArsoniaTable.Variables.__SilentAimTarget,
+                        ArsenalBFTable.Variables.__SilentAimTarget,
                         game.ReplicatedStorage.Weapons.Bow,
                         1,
-                        ArsoniaTable.Variables.__SilentAimTarget.Position)]]
-                    local Partpos=ArsoniaTable.Variables.__SilentAimTarget.Position+Vector3.new(math.random(),math.random(),math.random())
+                        ArsenalBFTable.Variables.__SilentAimTarget.Position)]]
+                    local Partpos=ArsenalBFTable.Variables.__SilentAimTarget.Position+Vector3.new(math.random(),math.random(),math.random())
                     local Packedstring=string.pack(
-                        ArsoniaTable.Variables.Hitparter,
+                        ArsenalBFTable.Variables.Hitparter,
                         Partpos.X,
                         Partpos.Y,
                         Partpos.Z,
@@ -3991,53 +3991,53 @@ require(game.ReplicatedStorage.Modules.ClientFunctions).CreateProjectile=functio
                         0,--scope=1 noscope=0
                         0--aircrit=1 none=0
                     )
-                    game.ReplicatedStorage.Events.HitPart:FireServer(ArsoniaTable.Variables.__SilentAimTarget,Packedstring)
+                    game.ReplicatedStorage.Events.HitPart:FireServer(ArsenalBFTable.Variables.__SilentAimTarget,Packedstring)
                 else
                     c=750
-                    d=ArsoniaTable.Variables.__SilentAimTarget.Position
+                    d=ArsenalBFTable.Variables.__SilentAimTarget.Position
                     e=CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0))
                 end
             end
         end
     end
-    return ArsoniaTable.Variables.Functions.CreateProjectile(a,b,c,d,e,...)
+    return ArsenalBFTable.Variables.Functions.CreateProjectile(a,b,c,d,e,...)
 end
 getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).flamemoment.doflame=function(a,b,...)
-    if ArsoniaTable.Aimbot.Silentaim.Enabled then
-        if ArsoniaTable.Variables.__SilentAimTarget then
+    if ArsenalBFTable.Aimbot.Silentaim.Enabled then
+        if ArsenalBFTable.Variables.__SilentAimTarget then
             if tostring(a)==game.Players.LocalPlayer.Name then
-                b=CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0),ArsoniaTable.Variables.__SilentAimTarget.Position)
+                b=CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+Vector3.new(0,1.5+game.Players.LocalPlayer.Character.Humanoid.CameraOffset.Y,0),ArsenalBFTable.Variables.__SilentAimTarget.Position)
             end
         end
     end
-    return ArsoniaTable.Variables.Functions.DoFlame(a,b,...)
+    return ArsenalBFTable.Variables.Functions.DoFlame(a,b,...)
 end
 getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).ShakeCam=function(...)
-    if ArsoniaTable.Combat.Gunmods.Enabled then
-        if ArsoniaTable.Combat.Gunmods.Removerecoil then
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
+        if ArsenalBFTable.Combat.Gunmods.Removerecoil then
             return
         end
     end
-    return ArsoniaTable.Variables.Functions.Shakecam(...)
+    return ArsenalBFTable.Variables.Functions.Shakecam(...)
 end
 require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).getammo=function(...)
-    if ArsoniaTable.Combat.Gunmods.Enabled then
-        return math.clamp(ArsoniaTable.Variables.Functions.Getammo(...)+ArsoniaTable.Combat.Gunmods.Clipsize,0,999)
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
+        return math.clamp(ArsenalBFTable.Variables.Functions.Getammo(...)+ArsenalBFTable.Combat.Gunmods.Clipsize,0,999)
     end
-    return ArsoniaTable.Variables.Functions.Getammo(...)
+    return ArsenalBFTable.Variables.Functions.Getammo(...)
 end
 require(game.ReplicatedStorage.Modules.Spread).calcspread=function(a,...)
-    if ArsoniaTable.Combat.Gunmods.Enabled then
-        if ArsoniaTable.Combat.Gunmods.Removespread then
+    if ArsenalBFTable.Combat.Gunmods.Enabled then
+        if ArsenalBFTable.Combat.Gunmods.Removespread then
             a=0
         end
     end
-    return ArsoniaTable.Variables.Functions.CalculateSpread(a,...)
+    return ArsenalBFTable.Variables.Functions.CalculateSpread(a,...)
 end
 
 
 
 --Fixes
-ArsoniaTable.Variables.Levels.StartBar=ArsoniaTable.Variables.Levels_OLD.StartBar
-ArsoniaTable.Variables.Levels.EndBar=ArsoniaTable.Variables.Levels_OLD.EndBar
-game:GetService("StarterGui"):SetCore("SendNotification",{Title="Made By: The3Bakers#4565",Text="https://discord.gg/yBEzKHB3Qr",Duration=99999})
+ArsenalBFTable.Variables.Levels.StartBar=ArsenalBFTable.Variables.Levels_OLD.StartBar
+ArsenalBFTable.Variables.Levels.EndBar=ArsenalBFTable.Variables.Levels_OLD.EndBar
+game:GetService("StarterGui"):SetCore("SendNotification",{Title="Made By: ZuhuInc",Text="https://discord.gg/a5kmyZTQPy",Duration=99999})
