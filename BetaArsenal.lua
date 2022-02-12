@@ -1397,9 +1397,9 @@ end)
 MiscTabMainSection:Button("Teleport To Frog Game",function()
     game.TeleportService:Teleport(5133094040,game.Players.LocalPlayer,{SuperSecretCode="NotSoSuperSecretPoggyWoggy"})
 end)
-MiscTabMainSection:Button("https://discord.gg/yBEzKHB3Qr",function()
-    pcall(function()setclipboard("https://discord.gg/yBEzKHB3Qr")end)
-    pcall(function()syn.write_clipboard("https://discord.gg/yBEzKHB3Qr")end)
+MiscTabMainSection:Button("https://discord.gg/a5kmyZTQPy",function()
+    pcall(function()setclipboard("https://discord.gg/a5kmyZTQPy")end)
+    pcall(function()syn.write_clipboard("https://discord.gg/a5kmyZTQPy")end)
 end)
 
 
