@@ -1,7 +1,5 @@
 --[[
-	Welcome to Sunshine! The first publicly open source DeepWoken script!
-	This script was brought to you by our top tier developers at https://stumware.cc/
-	Enjoy! Also, Please note that we arent responsible for if this script gets detected as it is OpenSource.
+	Enjoy! Also, Please note that we arent responsible for if this script gets detected as it is shitty.
 ]]
 do
   local Key53 = 8186484168865098
@@ -250,7 +248,7 @@ sfx:Play()
 tablestack[4][ivzcxy10]:SetCore(
 "SendNotification",
 {
-Title = "BF DW!",
+Title = "BF DeeWoken!",
 Text = text,
 Duration = 2
 }
