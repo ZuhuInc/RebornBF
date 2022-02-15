@@ -156,9 +156,9 @@ local library = {
     pointers = {},
     settings = {
         guiname = "Cs:Go BF",
-		title = "Cs:Go BF [Exodus Edition]",
+		title = "Cs:Go BF [Beta Edition]",
 		logo = "rbxassetid://4350178803", -- "http://www.roblox.com/asset/?id=6597976562",
-        footer = " Exodus Winning $$$",
+        footer = " BF CounterBlox Beta",
         modal = true,
         font = Enum.Font.SourceSans,
         textsize = 16,
