@@ -1639,9 +1639,9 @@ end)
 
 local SettingsTabCategoryCredits = SettingsTab:AddCategory("Credits", 2)
 
-SettingsTabCategoryCredits:AddLabel("Script - Pawel12d#0272")
+SettingsTabCategoryCredits:AddLabel("Script - ZuhuInc")
 
-SettingsTabCategoryCredits:AddLabel("ESP - Modified Kiriot ESP")
+SettingsTabCategoryCredits:AddLabel("ESP - Modified Zalvio ESP")
 
 SettingsTabCategoryCredits:AddLabel("UI Library - Modified Phantom Ware")
 
@@ -1649,11 +1649,11 @@ SettingsTabCategoryCredits:AddLabel("")
 
 SettingsTabCategoryCredits:AddLabel("Special Thanks To:")
 
-SettingsTabCategoryCredits:AddLabel("ny#2817")
+SettingsTabCategoryCredits:AddLabel("Zorax")
 
-SettingsTabCategoryCredits:AddLabel("neeX#3712")
+SettingsTabCategoryCredits:AddLabel("LTW")
 
-SettingsTabCategoryCredits:AddLabel("MrPolaczekPL#1884")
+SettingsTabCategoryCredits:AddLabel("IceQbe")
 
 SettingsTabCategoryCredits:AddLabel("")
 
