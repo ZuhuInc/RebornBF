@@ -1,14 +1,14 @@
 --[[
-Made by Pawel12d#0272
+Made by ZuhuInc
 --]]
 
 local Hint = Instance.new("Hint", game.CoreGui)
-Hint.Text = "Hexagon | Waiting for the game to load..."
+Hint.Text = "Cs:Go BF | Waiting for the game to load..."
 
 repeat wait() until game:IsLoaded()
 repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("GUI")
 
-Hint.Text = "Hexagon | Setting up environment..."
+Hint.Text = "Cs:Go BF | Setting up environment..."
 
 -- Services
 local UserInputService = game:GetService("UserInputService")
@@ -29,50 +29,50 @@ if (listfiles == false) then return game.Players.LocalPlayer:Kick("Exploit not s
 if (isfolder == false) then return game.Players.LocalPlayer:Kick("Exploit not supported! Missing: isfolder.") end
 if (hookfunc == false) then return game.Players.LocalPlayer:Kick("Exploit not supported! Missing: hookfunc.") end
 
-Hint.Text = "Hexagon | Setting up configuration settings..."
+Hint.Text = "Cs:Go BF | Setting up configuration settings..."
 
-if not isfolder("hexagon") then
-	print("creating hexagon folder")
-	makefolder("hexagon")
+if not isfolder("Cs:Go BF") then
+	print("creating Cs:Go BF folder")
+	makefolder("Cs:Go BF")
 end
 
-if not isfolder("hexagon/configs") then
-	print("creating hexagon configs folder")
-	makefolder("hexagon/configs")
+if not isfolder("Cs:Go BF/configs") then
+	print("creating Cs:Go BF configs folder")
+	makefolder("Cs:Go BF/configs")
 end
 
-if not isfile("hexagon/autoload.txt") then
-	print("creating hexagon autoload file")
-	writefile("hexagon/autoload.txt", "")
+if not isfile("Cs:Go BF/autoload.txt") then
+	print("creating Cs:Go BF autoload file")
+	writefile("Cs:Go BF/autoload.txt", "")
 end
 
-if not isfile("hexagon/custom_skins.txt") then
-	print("downloading hexagon custom skins file")
-	writefile("hexagon/custom_skins.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_skins.txt"))
+if not isfile("Cs:Go BF/custom_skins.txt") then
+	print("downloading Cs:Go BF custom skins file")
+	writefile("Cs:Go BF/custom_skins.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_skins.txt"))
 end
 
-if not isfile("hexagon/custom_models.txt") then
-	print("downloading hexagon custom models file")
-	writefile("hexagon/custom_models.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_models.txt"))
-elseif readfile("hexagon/custom_models.txt"):find("Clone") then
-	local str = readfile("hexagon/custom_models.txt")
+if not isfile("Cs:Go BF/custom_models.txt") then
+	print("downloading Cs:Go BF custom models file")
+	writefile("Cs:Go BF/custom_models.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_models.txt"))
+elseif readfile("Cs:Go BF/custom_models.txt"):find("Clone") then
+	local str = readfile("Cs:Go BF/custom_models.txt")
 	str = str:gsub([[game.ReplicatedStorage.Viewmodels["v_C4Halloween"]:Clone()]], [[game.ReplicatedStorage.Viewmodels:FindFirstChild("v_C4Halloween")]])
 	str = str:gsub([[game.ReplicatedStorage.Viewmodels["v_oldM4A1-S"]:Clone()]], [[game.ReplicatedStorage.Viewmodels:FindFirstChild("v_oldM4A1-S")]])
-	writefile("hexagon/custom_models.txt", str)
-	print("exodus winning $$$")
+	writefile("Cs:Go BF/custom_models.txt", str)
+	print("BF CounterBlox Beta")
 end
 
-if not isfile("hexagon/inventories.txt") then
-	print("downloading hexagon inventories file")
-	writefile("hexagon/inventories.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/inventories.txt"))
+if not isfile("Cs:Go BF/inventories.txt") then
+	print("downloading Cs:Go BF inventories file")
+	writefile("Cs:Go BF/inventories.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/inventories.txt"))
 end
 
-if not isfile("hexagon/skyboxes.txt") then
-	print("downloading hexagon skyboxes file")
-	writefile("hexagon/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/skyboxes.txt"))
+if not isfile("Cs:Go BF/skyboxes.txt") then
+	print("downloading Cs:Go BF skyboxes file")
+	writefile("Cs:Go BF/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/skyboxes.txt"))
 end
 
-Hint.Text = "Hexagon | Loading..."
+Hint.Text = "Cs:Go BF | Loading..."
 
 -- Viewmodels fix
 for i,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren()) do
@@ -94,8 +94,8 @@ local Hitboxes = {
 	["Legs"] = {"LeftUpperLeg", "LeftLowerLeg", "LeftFoot", "RightUpperLeg", "RightLowerLeg", "RightFoot"}
 }
 
-local HexagonFolder = Instance.new("Folder", workspace)
-HexagonFolder.Name = "HexagonFolder"
+local Cs:Go BFFolder = Instance.new("Folder", workspace)
+Cs:Go BFFolder.Name = "Cs:Go BFFolder"
 
 local oldOsPlatform = game.Players.LocalPlayer.OsPlatform
 local oldMusicT = game.Players.LocalPlayer.PlayerGui.Music.ValveT:Clone()
@@ -120,8 +120,8 @@ local FOVCircle = Drawing.new("Circle")
 local Cases = {}; for i,v in pairs(game.ReplicatedStorage.Cases:GetChildren()) do table.insert(Cases, v.Name) end
 
 local Configs = {}
-local Inventories = loadstring("return "..readfile("hexagon/inventories.txt"))()
-local Skyboxes = loadstring("return "..readfile("hexagon/skyboxes.txt"))()
+local Inventories = loadstring("return "..readfile("Cs:Go BF/inventories.txt"))()
+local Skyboxes = loadstring("return "..readfile("Cs:Go BF/skyboxes.txt"))()
 
 
 
@@ -137,8 +137,8 @@ local nocw_m = {}
 local curVel = 16
 local isBhopping = false
 
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/ESP.lua"))()
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/UILibrary.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZuhuInc/RebornBF/463d3a19334d5e331453248def685a6b9953fd20/CBESP.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZuhuInc/RebornBF/main/CBLibUI.lua"))()
 
 local Window = library:CreateWindow(Vector2.new(500, 500), Vector2.new((workspace.CurrentCamera.ViewportSize.X/2)-250, (workspace.CurrentCamera.ViewportSize.Y/2)-250))
 
@@ -730,13 +730,13 @@ VisualsTabCategoryOthers:AddColorPicker("Ambient", Color3.new(1,1,1), "VisualsTa
 end)
 
 VisualsTabCategoryOthers:AddDropdown("Skybox", TableToNames(Skyboxes), "Default", "VisualsTabCategoryOthersSkybox", function(val)
-	if game.Lighting:FindFirstChild("HEXAGON_SKYBOX") then
+	if game.Lighting:FindFirstChild("Cs:Go BF_SKYBOX") then
 		game.Lighting:FindFirstChild("HEXAGON_SKYBOX"):Destroy()
 	end
 	
 	if val ~= "Default" and rawget(Skyboxes, val) then
 		local NewSkybox = Instance.new("Sky", game.Lighting)
-		NewSkybox.Name = "HEXAGON_SKYBOX"
+		NewSkybox.Name = "Cs:Go BF_SKYBOX"
 		
 		for i,v in pairs(rawget(Skyboxes, val)) do
 			NewSkybox[i] = v
@@ -1052,7 +1052,7 @@ end)
 
 if not a then
 	print(a, b)
-	game.Players.LocalPlayer:Kick("Hexagon | Your custom models file is fucked up lol! "..b)
+	game.Players.LocalPlayer:Kick("Cs:Go BF | Your custom models file is fucked up lol! "..b)
 end
 
 MiscellaneousTabCategoryMain:AddDropdown("Inventory Changer", TableToNames(Inventories), "-", "MiscellaneousTabCategoryMainInventoryChanger", function(val)
@@ -1477,7 +1477,7 @@ MiscellaneousTabCategoryChatSpam:AddToggle("Enabled", false, "MiscellaneousTabCa
 	end
 end)
 
-MiscellaneousTabCategoryChatSpam:AddTextBox("Message", "Hexagon is the best!", "MiscellaneousTabCategoryChatSpamMessage")
+MiscellaneousTabCategoryChatSpam:AddTextBox("Message", "Cs:Go BF is the best!", "MiscellaneousTabCategoryChatSpamMessage")
 
 local MiscellaneousTabCategoryKeybinds = MiscellaneousTab:AddCategory("Keybinds", 2)
 
@@ -1633,7 +1633,7 @@ SettingsTabCategoryConfigs:AddButton("Set as default", function()
 	if isfile("hexagon/configs/"..library.pointers.SettingsTabCategoryConfigsConfig.value..".cfg") then
 		writefile("hexagon/autoload.txt", library.pointers.SettingsTabCategoryConfigsConfig.value..".cfg")
 	else
-		writefile("hexagon/autoload.txt", "")
+		writefile("Cs:Go BF/autoload.txt", "")
 	end
 end)
 
@@ -1980,7 +1980,7 @@ Mouse.Move:Connect(function()
 	end
 end)
 
-Hint.Text = "Hexagon | Setting up hooks..."
+Hint.Text = "Cs:Go BF | Setting up hooks..."
 
 hookfunc(getrenv().xpcall, function() end)
 
@@ -2204,9 +2204,9 @@ if readfile("hexagon/autoload.txt") ~= "" and isfile("hexagon/configs/"..readfil
 	end
 end
 
-print("Hexagon finished loading!")
+print("Cs:Go BF finished loading!")
 print("101 120 111 100 117 115") -- :)
 
-Hint.Text = "Hexagon | Loading finished!"
+Hint.Text = "Cs:Go BF | Loading finished!"
 wait(1.5)
 Hint:Destroy()
