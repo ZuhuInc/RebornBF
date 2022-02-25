@@ -3,12 +3,12 @@ Made by ZuhuInc
 --]]
 
 local Hint = Instance.new("Hint", game.CoreGui)
-Hint.Text = "Hexagon | Waiting for the game to load..."
+Hint.Text = "ZØRKA | Waiting for the game to load..."
 
 repeat wait() until game:IsLoaded()
 repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("GUI")
 
-Hint.Text = "Hexagon | Setting up environment..."
+Hint.Text = "ZØRKA | Setting up environment..."
 
 -- Services
 local UserInputService = game:GetService("UserInputService")
@@ -29,7 +29,7 @@ if (listfiles == false) then return game.Players.LocalPlayer:Kick("Exploit not s
 if (isfolder == false) then return game.Players.LocalPlayer:Kick("Exploit not supported! Missing: isfolder.") end
 if (hookfunc == false) then return game.Players.LocalPlayer:Kick("Exploit not supported! Missing: hookfunc.") end
 
-Hint.Text = "Hexagon | Setting up configuration settings..."
+Hint.Text = "ZØRKA | Setting up configuration settings..."
 
 if not isfolder("hexagon") then
 	print("creating hexagon folder")
@@ -72,7 +72,7 @@ if not isfile("hexagon/skyboxes.txt") then
 	writefile("hexagon/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/skyboxes.txt"))
 end
 
-Hint.Text = "Hexagon | Loading..."
+Hint.Text = "ZØRKA | Loading..."
 
 -- Viewmodels fix
 for i,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren()) do
