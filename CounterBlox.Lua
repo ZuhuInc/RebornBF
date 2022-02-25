@@ -59,7 +59,7 @@ elseif readfile("hexagon/custom_models.txt"):find("Clone") then
 	str = str:gsub([[game.ReplicatedStorage.Viewmodels["v_C4Halloween"]:Clone()]], [[game.ReplicatedStorage.Viewmodels:FindFirstChild("v_C4Halloween")]])
 	str = str:gsub([[game.ReplicatedStorage.Viewmodels["v_oldM4A1-S"]:Clone()]], [[game.ReplicatedStorage.Viewmodels:FindFirstChild("v_oldM4A1-S")]])
 	writefile("hexagon/custom_models.txt", str)
-	print("exodus winning $$$")
+	print("ZØRKA Beta V4.2")
 end
 
 if not isfile("hexagon/inventories.txt") then
@@ -2207,6 +2207,6 @@ end
 print("Hexagon finished loading!")
 print("101 120 111 100 117 115") -- :)
 
-Hint.Text = "Hexagon | Loading finished!"
+Hint.Text = "ZØRKA | Loading finished!"
 wait(1.5)
 Hint:Destroy()
