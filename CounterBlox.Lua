@@ -1531,7 +1531,7 @@ SettingsTabCategoryMain:AddButton("Server Rejoin", function()
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Discord Invite", function()
-	setclipboard("https://discord.gg/FdrQZ6sD5T")
+	setclipboard("https://discord.gg/YVaaSQbrgg")
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Roblox Game Invite", function()
@@ -1639,21 +1639,21 @@ end)
 
 local SettingsTabCategoryCredits = SettingsTab:AddCategory("Credits", 2)
 
-SettingsTabCategoryCredits:AddLabel("Script - Pawel12d#0272")
+SettingsTabCategoryCredits:AddLabel("Script - ZuhuInc")
 
-SettingsTabCategoryCredits:AddLabel("ESP - Modified Kiriot ESP")
+SettingsTabCategoryCredits:AddLabel("ESP - Kirotshi modified")
 
-SettingsTabCategoryCredits:AddLabel("UI Library - Modified Phantom Ware")
+SettingsTabCategoryCredits:AddLabel("UI Library - Modified Koshi")
 
 SettingsTabCategoryCredits:AddLabel("")
 
 SettingsTabCategoryCredits:AddLabel("Special Thanks To:")
 
-SettingsTabCategoryCredits:AddLabel("ny#2817")
+SettingsTabCategoryCredits:AddLabel("ZoraX")
 
-SettingsTabCategoryCredits:AddLabel("neeX#3712")
+SettingsTabCategoryCredits:AddLabel("IceQbe")
 
-SettingsTabCategoryCredits:AddLabel("MrPolaczekPL#1884")
+SettingsTabCategoryCredits:AddLabel("LTW")
 
 SettingsTabCategoryCredits:AddLabel("")
 
@@ -2207,6 +2207,6 @@ end
 print("Hexagon finished loading!")
 print("101 120 111 100 117 115") -- :)
 
-Hint.Text = "ZØRKA | Loading finished!"
+Hint.Text = "Hexagon | Loading finished!"
 wait(1.5)
 Hint:Destroy()
