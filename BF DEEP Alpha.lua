@@ -1,5 +1,5 @@
 --[[
-	Enjoy! Also, Please note that we arent responsible for if this script gets detected as it is shitty.
+	UwU Cause Can
 ]]
 do
   local Key53 = 8186484168865098
@@ -248,7 +248,7 @@ sfx:Play()
 tablestack[4][ivzcxy10]:SetCore(
 "SendNotification",
 {
-Title = "BF DeeWoken!",
+Title = "ZØRKA.XYZ DeeWoken!",
 Text = text,
 Duration = 2
 }
@@ -280,7 +280,7 @@ tool.Parent=tablestack[4].Players.LocalPlayer.Backpack
 end
 
 local DefaultSettings = {
-WindowName = "BF DeepWoken Beta V1" .. " - Time : " .. tostring(os.date()) .. " - Welcome to the club.",
+WindowName = "ZØRKA.XYZ DeepWoken Beta V1" .. " - Time : " .. tostring(os.date()) .. " - Welcome to the club.",
 Color = tablestack[10](255, 0, 0),
 Keybind = Enum.KeyCode.RightBracket,
 noinsanity = tablestack[2],
